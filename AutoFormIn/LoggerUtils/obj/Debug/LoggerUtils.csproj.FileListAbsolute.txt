@@ -1,0 +1,8 @@
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\LoggerUtils\bin\Debug\LoggerUtils.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\LoggerUtils\bin\Debug\LoggerUtils.pdb
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\LoggerUtils\obj\Debug\LoggerUtils.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\LoggerUtils\obj\Debug\LoggerUtils.pdb
+D:\2017\2017_柔性\standard\LoggerUtils\bin\Debug\LoggerUtils.dll
+D:\2017\2017_柔性\standard\LoggerUtils\bin\Debug\LoggerUtils.pdb
+D:\2017\2017_柔性\standard\LoggerUtils\obj\Debug\LoggerUtils.dll
+D:\2017\2017_柔性\standard\LoggerUtils\obj\Debug\LoggerUtils.pdb

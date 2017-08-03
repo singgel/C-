@@ -1,0 +1,10 @@
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\EntityLib\bin\Debug\EntityLib.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\EntityLib\bin\Debug\EntityLib.pdb
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\EntityLib\obj\Debug\EntityLib.csprojResolveAssemblyReference.cache
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\EntityLib\obj\Debug\EntityLib.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\EntityLib\obj\Debug\EntityLib.pdb
+D:\2017\2017_柔性\standard\EntityLib\bin\Debug\EntityLib.dll
+D:\2017\2017_柔性\standard\EntityLib\bin\Debug\EntityLib.pdb
+D:\2017\2017_柔性\standard\EntityLib\obj\Debug\EntityLib.csprojResolveAssemblyReference.cache
+D:\2017\2017_柔性\standard\EntityLib\obj\Debug\EntityLib.dll
+D:\2017\2017_柔性\standard\EntityLib\obj\Debug\EntityLib.pdb

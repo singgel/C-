@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.catarc.info/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="FlexServiceService" targetNamespace="http://www.catarc.info/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://www.catarc.info/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element xmlns:ns1="http://www.catarc.info/" name="userRegister" type="ns1:userRegister" />
+      <xs:complexType name="userRegister">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+          <xs:element minOccurs="0" name="arg3" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns2="http://www.catarc.info/" name="userRegisterResponse" type="ns2:userRegisterResponse" />
+      <xs:complexType name="userRegisterResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns3="http://www.catarc.info/" name="ufileUpload" type="ns3:ufileUpload" />
+      <xs:complexType name="ufileUpload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+          <xs:element minOccurs="0" name="arg3" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns4="http://www.catarc.info/" name="ufileUploadResponse" type="ns4:ufileUploadResponse" />
+      <xs:complexType name="ufileUploadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns5="http://www.catarc.info/" name="getBbh" type="ns5:getBbh" />
+      <xs:complexType name="getBbh">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns6="http://www.catarc.info/" name="getBbhResponse" type="ns6:getBbhResponse" />
+      <xs:complexType name="getBbhResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns7="http://www.catarc.info/" name="ufileDownload" type="ns7:ufileDownload" />
+      <xs:complexType name="ufileDownload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns8="http://www.catarc.info/" name="ufileDownloadResponse" type="ns8:ufileDownloadResponse" />
+      <xs:complexType name="ufileDownloadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns9="http://www.catarc.info/" name="getAllEnterprise" type="ns9:getAllEnterprise" />
+      <xs:complexType name="getAllEnterprise" />
+      <xs:element xmlns:ns10="http://www.catarc.info/" name="getAllEnterpriseResponse" type="ns10:getAllEnterpriseResponse" />
+      <xs:complexType name="getAllEnterpriseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns11="http://www.catarc.info/" name="fillRuleDowload" type="ns11:fillRuleDowload" />
+      <xs:complexType name="fillRuleDowload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+          <xs:element minOccurs="0" name="arg3" type="xs:string" />
+          <xs:element minOccurs="0" name="arg4" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns12="http://www.catarc.info/" name="fillRuleDowloadResponse" type="ns12:fillRuleDowloadResponse" />
+      <xs:complexType name="fillRuleDowloadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns13="http://www.catarc.info/" name="fillRuleUpload" type="ns13:fillRuleUpload" />
+      <xs:complexType name="fillRuleUpload">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+          <xs:element minOccurs="0" name="arg3" type="xs:string" />
+          <xs:element minOccurs="0" name="arg4" type="xs:string" />
+          <xs:element minOccurs="0" name="arg5" type="xs:base64Binary" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns14="http://www.catarc.info/" name="fillRuleUploadResponse" type="ns14:fillRuleUploadResponse" />
+      <xs:complexType name="fillRuleUploadResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns15="http://www.catarc.info/" name="fillRuleMdStr" type="ns15:fillRuleMdStr" />
+      <xs:complexType name="fillRuleMdStr">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+          <xs:element minOccurs="0" name="arg3" type="xs:string" />
+          <xs:element minOccurs="0" name="arg4" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns16="http://www.catarc.info/" name="fillRuleMdStrResponse" type="ns16:fillRuleMdStrResponse" />
+      <xs:complexType name="fillRuleMdStrResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns17="http://www.catarc.info/" name="ufileDetailGet" type="ns17:ufileDetailGet" />
+      <xs:complexType name="ufileDetailGet">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns18="http://www.catarc.info/" name="ufileDetailGetResponse" type="ns18:ufileDetailGetResponse" />
+      <xs:complexType name="ufileDetailGetResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns19="http://www.catarc.info/" name="userDelete" type="ns19:userDelete" />
+      <xs:complexType name="userDelete">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns20="http://www.catarc.info/" name="userDeleteResponse" type="ns20:userDeleteResponse" />
+      <xs:complexType name="userDeleteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns21="http://www.catarc.info/" name="ufileDelete" type="ns21:ufileDelete" />
+      <xs:complexType name="ufileDelete">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns22="http://www.catarc.info/" name="ufileDeleteResponse" type="ns22:ufileDeleteResponse" />
+      <xs:complexType name="ufileDeleteResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns23="http://www.catarc.info/" name="userLogin" type="ns23:userLogin" />
+      <xs:complexType name="userLogin">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns24="http://www.catarc.info/" name="userLoginResponse" type="ns24:userLoginResponse" />
+      <xs:complexType name="userLoginResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ufileDetailGet">
+    <wsdl:part name="parameters" element="tns:ufileDetailGet" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleDowload">
+    <wsdl:part name="parameters" element="tns:fillRuleDowload" />
+  </wsdl:message>
+  <wsdl:message name="userLoginResponse">
+    <wsdl:part name="parameters" element="tns:userLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="userDelete">
+    <wsdl:part name="parameters" element="tns:userDelete" />
+  </wsdl:message>
+  <wsdl:message name="getAllEnterpriseResponse">
+    <wsdl:part name="parameters" element="tns:getAllEnterpriseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileDeleteResponse">
+    <wsdl:part name="parameters" element="tns:ufileDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAllEnterprise">
+    <wsdl:part name="parameters" element="tns:getAllEnterprise" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleMdStrResponse">
+    <wsdl:part name="parameters" element="tns:fillRuleMdStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileDelete">
+    <wsdl:part name="parameters" element="tns:ufileDelete" />
+  </wsdl:message>
+  <wsdl:message name="getBbhResponse">
+    <wsdl:part name="parameters" element="tns:getBbhResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileDownloadResponse">
+    <wsdl:part name="parameters" element="tns:ufileDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleUpload">
+    <wsdl:part name="parameters" element="tns:fillRuleUpload" />
+  </wsdl:message>
+  <wsdl:message name="userRegisterResponse">
+    <wsdl:part name="parameters" element="tns:userRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileDownload">
+    <wsdl:part name="parameters" element="tns:ufileDownload" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleUploadResponse">
+    <wsdl:part name="parameters" element="tns:fillRuleUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="userDeleteResponse">
+    <wsdl:part name="parameters" element="tns:userDeleteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileUpload">
+    <wsdl:part name="parameters" element="tns:ufileUpload" />
+  </wsdl:message>
+  <wsdl:message name="userRegister">
+    <wsdl:part name="parameters" element="tns:userRegister" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleMdStr">
+    <wsdl:part name="parameters" element="tns:fillRuleMdStr" />
+  </wsdl:message>
+  <wsdl:message name="getBbh">
+    <wsdl:part name="parameters" element="tns:getBbh" />
+  </wsdl:message>
+  <wsdl:message name="fillRuleDowloadResponse">
+    <wsdl:part name="parameters" element="tns:fillRuleDowloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ufileDetailGetResponse">
+    <wsdl:part name="parameters" element="tns:ufileDetailGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="userLogin">
+    <wsdl:part name="parameters" element="tns:userLogin" />
+  </wsdl:message>
+  <wsdl:message name="ufileUploadResponse">
+    <wsdl:part name="parameters" element="tns:ufileUploadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FlexService">
+    <wsdl:operation name="userRegister">
+      <wsdl:input name="userRegister" message="tns:userRegister" />
+      <wsdl:output name="userRegisterResponse" message="tns:userRegisterResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ufileUpload">
+      <wsdl:input name="ufileUpload" message="tns:ufileUpload" />
+      <wsdl:output name="ufileUploadResponse" message="tns:ufileUploadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getBbh">
+      <wsdl:input name="getBbh" message="tns:getBbh" />
+      <wsdl:output name="getBbhResponse" message="tns:getBbhResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ufileDownload">
+      <wsdl:input name="ufileDownload" message="tns:ufileDownload" />
+      <wsdl:output name="ufileDownloadResponse" message="tns:ufileDownloadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllEnterprise">
+      <wsdl:input name="getAllEnterprise" message="tns:getAllEnterprise" />
+      <wsdl:output name="getAllEnterpriseResponse" message="tns:getAllEnterpriseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleDowload">
+      <wsdl:input name="fillRuleDowload" message="tns:fillRuleDowload" />
+      <wsdl:output name="fillRuleDowloadResponse" message="tns:fillRuleDowloadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleUpload">
+      <wsdl:input name="fillRuleUpload" message="tns:fillRuleUpload" />
+      <wsdl:output name="fillRuleUploadResponse" message="tns:fillRuleUploadResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleMdStr">
+      <wsdl:input name="fillRuleMdStr" message="tns:fillRuleMdStr" />
+      <wsdl:output name="fillRuleMdStrResponse" message="tns:fillRuleMdStrResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ufileDetailGet">
+      <wsdl:input name="ufileDetailGet" message="tns:ufileDetailGet" />
+      <wsdl:output name="ufileDetailGetResponse" message="tns:ufileDetailGetResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="userDelete">
+      <wsdl:input name="userDelete" message="tns:userDelete" />
+      <wsdl:output name="userDeleteResponse" message="tns:userDeleteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ufileDelete">
+      <wsdl:input name="ufileDelete" message="tns:ufileDelete" />
+      <wsdl:output name="ufileDeleteResponse" message="tns:ufileDeleteResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+      <wsdl:input name="userLogin" message="tns:userLogin" />
+      <wsdl:output name="userLoginResponse" message="tns:userLoginResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FlexServiceServiceSoapBinding" type="tns:FlexService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="userRegister">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="userRegister">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="userRegisterResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ufileUpload">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="ufileUpload">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ufileUploadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getBbh">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getBbh">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getBbhResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ufileDownload">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="ufileDownload">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ufileDownloadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllEnterprise">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getAllEnterprise">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAllEnterpriseResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleDowload">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="fillRuleDowload">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fillRuleDowloadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleUpload">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="fillRuleUpload">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fillRuleUploadResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fillRuleMdStr">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="fillRuleMdStr">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="fillRuleMdStrResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ufileDetailGet">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="ufileDetailGet">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ufileDetailGetResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userDelete">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="userDelete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="userDeleteResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ufileDelete">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="ufileDelete">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ufileDeleteResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="userLogin">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="userLogin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="userLoginResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FlexServiceService">
+    <wsdl:port name="FlexServicePort" binding="tns:FlexServiceServiceSoapBinding">
+      <soap:address location="http://219.234.2.24:8080/FlexServer/cxf/flexService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

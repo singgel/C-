@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.catarc.info/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="IFlexUserServiceService" targetNamespace="http://www.catarc.info/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.catarc.info/">
+      <xsd:element name="deleteUserInfo" type="tns:deleteUserInfo" />
+      <xsd:complexType name="deleteUserInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="deleteUserInfoResponse" type="tns:deleteUserInfoResponse" />
+      <xsd:complexType name="deleteUserInfoResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="checkUserInfo" type="tns:checkUserInfo" />
+      <xsd:complexType name="checkUserInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="checkUserInfoResponse" type="tns:checkUserInfoResponse" />
+      <xsd:complexType name="checkUserInfoResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="regUserInfo" type="tns:regUserInfo" />
+      <xsd:complexType name="regUserInfo">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="arg0" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg1" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg2" type="xsd:string" />
+          <xsd:element minOccurs="0" name="arg3" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="regUserInfoResponse" type="tns:regUserInfoResponse" />
+      <xsd:complexType name="regUserInfoResponse">
+        <xsd:sequence>
+          <xsd:element name="return" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="deleteUserInfo">
+    <wsdl:part name="parameters" element="tns:deleteUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="checkUserInfoResponse">
+    <wsdl:part name="parameters" element="tns:checkUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteUserInfoResponse">
+    <wsdl:part name="parameters" element="tns:deleteUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="regUserInfoResponse">
+    <wsdl:part name="parameters" element="tns:regUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="checkUserInfo">
+    <wsdl:part name="parameters" element="tns:checkUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="regUserInfo">
+    <wsdl:part name="parameters" element="tns:regUserInfo" />
+  </wsdl:message>
+  <wsdl:portType name="IFlexUserService">
+    <wsdl:operation name="deleteUserInfo">
+      <wsdl:input name="deleteUserInfo" message="tns:deleteUserInfo" />
+      <wsdl:output name="deleteUserInfoResponse" message="tns:deleteUserInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="checkUserInfo">
+      <wsdl:input name="checkUserInfo" message="tns:checkUserInfo" />
+      <wsdl:output name="checkUserInfoResponse" message="tns:checkUserInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="regUserInfo">
+      <wsdl:input name="regUserInfo" message="tns:regUserInfo" />
+      <wsdl:output name="regUserInfoResponse" message="tns:regUserInfoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IFlexUserServiceServiceSoapBinding" type="tns:IFlexUserService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="deleteUserInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="deleteUserInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="deleteUserInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkUserInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="checkUserInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkUserInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="regUserInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="regUserInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="regUserInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IFlexUserServiceService">
+    <wsdl:port name="IFlexUserServicePort" binding="tns:IFlexUserServiceServiceSoapBinding">
+      <soap:address location="http://localhost:8082/Mountain/services/flexService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

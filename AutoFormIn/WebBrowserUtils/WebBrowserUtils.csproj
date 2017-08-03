@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F12E1FE5-9791-4457-9E58-4A51DC11FC41}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBrowserUtils</RootNamespace>
+    <AssemblyName>WebBrowserUtils</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Arithmetic">
+      <HintPath>..\DLL\Arithmetic.dll</HintPath>
+    </Reference>
+    <Reference Include="BasicLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelUtils\dll\BasicLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendUI, Version=2.1.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\ExtendUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelUtils\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>dll\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.JScript" />
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\DLL\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="office.excel, Version=3.1.12.12, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelUtils\dll\office.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DialogOpenedEventArgs.cs" />
+    <Compile Include="ExtendWebBrowser\ClientUtils.cs" />
+    <Compile Include="ExtendWebBrowser\jQueryHelper.cs" />
+    <Compile Include="ExtendWebBrowser\NativeMethods\IDispatch.cs" />
+    <Compile Include="ExtendWebBrowser\NativeMethods\SafeNativeMethods.cs" />
+    <Compile Include="ExtendWebBrowser\NativeMethods\tagDISPPARAMS.cs" />
+    <Compile Include="ExtendWebBrowser\NativeMethods\tagEXCEPINFO.cs" />
+    <Compile Include="ExtendWebBrowser\WebBrowserEvent2.cs" />
+    <Compile Include="ExtendWebBrowser\WebBrowser2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FillStateChangedEventArgs.cs" />
+    <Compile Include="HtmlAppUtil.cs" />
+    <Compile Include="HtmlUtils\Actions\HtmlElementActions.cs" />
+    <Compile Include="HtmlUtils\BaseImpl.cs" />
+    <Compile Include="HtmlConstants.cs" />
+    <Compile Include="HtmlUtils\Changers\HtmlBaseFunctionChanger.cs" />
+    <Compile Include="HtmlUtils\Comparer\BHComparerFillManager.cs" />
+    <Compile Include="HtmlUtils\Comparer\CarTypeSelector.cs" />
+    <Compile Include="HtmlUtils\Comparer\GHComparerFillManager.cs" />
+    <Compile Include="HtmlUtils\Comparer\RuleComparer.cs" />
+    <Compile Include="HtmlUtils\Comparer\PageGroup.cs" />
+    <Compile Include="HtmlUtils\Comparer\RuleItem.cs" />
+    <Compile Include="HtmlUtils\Comparer\PrivateDetector.cs" />
+    <Compile Include="HtmlUtils\Comparer\RuleItemStatus.cs" />
+    <Compile Include="HtmlUtils\Fillers\BH\BHEngineFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\COC\COCElementDetector.cs" />
+    <Compile Include="HtmlUtils\Fillers\COC\CoCFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\COC\COCFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\COC\CoCItem.cs" />
+    <Compile Include="HtmlUtils\Fillers\BH\BHFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\BH\BHFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\BH\BHPageSearch.cs" />
+    <Compile Include="HtmlUtils\Fillers\BH\BHUrlParameter.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\AddValueAndNote.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\AddWindow.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\ApiSetter.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\AttachWindow_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\CCCFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\CCCWindowType.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\CheckListBox_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\ColumnWindow.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\RadioButtonWindow.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\FillDialog_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\InfoTips_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\InputFileName.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\Login_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\Main_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\OpenFileDialog_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\ControlSorter.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SaveDialog_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SaveRequireWindow.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SelectFirmRelation_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SelectProperty_3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\NormalAddPage.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_10_2_3.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_1_Relation.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_2_Relation.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_1.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_1Value.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_2.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_12_2Value.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_13_3.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_13_3Value.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\SpecialPage\Page9_13_3_Relation.cs" />
+    <Compile Include="HtmlUtils\Fillers\CCC\TextEditWindow.cs" />
+    <Compile Include="HtmlUtils\Fillers\ElementType.cs" />
+    <Compile Include="HtmlUtils\Fillers\FDL\FDLFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\FDL\FDLFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillBase.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillPageParameter3C.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillParameter.cs" />
+    <Compile Include="HtmlUtils\Detectors\ElementDetector.cs" />
+    <Compile Include="HtmlUtils\Detectors\GHElementDetector.cs" />
+    <Compile Include="HtmlUtils\Detectors\Matcher.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillAsyncHandler.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillManagerBase.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillParameterKey.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillRecord.cs" />
+    <Compile Include="HtmlUtils\Fillers\GH\GHFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\GH\GHFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\FillState.cs" />
+    <Compile Include="HtmlUtils\Fillers\GH\GHPageSearch.cs" />
+    <Compile Include="HtmlUtils\Fillers\RecordType.cs" />
+    <Compile Include="HtmlUtils\Fillers\PZH\PZHFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\PZH\PZHFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\UrlParameter.cs" />
+    <Compile Include="HtmlUtils\Fillers\WebFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\XNY\XNYFiller.cs" />
+    <Compile Include="HtmlUtils\Fillers\XNY\XNYFillManager.cs" />
+    <Compile Include="HtmlUtils\Fillers\XNY\XNYPageSearch.cs" />
+    <Compile Include="HtmlUtils\Fillers\XNY\XNYUrlParameter.cs" />
+    <Compile Include="HtmlUtils\History\HistoryHelper.cs" />
+    <Compile Include="HtmlUtils\History\HistoryItem.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WinApi\ListBoxStyles.cs" />
+    <Compile Include="WinApi\MENUITEMINFO.cs" />
+    <Compile Include="WinApi\MouseEventFlags.cs" />
+    <Compile Include="WinApi\MouseVirtualKeys.cs" />
+    <Compile Include="WinApi\NotificationCode.cs" />
+    <Compile Include="WinApi\RECT.cs" />
+    <Compile Include="WinApi\SysTreeView.cs" />
+    <Compile Include="WinApi\tagPoint.cs" />
+    <Compile Include="HtmlUtils\Readers\HtmlElementValueReader.cs" />
+    <Compile Include="HtmlUtils\Setters\HtmlElementValueSetter.cs" />
+    <Compile Include="IOpenDialog.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinApi\TVITEM.cs" />
+    <Compile Include="WinApi\WindowStyles.cs" />
+    <Compile Include="WinApi\WMMSG.cs" />
+    <Compile Include="WinApi\NativeApi.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssistantUpdater\AssistantUpdater.csproj">
+      <Project>{6fc0d7cc-1838-45e0-a423-f606cdd52b5a}</Project>
+      <Name>AssistantUpdater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataProvider\DataProvider.csproj">
+      <Project>{1f51cc1d-b622-4913-aed5-14329cbe469e}</Project>
+      <Name>DataProvider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

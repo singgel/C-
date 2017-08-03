@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F51CC1D-B622-4913-AED5-14329CBE469E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assistant.DataProviders</RootNamespace>
+    <AssemblyName>DataProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Arithmetic">
+      <HintPath>..\DLL\Arithmetic.dll</HintPath>
+    </Reference>
+    <Reference Include="ExtendUI">
+      <HintPath>..\DLL\ExtendUI.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\ExcelUtils\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\ExcelUtils\bin\Debug\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\ExcelUtils\bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\ExcelUtils\bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.1.3.1, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ExcelUtils\bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="office.excel">
+      <HintPath>..\ExcelUtils\dll\office.excel.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConverterParameter.cs" />
+    <Compile Include="DataHandler.cs" />
+    <Compile Include="DataProviderFactory.cs" />
+    <Compile Include="Default3CDataProvider.cs" />
+    <Compile Include="Default3CDataValidator.cs" />
+    <Compile Include="Default3CValueConverter.cs" />
+    <Compile Include="ExcelFileHelper.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="FillParameter3C.cs" />
+    <Compile Include="FillRuleVersion.cs" />
+    <Compile Include="FillValue3C.cs" />
+    <Compile Include="HCBM\HCBMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HCBM\HCBMForm.Designer.cs">
+      <DependentUpon>HCBMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HCBM\BHDataProvider.cs" />
+    <Compile Include="HCBM\GHDataProvider.cs" />
+    <Compile Include="HCBM\Product.cs" />
+    <Compile Include="HCBM\ProvideType.cs" />
+    <Compile Include="IDataProvider.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RuleCompareNode.cs" />
+    <Compile Include="SelectorModel.cs" />
+    <Compile Include="SHFY\BHDataProvider.cs" />
+    <Compile Include="SHFY\SHFYDataValidator.cs" />
+    <Compile Include="SHFY\ValueConverter.cs" />
+    <Compile Include="ValueConverter.cs" />
+    <Compile Include="ValueState.cs" />
+    <Compile Include="VOLVO\CCCDataProvider.cs" />
+    <Compile Include="SHFY\GHDataProvider.cs" />
+    <Compile Include="VOLVO\BHDataProvider.cs" />
+    <Compile Include="SHFY\CCCDataProvider.cs" />
+    <Compile Include="VOLVO\GHDataProvider.cs" />
+    <Compile Include="TreeValue.cs" />
+    <Compile Include="UpdateRuleParameter.cs" />
+    <Compile Include="WebValueConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HCBM\HCBMForm.resx">
+      <DependentUpon>HCBMForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

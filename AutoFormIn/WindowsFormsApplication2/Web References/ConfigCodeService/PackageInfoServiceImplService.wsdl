@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://serviceimpl.server.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://service.server.com/" name="PackageInfoServiceImplService" targetNamespace="http://serviceimpl.server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://service.server.com/" location="http://60.247.58.117:8000/PatacTapmWebService/PackageInfoService?wsdl=IPackageInfoService.wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="PackageInfoServiceImplServiceSoapBinding" type="ns1:IPackageInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="setConfigCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setConfigCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setConfigCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParamsByPackageCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getParamsByPackageCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getParamsByPackageCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PackageInfoServiceImplService">
+    <wsdl:port name="PackageInfoServiceImplPort" binding="tns:PackageInfoServiceImplServiceSoapBinding">
+      <soap:address location="http://60.247.58.117:8000/PatacTapmWebService/PackageInfoService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Configurations>
+  <EntName Name="HCBM" EnName="default" />
+  <ManagementAddress>http://219.234.2.24:8080/FlexServer/comm_login.action</ManagementAddress>
+  <UpdateAddress>http://219.234.2.24:8080/FlexServer/cxf/flexService</UpdateAddress>
+  <!--用于元素感知的最小填报数据文件，路径为 [规则版本=变化比较]\[填报类型]-->
+  <DefaultDetectDataFile>最小数据.xlsx</DefaultDetectDataFile>
+  <!--底盘类型-->
+  <Appendixes>
+    <Appendix Name="自产整车" Value="自产整车(底盘)"/>
+    <Appendix Name="二类底盘" Value="二类底盘(整车)改装车"/>
+    <Appendix Name="三类底盘" Value="三类底盘的改装车"/>
+  </Appendixes>
+  <!--可填报车型树形列表-->
+  <Sites Name="全部网站" Count="2">
+    <Site Name="国环" CanUseAppendix="True">
+      <StartFillPageUri>http://xshz.vecc-mep.org.cn/newvip/newplan/step01.jsp</StartFillPageUri>
+      <EndFillPageUri>http://xshz.vecc-mep.org.cn/newvip/newplan/step07.jsp</EndFillPageUri>
+      <JumpWhenPage>http://xshz.vecc-mep.org.cn/newvip/content.jsp</JumpWhenPage>
+      <Standard Name="国二" Value="第二阶段">
+        <CarType>三轮车和低速货车</CarType>
+        <CarType>三轮汽车和低速货车用柴油机</CarType>
+      </Standard>
+      <Standard Name="国三" Value="第三阶段">
+        <CarType>摩托车</CarType>
+        <CarType>轻便摩托车</CarType>
+      </Standard>
+      <Standard Name="国四" Value="第四阶段">
+        <CarType>轻型汽油车</CarType>
+        <CarType>轻型柴油车</CarType>
+        <CarType>重型柴油车</CarType>
+        <CarType>重型柴油机</CarType>
+        <CarType>轻型两用燃料车</CarType>
+        <CarType>重型柴油机(城市车辆用柴油发动机)</CarType>
+        <CarType>重型汽油车</CarType>
+        <CarType>重型汽油机</CarType>
+        <CarType>重型柴油车(依据GB18352.3-2005型式核准)</CarType>
+      </Standard>
+      <Standard Name="国五" Value="第五阶段">
+        <CarType>轻型柴油车</CarType>
+        <CarType>轻型汽油车</CarType>
+        <CarType>重型柴油机(城市车辆用柴油发动机)</CarType>
+        <CarType>重型柴油机</CarType>
+        <CarType>重型LPG机</CarType>
+        <CarType>重型NG机</CarType>
+        <CarType>重型柴油车</CarType>
+        <CarType>重型LPG车</CarType>
+        <CarType>重型NG车</CarType>
+        <CarType>轻型两用燃料车</CarType>
+      </Standard>
+    </Site>
+    <Site Name="北环" CanUseAppendix="False">
+      <StartFillPageUri>http://58.30.229.122:8080/motor/car/car-declare-step1!input.action</StartFillPageUri>
+      <EndFillPageUri>http://58.30.229.122:8080/motor/car/car-declare-step7.action</EndFillPageUri>
+      <JumpWhenPage>http://58.30.229.122:8080/motor/index.jsp</JumpWhenPage>
+      <Standard Value="京三" Name="京3">
+        <CarType>非道路机械</CarType>
+        <CarType>非道路机械用柴油发动机</CarType>
+      </Standard>
+      <Standard Value="京四" Name="京4">
+        <CarType>非道路机械</CarType>
+        <CarType>非道路机械用柴油发动机</CarType>
+      </Standard>
+      <Standard Value="国2" Name="国2">
+        <CarType>三轮及农用车</CarType>
+      </Standard>
+      <Standard Value="国3" Name="国3">
+        <CarType>重型柴油车</CarType>
+        <CarType>重型汽油车</CarType>
+        <CarType>三轮及农用车</CarType>
+      </Standard>
+      <Standard Value="国4" Name="国4">
+        <CarType>轻型汽油车</CarType>
+        <CarType>重型柴油发动机</CarType>
+        <CarType>重型柴油车</CarType>
+        <CarType>重型汽油车</CarType>
+        <CarType>重型燃气发动机</CarType>
+      </Standard>
+      <Standard Value="国5" Name="国5">
+        <CarType>轻型汽油车</CarType>
+        <CarType>重型柴油发动机</CarType>
+        <CarType>重型柴油车</CarType>
+        <CarType>重型燃气发动机</CarType>
+      </Standard>
+      <Standard Value="国5(带IUPR)" Name="国5IUPR">
+        <CarType>轻型汽油车</CarType>
+      </Standard>
+      <Standard Value="第六阶段" Name="第六阶段">
+        <CarType>重型柴油发动机</CarType>
+        <CarType>重型燃气发动机</CarType>
+      </Standard>
+      <Standard Value="国6" Name="国6">
+        <CarType>轻型柴油车</CarType>
+      </Standard>
+      <Standard Value="" Name="其他">
+        <CarType>电动车</CarType>
+      </Standard>
+    </Site>
+    <Site Name="配置号" CanUseAppendix="False">
+      <StartFillPageUri>http://code.vidc.info/index.aspx</StartFillPageUri>
+      <EndFillPageUri>http://code.vidc.info/subPage/content.aspx</EndFillPageUri>
+      <JumpWhenPage>about:blank</JumpWhenPage>
+    </Site>
+    <Site Name="COC" CanUseAppendix="False">
+      <StartFillPageUri>http://tec.cqccms.com.cn/carTypeSeq!allCarTypeSeq.action?menuModuleId=149818&amp;query=true</StartFillPageUri>
+      <EndFillPageUri>http://tec.cqccms.com.cn/cocComplete!cocCompleteCreate.action</EndFillPageUri>
+      <JumpWhenPage>http://tec.cqccms.com.cn/right.htm</JumpWhenPage>
+    </Site>
+  </Sites>
+  <!--填报时所使用的规则文件名称-->
+  <FillRuleFileList Version="填报规则">
+    <FillRule Name="国环" UseConverter="True">
+      <PublicPage RelativeFilePath="国环\公共页面.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="True">
+        <RuleFile CarType="三轮车和低速货车" Standard="第二阶段" RelativeFilePath="国环\国二\三轮车和低速货车.xlsx" />
+        <RuleFile CarType="三轮汽车和低速货车用柴油机" Standard="第二阶段" RelativeFilePath="国环\国二\三轮汽车和低速货车用柴油机.xlsx" />
+        <RuleFile CarType="摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\摩托车.xlsx" />
+        <RuleFile CarType="轻便摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\轻便摩托车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型汽油车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油车(依据GB18352.3-2005型式核准)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车(依据GB18352.3-2005型式核准).xlsx" />
+        <RuleFile CarType="重型汽油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型汽油机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机.xlsx" />
+        <RuleFile CarType="重型LPG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG机.xlsx" />
+        <RuleFile CarType="重型NG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG机.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油车.xlsx" />
+        <RuleFile CarType="重型LPG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG车.xlsx" />
+        <RuleFile CarType="重型NG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG车.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型柴油车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="北环" UseConverter="True">
+      <PublicPage RelativeFilePath="北环\公共页面.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="False">
+        <RuleFile CarType="非道路机械" Standard="All" RelativeFilePath="北环\非道路机械.xlsx" />
+        <RuleFile CarType="非道路机械用柴油发动机" Standard="All" RelativeFilePath="北环\非道路机械用柴油发动机.xlsx" />
+        <RuleFile CarType="三轮及农用车" Standard="All" RelativeFilePath="北环\三轮及农用车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="All" RelativeFilePath="北环\重型柴油车.xlsx" />
+        <RuleFile CarType="重型汽油车" Standard="All" RelativeFilePath="北环\重型汽油车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="All" RelativeFilePath="北环\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油发动机" Standard="All" RelativeFilePath="北环\重型柴油发动机.xlsx" />
+        <RuleFile CarType="重型燃气发动机" Standard="All" RelativeFilePath="北环\重型燃气发动机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="All" RelativeFilePath="北环\轻型柴油车.xlsx" />
+        <RuleFile CarType="电动车" Standard="All" RelativeFilePath="北环\电动车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="CCC" UseConverter="False">
+      <PublicPage RelativeFilePath="CCC\目录字典.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="False">
+        <RuleFile CarType="All" Standard="All" RelativeFilePath="CCC\CCC填报规则.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="配置号" UseConverter="False">
+      <PublicPage RelativeFilePath="配置号\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="COC" UseConverter="False">
+      <PublicPage RelativeFilePath="COC\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="应用程序配置">
+      <PublicPage RelativeFilePath="config.xml" />
+    </FillRule>
+    <FillRule Name="转换规则">
+      <PublicPage RelativeFilePath="转换规则.xlsx" />
+    </FillRule>
+</FillRuleFileList>
+
+  <FillRuleFileList Version="元素感知">
+    <FillRule Name="国环">
+      <PublicPage RelativeFilePath="国环\公共页面.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="True">
+        <RuleFile CarType="三轮车和低速货车" Standard="第二阶段" RelativeFilePath="国环\国二\三轮车和低速货车.xlsx" />
+        <RuleFile CarType="三轮汽车和低速货车用柴油机" Standard="第二阶段" RelativeFilePath="国环\国二\三轮汽车和低速货车用柴油机.xlsx" />
+        <RuleFile CarType="摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\摩托车.xlsx" />
+        <RuleFile CarType="轻便摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\轻便摩托车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型汽油车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油车(依据GB18352.3-2005型式核准)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车(依据GB18352.3-2005型式核准).xlsx" />
+        <RuleFile CarType="重型汽油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型汽油机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机.xlsx" />
+        <RuleFile CarType="重型LPG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG机.xlsx" />
+        <RuleFile CarType="重型NG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG机.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油车.xlsx" />
+        <RuleFile CarType="重型LPG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG车.xlsx" />
+        <RuleFile CarType="重型NG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG车.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型柴油车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="北环">
+      <PublicPage RelativeFilePath="北环\公共页面.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="False">
+        <RuleFile CarType="非道路机械" Standard="All" RelativeFilePath="北环\非道路机械.xlsx" />
+        <RuleFile CarType="非道路机械用柴油发动机" Standard="All" RelativeFilePath="北环\非道路机械用柴油发动机.xlsx" />
+        <RuleFile CarType="三轮及农用车" Standard="All" RelativeFilePath="北环\三轮及农用车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="All" RelativeFilePath="北环\重型柴油车.xlsx" />
+        <RuleFile CarType="重型汽油车" Standard="All" RelativeFilePath="北环\重型汽油车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="All" RelativeFilePath="北环\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油发动机" Standard="All" RelativeFilePath="北环\重型柴油发动机.xlsx" />
+        <RuleFile CarType="重型燃气发动机" Standard="All" RelativeFilePath="北环\重型燃气发动机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="All" RelativeFilePath="北环\轻型柴油车.xlsx" />
+        <RuleFile CarType="电动车" Standard="All" RelativeFilePath="北环\电动车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="CCC">
+      <PublicPage RelativeFilePath="CCC\目录字典.xlsx" />
+      <RuleFiles CanUseAppendix="False">
+        <RuleFile CarType="All" Standard="All" RelativeFilePath="CCC\CCC填报规则.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="配置号">
+      <PublicPage RelativeFilePath="配置号\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="COC" UseConverter="False">
+      <PublicPage RelativeFilePath="COC\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="应用程序配置">
+      <PublicPage RelativeFilePath="config.xml" />
+    </FillRule>
+    <FillRule Name="转换规则">
+      <PublicPage RelativeFilePath="转换规则.xlsx" />
+    </FillRule>
+  </FillRuleFileList>
+  
+  <FillRuleFileList Version="变化比较">
+    <FillRule Name="国环">
+      <RuleFiles CanUseAppendix="True" UseStandard="True">
+        <RuleFile CarType="三轮车和低速货车" Standard="第二阶段" RelativeFilePath="国环\国二\三轮车和低速货车.xlsx" />
+        <RuleFile CarType="三轮汽车和低速货车用柴油机" Standard="第二阶段" RelativeFilePath="国环\国二\三轮汽车和低速货车用柴油机.xlsx" />
+        <RuleFile CarType="摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\摩托车.xlsx" />
+        <RuleFile CarType="轻便摩托车" Standard="第三阶段" RelativeFilePath="国环\国三\轻便摩托车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型汽油车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车.xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油车(依据GB18352.3-2005型式核准)" Standard="第四阶段" RelativeFilePath="国环\国四\重型柴油车(依据GB18352.3-2005型式核准).xlsx" />
+        <RuleFile CarType="重型汽油机" Standard="第四阶段" RelativeFilePath="国环\国四\重型汽油机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第四阶段" RelativeFilePath="国环\国四\轻型柴油车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油机(城市车辆用柴油发动机)" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机(城市车辆用柴油发动机).xlsx" />
+        <RuleFile CarType="重型柴油机" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油机.xlsx" />
+        <RuleFile CarType="重型LPG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG机.xlsx" />
+        <RuleFile CarType="重型NG机" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG机.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\重型柴油车.xlsx" />
+        <RuleFile CarType="重型LPG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型LPG车.xlsx" />
+        <RuleFile CarType="重型NG车" Standard="第五阶段" RelativeFilePath="国环\国五\重型NG车.xlsx" />
+        <RuleFile CarType="轻型两用燃料车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型两用燃料车.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="第五阶段" RelativeFilePath="国环\国五\轻型柴油车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="北环"  >
+      <RuleFiles CanUseAppendix="False" UseStandard="True">
+        <RuleFile CarType="非道路机械" Standard="京三" RelativeFilePath="北环\京三\非道路机械.xlsx" />
+        <RuleFile CarType="非道路机械" Standard="京三" RelativeFilePath="北环\京三\非道路机械用柴油发动机.xlsx" />
+        <RuleFile CarType="非道路机械" Standard="京四" RelativeFilePath="北环\京四\非道路机械.xlsx" />
+        <RuleFile CarType="非道路机械" Standard="京四" RelativeFilePath="北环\京四\非道路机械用柴油发动机.xlsx" />
+        <RuleFile CarType="三轮及农用车" Standard="国2" RelativeFilePath="北环\国2\三轮及农用车.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="国3" RelativeFilePath="北环\国3\重型柴油车.xlsx" />
+        <RuleFile CarType="重型汽油车" Standard="国3" RelativeFilePath="北环\国3\重型汽油车.xlsx" />
+        <RuleFile CarType="三轮及农用车" Standard="国3" RelativeFilePath="北环\国3\三轮及农用车.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="国4" RelativeFilePath="北环\国4\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油发动机" Standard="国4" RelativeFilePath="北环\国4\重型柴油发动机.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="国4" RelativeFilePath="北环\国4\重型柴油车.xlsx" />
+        <RuleFile CarType="重型汽油车" Standard="国4" RelativeFilePath="北环\国4\重型汽油车.xlsx" />
+        <RuleFile CarType="重型燃气发动机" Standard="国4" RelativeFilePath="北环\国4\重型燃气发动机.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="国5" RelativeFilePath="北环\国5\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油发动机" Standard="国5" RelativeFilePath="北环\国5\重型柴油发动机.xlsx" />
+        <RuleFile CarType="重型柴油车" Standard="国5" RelativeFilePath="北环\国5\重型柴油车.xlsx" />
+        <RuleFile CarType="重型燃气发动机" Standard="国5" RelativeFilePath="北环\国5\重型燃气发动机.xlsx" />
+        <RuleFile CarType="轻型汽油车" Standard="国5(带IUPR)" RelativeFilePath="北环\国5IUPR\轻型汽油车.xlsx" />
+        <RuleFile CarType="重型柴油发动机" Standard="第六阶段" RelativeFilePath="北环\第六阶段\重型柴油发动机.xlsx" />
+        <RuleFile CarType="重型燃气发动机" Standard="第六阶段" RelativeFilePath="北环\第六阶段\重型燃气发动机.xlsx" />
+        <RuleFile CarType="轻型柴油车" Standard="国6" RelativeFilePath="北环\国6\轻型柴油车.xlsx" />
+        <RuleFile CarType="电动车" Standard="All" RelativeFilePath="北环\电动车.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="CCC">
+      <PublicPage RelativeFilePath="CCC\目录字典.xlsx" />
+      <RuleFiles CanUseAppendix="False" UseStandard="False">
+        <RuleFile CarType="All" Standard="All" RelativeFilePath="CCC\CCC填报规则.xlsx" />
+      </RuleFiles>
+    </FillRule>
+    <FillRule Name="COC" UseConverter="False">
+      <PublicPage RelativeFilePath="COC\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="配置号">
+      <PublicPage RelativeFilePath="配置号\公共页面.xlsx" />
+    </FillRule>
+    <FillRule Name="应用程序配置">
+      <PublicPage RelativeFilePath="config.xml" />
+    </FillRule>
+    <FillRule Name="转换规则">
+      <PublicPage RelativeFilePath="转换规则.xlsx" />
+    </FillRule>
+  </FillRuleFileList>
+  <!--填报类型-->
+  <FillTypes>
+    <FillType>国环</FillType>
+    <FillType>北环</FillType>
+    <FillType>CCC</FillType>
+    <FillType>COC</FillType>
+    <FillType>配置号</FillType>
+    <FillType>转换规则</FillType>
+    <FillType>应用程序配置</FillType>
+  </FillTypes>
+      <!--填报权限-->
+  <FillRights>
+    <FillType>配置序列号</FillType>
+    <FillType>国环</FillType>
+    <FillType>北环</FillType>
+    <FillType>COC</FillType>
+    <FillType>CCC</FillType>
+	<!--FillType>非道路机动车</FillType-->
+    <FillType>SysManagement</FillType>
+    <FillType>查看填报历史</FillType>
+	<FillType>用户管理</FillType>
+  </FillRights>
+  <!--规则版本-->
+  <FillRuleVersion>
+    <RuleVersion VersionName="填报规则" UseAppendix="False">Fill</RuleVersion>
+    <RuleVersion VersionName="变化比较" UseAppendix="True">Compare</RuleVersion>
+    <RuleVersion VersionName="元素感知" UseAppendix="False">Fill</RuleVersion>
+  </FillRuleVersion>
+</Configurations>

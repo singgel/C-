@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://iservice.webservice.business.vtapm.sgm.com/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" name="IPackageInfoServiceService" targetNamespace="http://iservice.webservice.business.vtapm.sgm.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns="http://iservice.webservice.business.vtapm.sgm.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://iservice.webservice.business.vtapm.sgm.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="paramPo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="operFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="packageCode" type="xs:string" />
+          <xs:element minOccurs="0" name="paramCode" type="xs:string" />
+          <xs:element minOccurs="0" name="paramName" type="xs:string" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+          <xs:element minOccurs="0" name="remark" type="xs:string" />
+          <xs:element minOccurs="0" name="updateFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="version" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getParamsByPackageCode" type="tns:getParamsByPackageCode" />
+      <xs:complexType name="getParamsByPackageCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getParamsByPackageCodeResponse" type="tns:getParamsByPackageCodeResponse" />
+      <xs:complexType name="getParamsByPackageCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:paramPo" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="setConfigCode" type="tns:setConfigCode" />
+      <xs:complexType name="setConfigCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="setConfigCodeResponse" type="tns:setConfigCodeResponse" />
+      <xs:complexType name="setConfigCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="setConfigCode">
+    <wsdl:part name="parameters" element="tns:setConfigCode" />
+  </wsdl:message>
+  <wsdl:message name="setConfigCodeResponse">
+    <wsdl:part name="parameters" element="tns:setConfigCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getParamsByPackageCode">
+    <wsdl:part name="parameters" element="tns:getParamsByPackageCode" />
+  </wsdl:message>
+  <wsdl:message name="getParamsByPackageCodeResponse">
+    <wsdl:part name="parameters" element="tns:getParamsByPackageCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPackageInfoService">
+    <wsdl:operation name="getParamsByPackageCode">
+      <wsdl:input name="getParamsByPackageCode" message="tns:getParamsByPackageCode" />
+      <wsdl:output name="getParamsByPackageCodeResponse" message="tns:getParamsByPackageCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setConfigCode">
+      <wsdl:input name="setConfigCode" message="tns:setConfigCode" />
+      <wsdl:output name="setConfigCodeResponse" message="tns:setConfigCodeResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IPackageInfoServiceServiceSoapBinding" type="tns:IPackageInfoService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getParamsByPackageCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getParamsByPackageCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getParamsByPackageCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setConfigCode">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="setConfigCode">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="setConfigCodeResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IPackageInfoServiceService">
+    <wsdl:port name="IPackageInfoServicePort" binding="tns:IPackageInfoServiceServiceSoapBinding">
+      <soap:address location="http://60.247.58.117:8000/patac/webservice/PackageInfoService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

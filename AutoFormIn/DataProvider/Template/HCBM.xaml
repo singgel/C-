@@ -1,0 +1,85 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="pack://application:,,,/ExtendUI;component/Template/share.xaml"/>
+  </ResourceDictionary.MergedDictionaries>
+  
+  <SolidColorBrush Color="#fffafafa" x:Key="NormalGridRowBrush" />
+  <SolidColorBrush Color="#fff0f0f0" x:Key="AlternatingGridRowBrush" />
+  <SolidColorBrush Color="#ffb5f0ff" x:Key="SelectedGridRowBrush" />
+
+  <LinearGradientBrush x:Key="HeaderBrush" StartPoint="0,1" EndPoint="0,0">
+    <GradientStop Color="#ffb0d2f7" Offset="0"/>
+    <GradientStop Color="#ff95bdee" Offset="0.25"/>
+    <GradientStop Color="#ffd7e9f7" Offset="0.5"/>
+    <GradientStop Color="#ffb2d4f9" Offset="0.75"/>
+    <GradientStop Color="#ffeff8ff" Offset="1"/>
+  </LinearGradientBrush>
+  
+  <Style x:Key="DataGridRowStyle" TargetType="DataGridRow">
+    <Style.Triggers>
+      <Trigger Property="IsSelected" Value="True">
+        <Setter Property="Background" Value="{StaticResource SelectedGridRowBrush}"/>
+      </Trigger>
+    </Style.Triggers>
+  </Style>
+  
+  <Style x:Key="NormalDataGridStyle" TargetType="DataGrid" BasedOn="{StaticResource dataGridAeroStyle}">
+    <Setter Property="Background" Value="{StaticResource NormalGridRowBrush}"/>
+    <Setter Property="RowStyle" Value="{StaticResource DataGridRowStyle}"/>
+    <Setter Property="RowBackground" Value="{StaticResource NormalGridRowBrush}"/>
+    <Setter Property="AlternatingRowBackground" Value="{StaticResource AlternatingGridRowBrush}"/>
+    <Setter Property="GridLinesVisibility" Value="Vertical"/>
+    <Setter Property="HorizontalGridLinesBrush" Value="Silver"/>
+    <Setter Property="ColumnHeaderStyle">
+      <Setter.Value>
+        <Style TargetType="DataGridColumnHeader">
+          <Setter Property="MinHeight" Value="30"/>
+          <Setter Property="Background" Value="{StaticResource HeaderBrush}"/>
+          <Setter Property="BorderThickness" Value="0,0,1,0"/>
+          <Setter Property="BorderBrush" Value="Silver"/>
+          <Setter Property="HorizontalContentAlignment" Value="Center"/>
+          <Setter Property="VerticalContentAlignment" Value="Center"/>
+          <Setter Property="ContentTemplate">
+            <Setter.Value>
+              <DataTemplate>
+                <TextBlock Text="{Binding}" TextWrapping="Wrap" TextAlignment="Center"/>
+              </DataTemplate>
+            </Setter.Value>
+          </Setter>
+        </Style>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  
+  <DataTemplate x:Key="hcbm">
+    <DockPanel LastChildFill="True" MinWidth="400" MaxWidth="800">
+      <DockPanel DockPanel.Dock="Top" Margin="5,10">
+        <Button DockPanel.Dock="Right" Command="Stop" Content=" 取消" IsCancel="True" Width="80" Height="24" Margin="0,0,25,0" />
+        <Button DockPanel.Dock="Right" Command="Open" Content=" 确定" IsDefault="True" Width="80" Height="24" Margin="25,0" />
+        <Button DockPanel.Dock="Right" Command="Find" Content=" 查询" Width="80" Height="24" VerticalAlignment="Center" />
+        <TextBox Text="{Binding SearchString}" DockPanel.Dock="Left" Height="24" VerticalAlignment="Center" Margin="5,0,25,0" MinWidth="200"/>
+      </DockPanel>
+      <!--<StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Center" Margin="5,10">
+        <Button Command="Open" Content=" 确定" IsDefault="True" Width="80" Height="24" Margin="0,0,25,0" />
+        <Button Command="Stop" Content=" 取消" IsCancel="True" Width="80" Height="24" Margin="0,0,25,0" />
+      </StackPanel>-->
+      <DataGrid ItemsSource="{Binding Products.Items}" MaxHeight="300" SelectedItem="{Binding Products.SelectedItem}" Style="{StaticResource NormalDataGridStyle}" AutoGenerateColumns="False" DockPanel.Dock="Top" Margin="5,0">
+        <DataGrid.Columns>
+          <DataGridTemplateColumn Header="" Width="30" IsReadOnly="True">
+            <DataGridTemplateColumn.CellTemplate>
+              <DataTemplate>
+                <RadioButton IsChecked="{Binding IsSelected, RelativeSource={RelativeSource AncestorType=DataGridRow}, Mode=TwoWay}"/>
+              </DataTemplate>
+            </DataGridTemplateColumn.CellTemplate>
+          </DataGridTemplateColumn>
+          <DataGridTextColumn Header="产品型号" Binding="{Binding Model}" IsReadOnly="True" Width="*"/>
+          <DataGridTextColumn Header="产品商标" Binding="{Binding Brand}" IsReadOnly="True" Width="*"/>
+          <DataGridTextColumn Header="产品名称" Binding="{Binding Name}" IsReadOnly="True" Width="*"/>
+          <DataGridTextColumn Header="申报类别" Binding="{Binding ApplicantType}" IsReadOnly="True" Width="*"/>
+          <!--<DataGridTextColumn Header="是否申报催化器" Binding="{Binding ApplicantCatalyticConverter}" Width="*"/>-->
+        </DataGrid.Columns>
+      </DataGrid>
+    </DockPanel>
+  </DataTemplate>
+</ResourceDictionary>

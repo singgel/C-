@@ -1,0 +1,14 @@
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\bin\Debug\MachineCodeUtils.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\bin\Debug\MachineCodeUtils.pdb
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\bin\Debug\LoggerUtils.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\bin\Debug\LoggerUtils.pdb
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.csprojResolveAssemblyReference.cache
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.dll
+E:\WorkSpace\SVN\FlexDeclaration\branches\shfy\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.pdb
+D:\2017\2017_柔性\standard\MachineCodeUtils\bin\Debug\MachineCodeUtils.dll
+D:\2017\2017_柔性\standard\MachineCodeUtils\bin\Debug\MachineCodeUtils.pdb
+D:\2017\2017_柔性\standard\MachineCodeUtils\bin\Debug\LoggerUtils.dll
+D:\2017\2017_柔性\standard\MachineCodeUtils\bin\Debug\LoggerUtils.pdb
+D:\2017\2017_柔性\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.csprojResolveAssemblyReference.cache
+D:\2017\2017_柔性\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.dll
+D:\2017\2017_柔性\standard\MachineCodeUtils\obj\Debug\MachineCodeUtils.pdb

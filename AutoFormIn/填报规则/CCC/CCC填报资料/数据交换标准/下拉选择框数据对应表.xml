@@ -1,0 +1,1771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<table name="A_T_1">
+		<column name="F_1_3">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_1_6">
+			<field name="0">前置</field>
+			<field name="1">中置</field>
+			<field name="2">后置</field>
+		</column>
+		<column name="F_1_8">
+			<field name="0">左侧</field>
+			<field name="1">中间</field>
+			<field name="2">右侧</field>
+		</column>
+		<column name="F_1_8_1">
+			<field name="0">左侧</field>
+			<field name="1">右侧</field>
+		</column>
+		<column name="F_1_9">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_C_1_9_1">
+			<field name="0">半挂车</field>
+			<field name="1">全挂车</field>
+			<field name="2">中置轴挂车</field>
+		</column>
+		<column name="F_C_1_9_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_2">
+		<column name="F_2_11_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_C_2_4_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_C_2_4_2_15">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_2_1">
+		<column name="F_2_1">
+			<field name="0">空载轴距</field>
+			<field name="1">满载轴距</field>
+		</column>
+		<column name="F_2_4_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_3">
+		<column name="F_C_3_1_7">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_3_1">
+		<column name="F_3_2_3_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_3_2">
+		<column name="F_3_2_3_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_4_1">
+		<column name="F_3_2_4_1_5">
+			<field name="0">自动</field>
+			<field name="1">手动</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_5">
+		<column name="F_C_3_2_5_1_1">
+			<field name="0">正极接地</field>
+			<field name="1">负极接地</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_7_2_2">
+		<column name="F_3_2_7_2_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_7_3_1">
+		<column name="F_3_2_7_3_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_8_1">
+		<column name="F_3_2_8_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_8_2">
+		<column name="F_C_3_2_8_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_9">
+		<column name="F_3_2_9_6">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_C_3_2_9_7">
+		<column name="F_C_3_2_9_7">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_1">
+		<column name="F_C_3_2_12_2_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+		<column name="F_3_2_12_2_1_10">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_2">
+		<column name="F_3_2_12_2_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_3">
+		<column name="F_3_2_12_2_3">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_4">
+		<column name="F_3_2_12_2_4">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_5">
+		<column name="F_3_2_12_2_5">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_6">
+		<column name="F_3_2_12_2_6">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_7">
+		<column name="F_3_2_12_2_7">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_12_2_7">
+		<column name="F_3_2_12_2_7_3">
+			<field name="0">点燃式发动机</field>
+			<field name="1">压燃式发动机</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_15">
+		<column name="F_3_2_15_0">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_2_16">
+		<column name="F_3_2_16">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_C_3_2_17">
+		<column name="F_C_3_2_17">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_3_8_4">
+		<column name="F_3_8_4">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_4">
+		<column name="F_4_9">
+			<field name="0">有</field>
+			<field name="1">无</field>
+			<field name="2">选装</field>
+		</column>
+	</table>
+	<table name="A_T_C_4_10">
+		<column name="F_C_4_10_0">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_6">
+		<column name="F_6_2">
+			<field name="0">有车轴</field>
+			<field name="1">无车轴</field>
+		</column>
+		<column name="F_6_2_1">
+			<field name="0">能</field>
+			<field name="1">不能</field>
+		</column>
+		<column name="F_6_2_3">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_6_2_3_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_C_6_2_4">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="2">选装</field>
+		</column>
+		<column name="F_C_6_2_4_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="2">选装</field>
+		</column>
+		<column name="F_6_4">
+			<field name="0">有</field>
+			<field name="1">无</field>
+			<field name="2">选装</field>
+		</column>
+		<column name="F_6_5">
+			<field name="0">有</field>
+			<field name="1">无</field>
+			<field name="2">选装</field>
+		</column>
+	</table>
+	<table name="A_T_6_6">
+		<column name="F_6_6_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_7">
+		<column name="F_7_2_9">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_C_7_2_11">
+		<column name="F_C_7_2_11_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column> 
+	</table>
+	<table name="A_T_8">
+		<column name="F_8_5">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="A_T_C_8_19_1">
+		<column name="F_C_8_19_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_8_19_2">
+		<column name="F_C_8_19_2_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_8_19_3">
+		<column name="F_C_8_19_3_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_3_3_0_1">
+		<column name="F_C_9_3_3_0_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_3_3_0_2">
+		<column name="F_C_9_3_3_0_2_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_1">
+		<column name="F_C_9_5_2_1">
+			<field name="0">侧风窗用夹层玻璃</field>
+			<field name="1">侧风窗用钢化玻璃</field>
+			<field name="2">侧风窗用塑玻复合材料</field>
+			<field name="3">侧风窗用安全中空玻璃</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_2">
+		<column name="F_C_9_5_2_2">
+			<field name="0">后风窗用夹层玻璃</field>
+			<field name="1">后风窗用钢化玻璃</field>
+			<field name="2">后风窗用塑玻复合材料</field>
+			<field name="3">后风窗用安全中空玻璃</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_3">
+		<column name="F_C_9_5_2_3">
+			<field name="0">开启式车顶用夹层玻璃</field>
+			<field name="1">开启式车顶用钢化玻璃</field>
+			<field name="2">开启式车顶用塑玻复合材料</field>
+			<field name="3">开启式车顶用安全中空玻璃</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_4">
+		<column name="F_C_9_5_2_4">
+			<field name="0">其他玻璃窗用夹层玻璃</field>
+			<field name="1">其他玻璃窗用钢化玻璃</field>
+			<field name="2">其他玻璃窗用塑玻复合材料</field>
+			<field name="3">其他玻璃窗用安全中空玻璃</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_1">
+		<column name="F_C_9_5_1">
+			<field name="0">汽车前风窗用夹层玻璃</field>
+			<field name="1">汽车前风窗用区域钢化玻璃</field>
+			<field name="2">汽车前风窗用钢化玻璃</field>
+			<field name="3">汽车前风窗用塑玻复合材料玻璃</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_1_1">
+		<column name="F_C_9_5_1_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_1_2">
+		<column name="F_C_9_5_1_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_1_3">
+		<column name="F_C_9_5_1_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_1_4">
+		<column name="F_C_9_5_1_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_1_1">
+		<column name="F_C_9_5_2_1_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_1_1_15">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_1_2">
+		<column name="F_C_9_5_2_1_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_1_2_9">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_1_3">
+		<column name="F_C_9_5_2_1_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_1_3_16">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_1_4">
+		<column name="F_C_9_5_2_1_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_1_4_13">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+<table name="A_T_C_9_5_2_2_1">
+		<column name="F_C_9_5_2_2_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_2_1_15">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_2_2">
+		<column name="F_C_9_5_2_2_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_2_2_9">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_2_3">
+		<column name="F_C_9_5_2_2_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_2_3_16">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_2_4">
+		<column name="F_C_9_5_2_2_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_2_4_13">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_3_1">
+		<column name="F_C_9_5_2_3_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_3_1_15">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_3_2">
+		<column name="F_C_9_5_2_3_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_3_2_9">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_3_3">
+		<column name="F_C_9_5_2_3_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_3_3_16">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_3_4">
+		<column name="F_C_9_5_2_3_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_3_4_13">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_4_1">
+		<column name="F_C_9_5_2_4_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_4_1_15">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_4_2">
+		<column name="F_C_9_5_2_4_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_4_2_9">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_4_3">
+		<column name="F_C_9_5_2_4_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_4_3_16">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_5_2_4_4">
+		<column name="F_C_9_5_2_4_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_5_2_4_4_13">
+			<field name="0">大于等于70%</field>
+			<field name="1">小于70%</field>
+		</column>
+	</table>
+	<table name="A_T_9_9_1">
+		<column name="F_9_9_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_9_9_1_8">
+			<field name="0">手动</field>
+			<field name="1">电动</field>
+		</column>
+		<column name="F_C_9_9_1_9">
+			<field name="0">Ⅰ</field>
+			<field name="1">Ⅱ</field>
+			<field name="2">Ⅲ</field>
+			<field name="3">Ⅳ</field>
+			<field name="4">Ⅴ</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_9_2_0_1">
+		<column name="F_C_9_9_2_0_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10">
+		<column name="F_9_10_8_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_3">
+		<column name="F_9_10_3_2_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_1_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_2_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_3_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_4_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_5_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_6_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_7_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_8_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_9_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_10_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_11_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_12_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_13_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_14_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_15_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_16_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_17_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_18_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_19_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_20_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_21_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_22_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_1">
+		<column name="F_9_10_2_3_1_23_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_1_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_2_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_3_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_4_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_5_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_6_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_7_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_8_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_9_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_10_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_11_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_12_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_13_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_14_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_15_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_16_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_17_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_18_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_19_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_20_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_21_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_22_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_2_3_2">
+		<column name="F_9_10_2_3_2_23_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+			<field name="n">不适用</field>
+		</column>
+	</table>
+
+	<table name="A_T_9_10_3_0_1">
+		<column name="F_9_10_3_0_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_3_4">
+		<column name="F_9_10_3_4_7_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_3_6">
+		<column name="F_9_10_3_6">
+			<field name="0">驾驶员座椅</field>
+			<field name="1">非驾驶员座椅</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_4">
+		<column name="F_9_10_4_0_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_9_10_4_1">
+			<field name="0">整体式</field>
+			<field name="1">可拆式</field>
+			<field name="2">单独式</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_1">
+		<column name="F_9_10_7_1_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_2">
+		<column name="F_9_10_7_2_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_3">
+		<column name="F_9_10_7_3_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_4">
+		<column name="F_9_10_7_4_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_5">
+		<column name="F_9_10_7_5_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_6">
+		<column name="F_9_10_7_6_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_C_9_10_7_7">
+		<column name="F_9_10_7_7_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table>
+	<table name="A_T_9_10_7_7">
+		<column name="F_9_10_7_7_0">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+	</table> 
+	<table name="A_T_9_16">
+		<column name="F_9_16_1">
+			<field name="0">独立部件</field>
+			<field name="1">车身的一部分</field>
+			<field name="2">独立部件与车身的整合</field>
+		</column>
+	</table>
+	<table name="A_T_9_20">
+		<column name="F_9_20_0">
+			<field name="0">有</field>
+			<field name="1">不完整</field> 
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_1">
+		<column name="F_C_10_1_1_1">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_1_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_2">
+		<column name="F_C_10_1_1_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_2_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_3">
+		<column name="F_C_10_1_1_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_3_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_4">
+		<column name="F_C_10_1_1_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_4_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_5">
+		<column name="F_C_10_1_1_5">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_5_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_6">
+		<column name="F_C_10_1_1_6">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_6_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_7">
+		<column name="F_C_10_1_1_7">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_7_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_8">
+		<column name="F_C_10_1_1_8">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_8_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_9">
+		<column name="F_C_10_1_1_9">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_9_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_10">
+		<column name="F_C_10_1_1_10">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_10_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_11">
+		<column name="F_C_10_1_1_11">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_11_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_12">
+		<column name="F_C_10_1_1_12">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_12_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_13">
+		<column name="F_C_10_1_1_13">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_13_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_14">
+		<column name="F_C_10_1_1_14">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_14_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_15">
+		<column name="F_C_10_1_1_15">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_15_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_1_16">
+		<column name="F_C_10_1_1_16">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_1_16_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_2_2">
+		<column name="F_C_10_1_2_2">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_2_2_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_2_3">
+		<column name="F_C_10_1_2_3">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_2_3_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_C_10_1_2_4">
+		<column name="F_C_10_1_2_4">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_10_1_2_4_3">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+	</table>
+	<table name="A_T_10_7">
+		<column name="F_10_7">
+			<field name="0">灯具</field>
+			<field name="1">回复反射器</field>
+		</column>
+	</table>
+	<table name="A_T_10_8">
+		<column name="F_10_8_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+		<column name="F_10_8_4">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_12_7">
+		<column name="F_12_7_1">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_12_7_2">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="A_T_C_12_9">
+		<column name="F_C_12_9">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column>
+		<column name="F_C_12_9_3_1">
+			<field name="0">盘形</field>
+			<field name="1">螺旋形</field>
+			<field name="2">筒形</field>
+			<field name="3">其他</field>
+		</column>
+		<column name="F_C_12_9_3_2">
+			<field name="0">电喇叭</field>
+			<field name="1">电子喇叭</field>
+			<field name="2">气喇叭</field>
+			<field name="3">电-气喇叭</field>
+		</column>
+	</table>
+	<table name="A_T_C_12_12">
+		<column name="F_C_12_12">
+			<field name="0">已获CQC证书</field>
+			<field name="1">未获CQC证书或已获非CQC证书</field>
+		</column> 
+	</table>
+	<table name="M_T_0">
+		<column name="F_0_2_3">
+			<field name="0">轻便摩托车</field>
+			<field name="1">电动轻便摩托车</field>
+			<field name="2">混合动力（电动）轻便摩托车</field>
+			<field name="3">踏板式两轮轻便摩托车</field>
+			<field name="4">正三轮轻便摩托车</field>
+			<field name="5">两轮摩托车</field>
+			<field name="6">电动摩托车</field>
+			<field name="7">混合动力（电动）摩托车</field>
+			<field name="8">踏板式两轮摩托车</field>
+			<field name="9">边三轮摩托车</field>
+			<field name="10">正三轮摩托车</field>
+		</column>
+		<column name="F_0_4">
+			<field name="0">L1</field>
+			<field name="1">L2</field>
+			<field name="2">L3</field>
+			<field name="3">L4</field>
+			<field name="4">L5</field>
+		</column>
+	</table>
+	<table name="M_T_1">
+		<column name="F_1_7">
+			<field name="0">左</field>
+			<field name="1">中</field>
+			<field name="2">右</field>
+		</column>
+		<column name="F_1_7_1">
+			<field name="0">左侧</field>
+			<field name="1">右侧</field>
+		</column>
+	</table>
+	<table name="M_T_3_2">
+		<column name="F_3_2_1_15">
+			<field name="0">液冷</field>
+			<field name="1">风冷</field>
+		</column>
+		<column name="F_3_2_2">
+			<field name="0">柴油</field>
+			<field name="1">汽油</field>
+			<field name="2">混合燃料</field>
+			<field name="3">液化石油气</field>
+			<field name="4">其他</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_3">
+		<column name="F_3_2_3_5">
+			<field name="0">金属</field>
+			<field name="1">非金属</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_4">
+		<column name="F_3_2_4">
+			<field name="0">化油器式</field>
+			<field name="1">压燃式燃油喷射</field>
+			<field name="2">点燃式燃油喷射</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_4_1">
+		<column name="F_3_2_3_4_1_5">
+			<field name="0">手动</field>
+			<field name="1">自动</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_4_2">
+		<column name="F_3_2_4_2_3_7">
+			<field name="0">试验台</field>
+			<field name="1">发动机</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_5_3">
+		<column name="F_3_2_5_3_4">
+			<field name="0">程序可通过外部通讯接口重新烧制</field>
+			<field name="1">程序固化</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_7">
+		<column name="F_3_2_7_2_1">
+			<field name="0">专用冰冷液</field>
+			<field name="1">纯水</field>
+			<field name="2">油</field>
+		</column>
+		<column name="F_3_2_7_2_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+		<column name="F_3_2_7_3_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_8">
+		<column name="F_3_2_8_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_8_1">
+		<column name="F_3_2_8_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+		<column name="F_3_2_8_1_3">
+			<field name="0">废气涡轮</field>
+			<field name="1">机械式</field>
+			<field name="2">电机独立驱动</field>
+			<field name="3">混合式</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_12_3_1">
+		<column name="F_3_2_12_3_1">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+		<column name="F_3_2_12_3_1_2">
+			<field name="0">氧化型</field>
+			<field name="1">还原型</field>
+			<field name="2">氧化还原型</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_12_3_2">
+		<column name="F_3_2_12_3_2">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_12_3_3">
+		<column name="F_3_2_12_3_3">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_2_12_3_4">
+		<column name="F_3_2_12_3_4">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_3_1">
+		<column name="F_3_3_1_4">
+			<field name="0">永磁</field>
+			<field name="1">励磁</field>
+		</column>
+		<column name="F_3_3_1_12">
+			<field name="0">直流电动机</field>
+			<field name="1">交流电动机</field>
+		</column>
+	</table>
+	<table name="M_T_3_3_3">
+		<column name="F_3_3_3_6">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_3_6_4">
+		<column name="F_3_6_4">
+			<field name="0">有</field>
+			<field name="1">无</field>
+		</column>
+	</table>
+	<table name="M_T_4">
+		<column name="F_4_2">
+			<field name="0">机械式</field>
+			<field name="1">液力式</field>
+			<field name="2">电力式</field>
+		</column>
+		<column name="F_4_3">
+			<field name="0">链条</field>
+			<field name="1">轴</field>
+			<field name="2">其它</field>
+		</column>
+	</table>
+	<table name="M_T_4_5">
+		<column name="F_4_5_1">
+			<field name="0">自动</field>
+			<field name="1">人工</field>
+		</column>
+		<column name="F_4_5_2">
+			<field name="0">手动</field>
+			<field name="1">脚动</field>
+		</column>
+	</table>
+	<table name="M_T_4_8">
+		<column name="F_4_8_3">
+			<field name="0">机械式</field>
+			<field name="1">电子式</field>
+			<field name="2">电气式</field>
+		</column>
+	</table>
+	<table name="M_T_5_2_1">
+		<column name="F_5_2_1_8">
+			<field name="0">标准</field>
+			<field name="1">专用</field>
+			<field name="2">雪地</field>
+			<field name="3">轻便</field>
+		</column>
+		<column name="F_5_2_1_9">
+			<field name="0">子午线轮胎</field>
+			<field name="1">斜交轮胎</field>
+			<field name="2">带束斜交轮胎</field>
+		</column>
+		<column name="F_5_2_1_11">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_5_2_1_12">
+			<field name="0">标准型</field>
+			<field name="1">增强型</field>
+		</column>
+	</table>
+	<table name="M_T_5_2_2">
+		<column name="F_5_2_2_8">
+			<field name="0">标准</field>
+			<field name="1">专用</field>
+			<field name="2">雪地</field>
+			<field name="3">轻便</field>
+		</column>
+		<column name="F_5_2_2_9">
+			<field name="0">子午线轮胎</field>
+			<field name="1">斜交轮胎</field>
+			<field name="2">带束斜交轮胎</field>
+		</column>
+		<column name="F_5_2_2_11">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_5_2_2_12">
+			<field name="0">标准型</field>
+			<field name="1">增强型</field>
+		</column>
+	</table>
+	<table name="M_T_5_2_3">
+		<column name="F_5_2_3_8">
+			<field name="0">标准</field>
+			<field name="1">专用</field>
+			<field name="2">雪地</field>
+			<field name="3">轻便</field>
+		</column>
+		<column name="F_5_2_3_9">
+			<field name="0">子午线轮胎</field>
+			<field name="1">斜交轮胎</field>
+			<field name="2">带束斜交轮胎</field>
+		</column>
+		<column name="F_5_2_3_11">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_5_2_3_12">
+			<field name="0">标准型</field>
+			<field name="1">增强型</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_2">
+		<column name="F_8_1_2_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_3">
+		<column name="F_8_1_3_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_4">
+		<column name="F_8_1_4_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_5">
+		<column name="F_8_1_5_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_6_1">
+		<column name="F_8_1_6_1_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_6_2">
+		<column name="F_8_1_6_2_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_7">
+		<column name="F_8_1_7_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_8">
+		<column name="F_8_1_8_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_9">
+		<column name="F_8_1_9_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_10">
+		<column name="F_8_1_10_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_11_1">
+		<column name="F_8_1_11_1_4">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+		<column name="F_8_1_11_1_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_11_2">
+		<column name="F_8_1_11_2_5">
+			<field name="0">是</field>
+			<field name="1">否</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_11_1">
+		<column name="F_8_1_11_1_4">
+			<field name="0">ⅠA</field>
+			<field name="1">ⅢA</field>
+			<field name="2">ⅣA</field>
+		</column>
+		<column name="F_8_1_11_1_5">
+			<field name="0">红色</field>
+			<field name="1">琥珀色</field>
+			<field name="2">白色</field>
+		</column>
+		<column name="F_8_1_11_1_6">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+		<column name="F_8_1_11_1_7_1">
+			<field name="0">六面体</field>
+			<field name="1">其他</field>
+		</column>
+		<column name="F_8_1_11_1_7_2">
+			<field name="0">PC</field>
+			<field name="1">PMMA</field>
+			<field name="2">其他</field>
+		</column>
+		<column name="F_8_1_11_1_7_3">
+			<field name="0">六边形</field>
+			<field name="1">三边形</field>
+			<field name="2">其他</field>
+		</column>
+		<column name="F_8_1_11_1_8">
+			<field name="0">焊接</field>
+			<field name="1">铆接</field>
+			<field name="2">粘贴</field>
+			<field name="3">其他</field>
+		</column>
+		<column name="F_8_1_11_1_9">
+			<field name="0">可开启式</field>
+			<field name="1">可拆式</field>
+			<field name="2">封闭式</field>
+		</column>
+		<column name="F_8_1_11_1_10">
+			<field name="0">螺栓固定</field>
+			<field name="1">粘贴</field>
+			<field name="2">与其他光学部件结合</field>
+			<field name="3">其他</field>
+		</column>
+	</table>
+	<table name="M_T_8_1_11_2">
+		<column name="F_8_1_11_2_4">
+			<field name="0">ⅠA</field>
+			<field name="1">ⅢA</field>
+			<field name="2">ⅣA</field>
+		</column>
+		<column name="F_8_1_11_2_5">
+			<field name="0">红色</field>
+			<field name="1">琥珀色</field>
+			<field name="2">白色</field>
+		</column>
+		<column name="F_8_1_11_2_6">
+			<field name="0">长方形</field>
+			<field name="1">正方形</field>
+			<field name="2">圆形</field>
+			<field name="3">三角形</field>
+			<field name="4">异形</field>
+		</column>
+		<column name="F_8_1_11_2_7_1">
+			<field name="0">六面体</field>
+			<field name="1">其他</field>
+		</column>
+		<column name="F_8_1_11_2_7_2">
+			<field name="0">PC</field>
+			<field name="1">PMMA</field>
+			<field name="2">其他</field>
+		</column>
+		<column name="F_8_1_11_2_7_3">
+			<field name="0">六边形</field>
+			<field name="1">三边形</field>
+			<field name="2">其他</field>
+		</column>
+		<column name="F_8_1_11_2_8">
+			<field name="0">焊接</field>
+			<field name="1">铆接</field>
+			<field name="2">粘贴</field>
+			<field name="3">其他</field>
+		</column>
+		<column name="F_8_1_11_2_9">
+			<field name="0">可开启式</field>
+			<field name="1">可拆式</field>
+			<field name="2">封闭式</field>
+		</column>
+		<column name="F_8_1_11_2_10">
+			<field name="0">螺栓固定</field>
+			<field name="1">粘贴</field>
+			<field name="2">与其他光学部件结合</field>
+			<field name="3">其他</field>
+		</column>
+	</table>
+	<table name="M_T_9">
+		<column name="F_9_4_1">
+			<field name="0">Ⅰ类</field>
+			<field name="1">Ⅱ类</field>
+			<field name="2">Ⅲ类</field>
+		</column>
+	</table>
+	<table name="M_T_9_5">
+		<column name="F_9_5_4">
+			<field name="0">电喇叭</field>
+			<field name="1">电子喇叭</field>
+			<field name="2">气喇叭</field>
+			<field name="3">电-气喇叭</field>
+		</column>
+		<column name="F_9_5_6">
+			<field name="0">盘形</field>
+			<field name="1">螺旋形</field>
+			<field name="2">筒形</field>
+			<field name="3">其他</field>
+		</column>
+	</table>
+	<table name="M_T_B_1_1">
+		<column name="F_B_1_1_3">
+			<field name="0">圆形</field>
+			<field name="1">非圆形</field>
+		</column>
+		<column name="F_B_1_1_4">
+			<field name="0">手动</field>
+			<field name="1">自动</field>
+		</column>
+	</table>
+	<table name="M_T_B_1_2">
+		<column name="F_B_1_2_1">
+			<field name="0">停车架</field>
+			<field name="1">撑杆</field>
+			<field name="2">停车架和撑杆</field>
+		</column>
+	</table>
+	<table name="M_T_B_1_3">
+		<column name="F_B_1_3_3">
+			<field name="0">皮带</field>
+			<field name="1">手柄</field>
+			<field name="2">皮带和手柄</field>
+		</column>
+	</table>
+	<table name="M_T_C_2_6_1">
+		<column name="F_C_2_6_1_4">
+			<field name="0">圆形</field>
+			<field name="1">非圆形</field>
+		</column>
+		<column name="F_C_2_6_1_5">
+			<field name="0">手动</field>
+			<field name="1">自动</field>
+		</column>
+	</table>
+	<table name="M_T_C_2_6_2">
+		<column name="F_C_2_6_2_4">
+			<field name="0">圆形</field>
+			<field name="1">非圆形</field>
+		</column>
+		<column name="F_C_2_6_2_5">
+			<field name="0">手动</field>
+			<field name="1">自动</field>
+		</column>
+	</table>
+</data>

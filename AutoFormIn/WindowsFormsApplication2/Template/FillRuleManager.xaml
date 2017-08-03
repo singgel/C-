@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cmd="clr-namespace:Assistant">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="./Share.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <DataTemplate x:Key="fillRuleManager">
+    <DockPanel x:Name="root" Margin="5,6,6,7">
+      <DockPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+        <TextBlock Text="选择规则类型" Margin="0,0,10,0" DockPanel.Dock="Left" />
+        <ComboBox ItemsSource="{Binding FillTypes}" SelectedItem="{Binding SelectedFillType, Mode=TwoWay}" DockPanel.Dock="Left" />
+      </DockPanel>
+      
+      <DockPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+        <TextBlock Text="选择规则版本" Margin="0,0,10,0" DockPanel.Dock="Left" />
+        <ComboBox ItemsSource="{Binding FillRuleVersions}" SelectedItem="{Binding SelectedFillRuleVersion, Mode=TwoWay}" DockPanel.Dock="Left">
+          <ComboBox.ItemTemplate>
+            <DataTemplate>
+              <TextBlock Text="{Binding Name}" />
+            </DataTemplate>
+          </ComboBox.ItemTemplate>
+        </ComboBox>
+      </DockPanel>
+      
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" HorizontalAlignment="Center" Margin="0,10,0,0">
+          <Button Content="上传更改" Command="{x:Static cmd:Commands.OK}" Width="100" Height="24" />
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding Items}" Style="{StaticResource dataGridAeroStyle}" IsReadOnly="True">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="规则版本" Binding="{Binding Version.Name}" Width="Auto" MinWidth="100"/>
+            <DataGridTextColumn Header="规则类型" Binding="{Binding Type}" Width="Auto" MinWidth="80"/>
+            <DataGridTextColumn Header="原文件名" Binding="{Binding OriginName}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="底盘类型" Binding="{Binding Appendix}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="排放标准" Binding="{Binding Standard}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="车辆类型" Binding="{Binding CarType}" Width="Auto" MinWidth="140"/>
+            <DataGridTemplateColumn Header="选择文件" IsReadOnly="True" Width="200">
+              <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                  <DockPanel>
+                    <Button DockPanel.Dock="Right" Content="..." ToolTip="浏览" Width="25" Height="24" CommandParameter="{Binding}" Command="{x:Static cmd:Commands.Browser}" Margin="10,0" />
+                    <TextBlock Text="{Binding FileName}" TextAlignment="Left"/>
+                  </DockPanel>
+                </DataTemplate>
+              </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTextColumn Header="状态" Binding="{Binding Status, Converter={StaticResource fileStatusConverter}}" Width="Auto" MinWidth="140"/>
+          </DataGrid.Columns>
+        </DataGrid>
+      </DockPanel>
+    </DockPanel>
+    <DataTemplate.Triggers>
+      <DataTrigger Binding="{Binding IsUploading}" Value="True">
+        <Setter Property="IsEnabled" TargetName="root" Value="False"/>
+      </DataTrigger>
+    </DataTemplate.Triggers>
+  </DataTemplate>
+</ResourceDictionary>

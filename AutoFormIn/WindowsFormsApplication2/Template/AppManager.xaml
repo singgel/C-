@@ -1,0 +1,55 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:cmd="clr-namespace:Assistant">
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="./Share.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+  <DataTemplate x:Key="appManager">
+    <DockPanel x:Name="root" Margin="5,6,6,7">
+      <DockPanel DockPanel.Dock="Top" Margin="0,0,0,10">
+        <TextBlock Text="选择企业" Margin="0,0,10,0" DockPanel.Dock="Left" />
+        <ComboBox ItemsSource="{Binding Enterprises}" SelectedItem="{Binding SelectedEnterprise, Mode=TwoWay}" DockPanel.Dock="Left" />
+      </DockPanel>
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+          <Button Content="上传更改" Width="100" Height="24" Command="{x:Static cmd:Commands.OK}" />
+          <Button Content="添加程序文件" Width="100" Height="24" Command="{x:Static cmd:Commands.Add}" Margin="10,0,0,0" />
+        </StackPanel>
+        <DataGrid ItemsSource="{Binding Items}" Style="{StaticResource dataGridAeroStyle}" IsReadOnly="True">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="企业名称" Binding="{Binding Enterprise}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="服务器最新版本" Binding="{Binding ServerVersion}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="应用程序版本" Binding="{Binding Version}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="文件状态" Binding="{Binding Status, Converter={StaticResource fileStatusConverter}}" Width="Auto" MinWidth="140"/>
+            <DataGridTextColumn Header="原文件名" Binding="{Binding OriginName}" Width="Auto" MinWidth="140"/>
+            <DataGridTemplateColumn Header="选择文件" IsReadOnly="True" Width="200">
+              <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                  <DockPanel>
+                    <Button DockPanel.Dock="Right" Content="..." ToolTip="浏览" Width="25" Height="24" CommandParameter="{Binding}" Command="{x:Static cmd:Commands.Browser}" Margin="10,0" />
+                    <TextBlock Text="{Binding FileName}" TextAlignment="Left"/>
+                  </DockPanel>
+                </DataTemplate>
+              </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTemplateColumn Header="操作" IsReadOnly="True">
+              <DataGridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                  <StackPanel Orientation="Horizontal">
+                    <Label><Hyperlink Command="{x:Static cmd:Commands.Delete}" CommandParameter="{Binding}">标记删除</Hyperlink></Label>
+                    <Label><Hyperlink Command="{x:Static cmd:Commands.Remove}" CommandParameter="{Binding}">移除</Hyperlink></Label>
+                  </StackPanel>
+                </DataTemplate>
+              </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+          </DataGrid.Columns>
+        </DataGrid>
+      </DockPanel>
+    </DockPanel>
+    <DataTemplate.Triggers>
+      <DataTrigger Binding="{Binding IsUploading}" Value="True">
+        <Setter Property="IsEnabled" TargetName="root" Value="False"/>
+      </DataTrigger>
+    </DataTemplate.Triggers>
+  </DataTemplate>
+</ResourceDictionary>

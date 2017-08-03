@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://service.server.com/" name="IPackageInfoService" targetNamespace="http://service.server.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns="http://service.server.com/" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://service.server.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="paramPo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="operFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="packageCode" type="xs:string" />
+          <xs:element minOccurs="0" name="paramCode" type="xs:string" />
+          <xs:element minOccurs="0" name="paramName" type="xs:string" />
+          <xs:element minOccurs="0" name="paramValue" type="xs:string" />
+          <xs:element minOccurs="0" name="remark" type="xs:string" />
+          <xs:element minOccurs="0" name="updateFlag" type="xs:string" />
+          <xs:element minOccurs="0" name="version" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="setConfigCode" type="ns1:setConfigCode" />
+      <xs:complexType name="setConfigCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="arg0" type="xs:string" />
+          <xs:element minOccurs="0" name="arg1" type="xs:string" />
+          <xs:element minOccurs="0" name="arg2" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="setConfigCodeResponse" type="ns1:setConfigCodeResponse" />
+      <xs:complexType name="setConfigCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getParamsByPackageCode" type="ns1:getParamsByPackageCode" />
+      <xs:complexType name="getParamsByPackageCode">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="arg0" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="getParamsByPackageCodeResponse" type="ns1:getParamsByPackageCodeResponse" />
+      <xs:complexType name="getParamsByPackageCodeResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:paramPo" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="setConfigCode">
+    <wsdl:part name="parameters" element="ns1:setConfigCode" />
+  </wsdl:message>
+  <wsdl:message name="getParamsByPackageCode">
+    <wsdl:part name="parameters" element="ns1:getParamsByPackageCode" />
+  </wsdl:message>
+  <wsdl:message name="setConfigCodeResponse">
+    <wsdl:part name="parameters" element="ns1:setConfigCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="getParamsByPackageCodeResponse">
+    <wsdl:part name="parameters" element="ns1:getParamsByPackageCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPackageInfoService">
+    <wsdl:operation name="setConfigCode">
+      <wsdl:input name="setConfigCode" message="ns1:setConfigCode" />
+      <wsdl:output name="setConfigCodeResponse" message="ns1:setConfigCodeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getParamsByPackageCode">
+      <wsdl:input name="getParamsByPackageCode" message="ns1:getParamsByPackageCode" />
+      <wsdl:output name="getParamsByPackageCodeResponse" message="ns1:getParamsByPackageCodeResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

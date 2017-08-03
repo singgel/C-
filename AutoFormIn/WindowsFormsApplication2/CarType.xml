@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Sites Name="全部网站" Count="2">
+  <Site Name="国环">
+    <Standard Name="国二" Value="第二阶段">
+      <CarType>三轮车和低速货车</CarType>
+      <CarType>三轮汽车和低速货车用柴油机</CarType>
+    </Standard>
+    <Standard Name="国三" Value="第三阶段">
+      <CarType>摩托车</CarType>
+      <CarType>轻便摩托车</CarType>
+    </Standard>
+    <Standard Name="国四" Value="第四阶段">
+      <CarType>轻型汽油车</CarType>
+      <CarType>轻型柴油车</CarType>
+      <CarType>重型柴油车</CarType>
+      <CarType>重型柴油机</CarType>
+      <CarType>轻型两用燃料车</CarType>
+      <CarType>重型柴油机(城市车辆用柴油发动机)</CarType>
+      <CarType>重型汽油车</CarType>
+      <CarType>重型汽油机</CarType>
+      <CarType>重型柴油车(依据GB18352.3-2005型式核准)</CarType>
+    </Standard>
+    <Standard Name="国五" Value="第五阶段">
+      <CarType>轻型柴油车</CarType>
+      <CarType>轻型汽油车</CarType>
+      <CarType>重型柴油机(城市车辆用柴油发动机)</CarType>
+      <CarType>重型柴油机</CarType>
+      <CarType>重型LPG机</CarType>
+      <CarType>重型NG机</CarType>
+      <CarType>重型柴油车</CarType>
+      <CarType>重型LPG车</CarType>
+      <CarType>重型NG车</CarType>
+      <CarType>轻型两用燃料车</CarType>
+    </Standard>
+    <Appendixes>
+      <Appendix Name="自产整车" Value="自产整车(底盘)"/>
+      <Appendix Name="二类底盘" Value="二类底盘(整车)改装车"/>
+      <Appendix Name="三类底盘" Value="三类底盘的改装车"/>
+    </Appendixes>
+  </Site>
+  <Site Name="北环">
+    <Standard Value="京3" Name="京3">
+      <CarType>非道路机械</CarType>
+      <CarType>非道路机械用柴油发动机</CarType>
+    </Standard>
+    <Standard Value="京4" Name="京4">
+      <CarType>非道路机械</CarType>
+      <CarType>非道路机械用柴油发动机</CarType>
+    </Standard>
+    <Standard Value="国2" Name="国2">
+      <CarType>三轮及农用车</CarType>
+    </Standard>
+    <Standard Value="国3" Name="国3">
+      <CarType>重型柴油车</CarType>
+      <CarType>重型汽油车</CarType>
+      <CarType>三轮及农用车</CarType>
+    </Standard>
+    <Standard Value="国4" Name="国4">
+      <CarType>轻型汽油车</CarType>
+      <CarType>重型柴油发动机</CarType>
+      <CarType>重型柴油车</CarType>
+      <CarType>重型汽油车</CarType>
+      <CarType>重型燃气发动机</CarType>
+    </Standard>
+    <Standard Value="国5" Name="国5">
+      <CarType>轻型汽油车</CarType>
+      <CarType>重型柴油发动机</CarType>
+      <CarType>重型柴油车</CarType>
+      <CarType>重型燃气发动机</CarType>
+    </Standard>
+    <Standard Value="国5(带IUPR)" Name="国5IUPR">
+      <CarType>轻型汽油车</CarType>
+    </Standard>
+    <Standard Value="第六阶段" Name="第六阶段">
+      <CarType>重型柴油发动机</CarType>
+      <CarType>重型燃气发动机</CarType>
+    </Standard>
+    <Standard Value="国6" Name="国6">
+      <CarType>轻型柴油车</CarType>
+    </Standard>
+    <Standard Value="" Name="其他">
+      <CarType>电动车</CarType>
+    </Standard>
+  </Site>
+</Sites>
