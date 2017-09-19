@@ -1,0 +1,10 @@
+C:\Users\user\Desktop\codefans.net\Google\Google\bin\Debug\Google.exe
+C:\Users\user\Desktop\codefans.net\Google\Google\bin\Debug\Google.pdb
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.csproj.ResolveComReference.cache
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.Form1.resources
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.Form2.resources
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.Properties.Resources.resources
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.exe
+C:\Users\user\Desktop\codefans.net\Google\Google\obj\Debug\Google.pdb
