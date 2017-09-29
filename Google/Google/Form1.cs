@@ -42,7 +42,7 @@ namespace Google
 
                 //加载地图
 
-                string address = "File:\\" + Application.StartupPath + "\\index.html";
+                string address = "http://www.google.cn/maps/";
 
                 Uri url = new Uri(address);
 
