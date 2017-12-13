@@ -1,0 +1,16 @@
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\bin\Debug\download.exe
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\bin\Debug\download.pdb
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\download.Form1.resources
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\download.Properties.Resources.resources
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\download.exe
+D:\users\choujidan\documents\visual studio 2010\Projects\download\download\obj\x86\Debug\download.pdb
+C:\Users\user\Desktop\download\download\obj\x86\Debug\download.exe
+C:\Users\user\Desktop\download\download\obj\x86\Debug\download.pdb
+C:\Users\user\Desktop\download\download\bin\Debug\download.exe
+C:\Users\user\Desktop\download\download\bin\Debug\download.pdb
+C:\Users\user\Desktop\download\download\obj\x86\Debug\download.Form1.resources
+C:\Users\user\Desktop\download\download\obj\x86\Debug\download.Properties.Resources.resources
+C:\Users\user\Desktop\download\download\obj\x86\Debug\download.csproj.GenerateResource.Cache
