@@ -1,0 +1,23 @@
+private void btnFeedback_Click(object sender, EventArgs e)
+{
+	string from = "adc_catarc@163.com";
+	string to = "adc_catarc@163.com";
+	string subject = "Bug提交";
+	string body = errorMessage();
+	string server = "smtp.163.com";
+	MailMessage message = new MailMessage(from, to, subject, body);
+	SmtpClient client = new SmtpClient(server);
+	client.Credentials = new NetworkCredential("adc_catarc", "******");
+	client.DeliveryMethod = SmtpDeliveryMethod.Network;
+	try
+	{
+		client.Send(message);
+	}
+	catch (Exception ex)
+	{
+		MessageBox.Show(ex.ToString());
+		return;
+	}
+	MessageBox.Show("邮件发送成功!");
+	this.Close();
+}
