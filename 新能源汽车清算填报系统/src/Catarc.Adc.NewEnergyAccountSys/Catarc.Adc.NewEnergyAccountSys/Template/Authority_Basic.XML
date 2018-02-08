@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MenuData>
+  <MenuModel>
+    <ID>1</ID>
+    <MenuName>单条信息录入</MenuName>
+    <ParentID>组类</ParentID>
+    <OrderID>1</OrderID>
+  </MenuModel>
+  
+   <MenuModel>
+    <ID>2</ID>
+    <MenuName>申报数据管理</MenuName>
+    <ParentID>组类</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>11</ID>
+    <MenuName>单条增加</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>12</ID>
+    <MenuName>批量导入（旧）</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>13</ID>
+    <MenuName>批量导入（新）</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+    <MenuModel>
+    <ID>14</ID>
+    <MenuName>单条修改</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+    <MenuModel>
+    <ID>15</ID>
+    <MenuName>删除记录</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  <MenuModel>
+  <ID>16</ID>
+    <MenuName>全部选中</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+    <MenuModel> 
+    <ID>17</ID>
+    <MenuName>全部取消</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+    <MenuModel> 
+    <ID>18</ID>
+    <MenuName>刷新</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+    <MenuModel> 
+    <ID>19</ID>
+    <MenuName>数据导出</MenuName>
+    <ParentID>申报数据管理</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  
+    <MenuModel>
+    <ID>5</ID>
+    <MenuName>企业联络人</MenuName>
+    <ParentID>组类</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>40</ID>
+    <MenuName>保存</MenuName>
+    <ParentID>企业联络人</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>41</ID>
+    <MenuName>刷新</MenuName>
+    <ParentID>企业联络人</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>42</ID>
+    <MenuName>基础版</MenuName>
+    <ParentID>企业联络人</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+  
+  <MenuModel>
+    <ID>6</ID>
+    <MenuName>升级</MenuName>
+    <ParentID>组类</ParentID>
+    <OrderID>6</OrderID>
+  </MenuModel>
+
+
+  <MenuModel>
+    <ID>7</ID>
+    <MenuName>退出</MenuName>
+    <ParentID>组类</ParentID>
+    <OrderID>7</OrderID>
+  </MenuModel>
+
+  
+  
+  
+ 
+
+</MenuData>

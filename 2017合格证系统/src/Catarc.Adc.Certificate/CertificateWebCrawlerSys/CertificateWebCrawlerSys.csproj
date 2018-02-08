@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4B252E1-25DB-404A-BA4B-51708086E4A4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CertificateWebCrawlerSys</RootNamespace>
+    <AssemblyName>CertificateWebCrawlerSys</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Win.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\dll\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form\AllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\AllForm.Designer.cs">
+      <DependentUpon>AllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCrawler.cs" />
+    <Compile Include="DBHelper\SqlHelper.cs" />
+    <Compile Include="Helper\InsertHGZ.cs" />
+    <Compile Include="Helper\InsertPZ.cs" />
+    <Compile Include="Helper\InsertWS.cs" />
+    <Compile Include="Form\HGZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\HGZForm.Designer.cs">
+      <DependentUpon>HGZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtils\HGZUtils.cs" />
+    <Compile Include="FormUtils\HGZUtilsThreadPool.cs" />
+    <Compile Include="InsertQueue.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Form\PZForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\PZForm.Designer.cs">
+      <DependentUpon>PZForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtils\PZUtils.cs" />
+    <Compile Include="ShowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowForm.Designer.cs">
+      <DependentUpon>ShowForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowInfoForm.Designer.cs">
+      <DependentUpon>ShowInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ConvertHGZ.cs" />
+    <Compile Include="Utils\ConvertPZ.cs" />
+    <Compile Include="Utils\ConvertWS.cs" />
+    <Compile Include="Utils\LogManager.cs" />
+    <Compile Include="Utils\Tool.cs" />
+    <Compile Include="Form\WSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\WSForm.Designer.cs">
+      <DependentUpon>WSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUtils\WSUtils.cs" />
+    <EmbeddedResource Include="Form\AllForm.resx">
+      <DependentUpon>AllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\HGZForm.resx">
+      <DependentUpon>HGZForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Form\PZForm.resx">
+      <DependentUpon>PZForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowForm.resx">
+      <DependentUpon>ShowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowInfoForm.resx">
+      <DependentUpon>ShowInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\WSForm.resx">
+      <DependentUpon>WSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\arrow_left.png" />
+    <Content Include="Resources\arrow_left_top.png" />
+    <Content Include="Resources\arrow_right.png" />
+    <Content Include="Resources\arrow_right_top.png" />
+    <Content Include="Resources\barBtnPause.png" />
+    <Content Include="Resources\barBtnStart.png" />
+    <Content Include="Resources\barBtn_carUnion.png" />
+    <Content Include="Resources\barBtn_ClearAll.png" />
+    <Content Include="Resources\barBtn_compare.png" />
+    <Content Include="Resources\barBtn_Del.png" />
+    <Content Include="Resources\barBtn_Refresh.png" />
+    <Content Include="Resources\barBtn_SelectAll.png" />
+    <Content Include="Resources\barBtn_Set.png" />
+    <Content Include="Resources\barBtn_Update.png" />
+    <Content Include="Resources\barBtn_userAdd.png" />
+    <Content Include="Resources\barBtn_userDel.png" />
+    <Content Include="Resources\barBtn_userEdit.png" />
+    <Content Include="Resources\barBtn_userSave.png" />
+    <Content Include="Resources\bar_tools.png" />
+    <None Include="Resources\btnImportAuto.png" />
+    <None Include="Resources\Linked_In_Vintage_96px_1100580_easyicon.net.png" />
+    <Content Include="Resources\nav_cloud.png" />
+    <Content Include="Resources\nav_import.png" />
+    <Content Include="Resources\nav_tools.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

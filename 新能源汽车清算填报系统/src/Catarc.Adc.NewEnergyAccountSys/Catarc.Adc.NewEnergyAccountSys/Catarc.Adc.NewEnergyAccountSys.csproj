@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26154E20-8CF6-4AF9-9390-AE3C90305C60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Catarc.Adc.NewEnergyAccountSys</RootNamespace>
+    <AssemblyName>Catarc.Adc.NewEnergyAccountSys</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\dll\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.interop.access.dao, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\dll\Microsoft.Office.interop.access.dao.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\dll\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\..\..\dll\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\..\..\dll\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\..\..\dll\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\..\..\dll\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Authority.cs" />
+    <Compile Include="Common\CharacterSwitch.cs" />
+    <Compile Include="Common\DevTextEditControl.cs" />
+    <Compile Include="Common\ImageTool.cs" />
+    <Compile Include="Common\NPOITool.cs" />
+    <Compile Include="Common\ObjectReflect.cs" />
+    <Compile Include="Common\Tool.cs" />
+    <Compile Include="Common\Utils.cs" />
+    <Compile Include="Common\ValidateParam.cs" />
+    <Compile Include="ControlUtils\ComboBoxEditHelper.cs" />
+    <Compile Include="ControlUtils\GridControlHelper.cs" />
+    <Compile Include="DataUtils\DataCompareHelper.cs" />
+    <Compile Include="DataUtils\DataTableHelper.cs" />
+    <Compile Include="DBUtils\AccessHelper.cs" />
+    <Compile Include="DBUtils\QueryHelper.cs" />
+    <Compile Include="DevForm\DevSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\DevSplashScreen.Designer.cs">
+      <DependentUpon>DevSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\DevWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\DevWaitForm.Designer.cs">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\waitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\waitForm.Designer.cs">
+      <DependentUpon>waitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\waitFormService.cs" />
+    <Compile Include="FormUtils\DataUtils\ExportNewInfoUtils.cs" />
+    <Compile Include="FormUtils\DataUtils\ImportNewInfoUtils.cs" />
+    <Compile Include="FormUtils\DataUtils\ImportOldInfoUtils.cs" />
+    <Compile Include="FormUtils\FolderDialog.cs" />
+    <Compile Include="FormUtils\NewEnergyUtils.cs" />
+    <Compile Include="FormUtils\NoticeParamInfo.cs" />
+    <Compile Include="Form_Data\ChooseConfigInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Data\ChooseConfigInfoForm.Designer.cs">
+      <DependentUpon>ChooseConfigInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Data\ImportOldInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Data\ImportOldInfoForm.Designer.cs">
+      <DependentUpon>ImportOldInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Data\NoticeParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Data\NoticeParam.Designer.cs">
+      <DependentUpon>NoticeParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Data\SingleInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Data\SingleInfoForm.designer.cs">
+      <DependentUpon>SingleInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Data\ImportNewInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Data\ImportNewInfoForm.Designer.cs">
+      <DependentUpon>ImportNewInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Index\IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Index\IndexForm.Designer.cs">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Set\ContactsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Set\ContactsForm.Designer.cs">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Set\SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Set\SetForm.Designer.cs">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogUtils\GlobalExceptionManager.cs" />
+    <Compile Include="LogUtils\LogManager.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeHelper\ImportExcel.cs" />
+    <Compile Include="OfficeHelper\ImportExcelNPOI.cs" />
+    <Compile Include="OfficeHelper\SysIOHelper.cs" />
+    <Compile Include="PopForm\GlobalExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopForm\GlobalExceptionForm.Designer.cs">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopForm\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopForm\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\NewEnergyWeb\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DevForm\DevSplashScreen.resx">
+      <DependentUpon>DevSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\DevWaitForm.resx">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\waitForm.resx">
+      <DependentUpon>waitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Data\ChooseConfigInfoForm.resx">
+      <DependentUpon>ChooseConfigInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Data\ImportOldInfoForm.resx">
+      <DependentUpon>ImportOldInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Data\NoticeParam.resx">
+      <DependentUpon>NoticeParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Data\SingleInfoForm.resx">
+      <DependentUpon>SingleInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Data\ImportNewInfoForm.resx">
+      <DependentUpon>ImportNewInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Index\IndexForm.resx">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Set\ContactsForm.resx">
+      <DependentUpon>ContactsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Set\SetForm.resx">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopForm\GlobalExceptionForm.resx">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopForm\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\set_96.png" />
+    <None Include="Resources\set_16.png" />
+    <None Include="Resources\picBox_Set.png" />
+    <None Include="Resources\barBtn_ImportOld.png" />
+    <Content Include="Resources\bg.jpg" />
+    <Content Include="Resources\Cancel.gif" />
+    <None Include="Resources\navBtn_exit.png" />
+    <None Include="Resources\NewEergyAccountSYS.png" />
+    <Content Include="Resources\waiting.gif" />
+    <Content Include="Resources\_return.gif" />
+    <Content Include="Template\Authority.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\Authority_Basic.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\明细模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\汇总模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\联系人模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\车辆运行模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\公告模板.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Template\填报说明%28新能源汽车清算%29.pdf" />
+    <None Include="Web References\NewEnergyWeb\INewEnergyClearingServiceService.wsdl" />
+    <None Include="Web References\NewEnergyWeb\newEnergyVehicle.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NewEnergyWeb\qynameByYear.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\NewEnergyWeb\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GreenCar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADC-1.ico" />
+    <Content Include="data\data.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GreenCar.ico" />
+    <None Include="Resources\barBtn_userSave.png" />
+    <None Include="Resources\barBtn_fuelCopy.png" />
+    <None Include="Resources\barBtn_fuelDel.png" />
+    <None Include="Resources\barBtn_fuelImport.png" />
+    <None Include="Resources\barBtn_Edit.png" />
+    <None Include="Resources\barBtn_ExportExcel.png" />
+    <None Include="Resources\barBtn_fuelAdd.png" />
+    <None Include="Resources\arrow_left_top.png" />
+    <None Include="Resources\arrow_right.png" />
+    <None Include="Resources\arrow_right_top.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\barBtn_ExportAccess.png" />
+    <None Include="Resources\barBtn_ExportGmail.png" />
+    <None Include="Resources\barBtn_ExportPdf.png" />
+    <None Include="Resources\barBtn_ExportPpt.png" />
+    <None Include="Resources\barBtn_ExportWord.png" />
+    <Content Include="Template\VehicleMeun.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\adc_backlogo.png" />
+    <None Include="Resources\nav_WebSearch.png" />
+    <None Include="Resources\nav_upload.png" />
+    <None Include="Resources\nav_updateSearch.png" />
+    <None Include="Resources\nav_tools.png" />
+    <None Include="Resources\nav_reback.png" />
+    <None Include="Resources\nav_plusSearch.png" />
+    <None Include="Resources\nav_Param.png" />
+    <None Include="Resources\nav_page_third.png" />
+    <None Include="Resources\nav_page_second.png" />
+    <None Include="Resources\nav_page_local.png" />
+    <None Include="Resources\nav_page_first.png" />
+    <None Include="Resources\nav_Calendar.png" />
+    <None Include="Resources\ExportToExcel.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\btnBtn_Print.png" />
+    <None Include="Resources\barBtn_Update.png" />
+    <None Include="Resources\barBtn_Sync.png" />
+    <None Include="Resources\barBtn_SelectAll.png" />
+    <None Include="Resources\barBtn_Search.png" />
+    <None Include="Resources\barBtn_Repea.png" />
+    <None Include="Resources\barBtn_Refresh.png" />
+    <None Include="Resources\barBtn_ParamSync.png" />
+    <None Include="Resources\barBtn_HolidaySync.png" />
+    <None Include="Resources\barBtn_FuelUploadOT.png" />
+    <None Include="Resources\barBtn_FuelUpload.png" />
+    <None Include="Resources\barBtn_FuelUpdate.png" />
+    <None Include="Resources\barBtn_FuelSync.png" />
+    <None Include="Resources\barBtn_exit.png" />
+    <None Include="Resources\barBtn_Del.png" />
+    <None Include="Resources\barBtn_ClearAll.png" />
+    <None Include="Resources\bar_WebSearch.png" />
+    <None Include="Resources\bar_upload.png" />
+    <None Include="Resources\bar_updateSearch.png" />
+    <None Include="Resources\bar_tools.png" />
+    <None Include="Resources\bar_reback.png" />
+    <None Include="Resources\bar_plusSearch.png" />
+    <None Include="Resources\bar_Param.png" />
+    <None Include="Resources\bar_page_third.png" />
+    <None Include="Resources\bar_page_second.png" />
+    <None Include="Resources\bar_page_local.png" />
+    <None Include="Resources\bar_page_first.png" />
+    <None Include="Resources\bar_Calendar.png" />
+    <None Include="Resources\picBox_DebugInfo.png" />
+    <None Include="Resources\picBox_Computer.png" />
+    <None Include="Resources\ADC-1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://123.127.164.35:18082/APP/services/mai_newec%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\NewEnergyWeb\</RelPath>
+      <UpdateFromURL>http://123.127.164.35:18082/APP/services/mai_newec%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Catarc_Adc_NewEnergyAccountSys_NewEnergyWeb_IManufacturersAiService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HFSoft.Component.Windows\HFSoft.Component.Windows.csproj">
+      <Project>{F97C8FE8-673B-406C-B5CD-9415601378BE}</Project>
+      <Name>HFSoft.Component.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

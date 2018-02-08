@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>Application autoUpdate</description>
+  <Updater>
+	<Url>http://123.127.164.42:30979/Energr/</Url>
+	<LastUpdateTime>2017-10-1</LastUpdateTime>
+  </Updater>
+  <Application applicationId="NewEnergyAccountSys">
+    <EntryPoint>Catarc.Adc.NewEnergyAccountSys.exe</EntryPoint>
+    <Location>.</Location>
+	<Version>1.0.0.0</Version>
+  </Application>
+  <Files>
+	   <File Ver="1.0.0.0" Name="Catarc.Adc.NewEnergyAccountSys.exe"/>
+  </Files>
+</AutoUpdater>

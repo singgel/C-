@@ -1,0 +1,230 @@
+// ■■■■■■■■■■ [2017/4/18 9:59:42] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Splash Form is not displayed
+帮助链接: None
+对象: DevExpress.XtraEditors.v11.2
+堆栈:
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(Boolean throwExceptionIfAlreadyClosed)
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnImport_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 109
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void CloseForm(Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/18 10:34:12] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Splash Form is not displayed
+帮助链接: None
+对象: DevExpress.XtraEditors.v11.2
+堆栈:
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(Boolean throwExceptionIfAlreadyClosed)
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnImport_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 115
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void CloseForm(Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/18 14:35:54] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Splash Form is not displayed
+帮助链接: None
+对象: DevExpress.XtraEditors.v11.2
+堆栈:
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(Boolean throwExceptionIfAlreadyClosed)
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
+   at FuelDataSysClient.Form_SJSB.ImportCLJBXXForm.barBtnRefresh_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportCLJBXXForm.cs:line 279
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void CloseForm(Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/18 14:35:57] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Splash Form is not displayed
+帮助链接: None
+对象: DevExpress.XtraEditors.v11.2
+堆栈:
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(Boolean throwExceptionIfAlreadyClosed)
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
+   at FuelDataSysClient.Form_SJSB.ImportCLJBXXForm.barBtnRefresh_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportCLJBXXForm.cs:line 279
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void CloseForm(Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/18 14:36:02] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Splash Form is not displayed
+帮助链接: None
+对象: DevExpress.XtraEditors.v11.2
+堆栈:
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm(Boolean throwExceptionIfAlreadyClosed)
+   at DevExpress.XtraSplashScreen.SplashScreenManager.CloseForm()
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnRefresh_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 214
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void CloseForm(Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+

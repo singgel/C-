@@ -1,0 +1,131 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FuelDataSysClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dataConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\192.168.1.100\lhhb\data.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\\192.168.1.100\lhhb\data.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="WsDXIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IsProxy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ProxyAddr" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProxyPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProxyUserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ProxyPwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TimeConstrain" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate.xls</Value>
+    </Setting>
+    <Setting Name="DbPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FuelDataSysClient_CafcService_CafcWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/CafcWebService.asmx</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_FuelDataOpen_FuelDataOpen" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/FuelDataOpen.asmx</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_CertificateService_CertificateComparison" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/CertificateComparison.asmx</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_AuthorityManager_Authority" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/Authority.asmx</Value>
+    </Setting>
+    <Setting Name="dataConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="Qymc" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserPWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CompareFlag" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IsFuelTest" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_FuelDataService_FuelDataSysWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/FuelDataSysWebService.asmx</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_FuelDataService_Service1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://tsoap.catarc.info/FuelDataSysWebService.asmx</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_JBLH" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_JBLH.xls</Value>
+    </Setting>
+    <Setting Name="data_JBLHConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data_JBLH.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data_JBLH.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_BMW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_BMW.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Porsche" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Porsche.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Mits" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Mits.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Toyota" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Toyota.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_ToyotaCompare" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_ToyotaCompare.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Chrysler" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Chrysler.xls</Value>
+    </Setting>
+    <Setting Name="FuelDataSysClient_FuelFileUpload_FileUploadService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tsoapfuel.catarc.info/FileUploadService.asmx</Value>
+    </Setting>
+    <Setting Name="data_NissanConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data_Nissan.mdb;Persist Security Info=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\data\data_Nissan.mdb;Persist Security Info=True</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Nissan" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Nissan.xls</Value>
+    </Setting>
+    <Setting Name="ExcelHeaderTemplate_Volkswagen" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\ExcelHeaderTemplate_Volkswagen.xls</Value>
+    </Setting>
+    <Setting Name="MenuDataURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\ExcelHeaderTemplate\menuData.XML</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

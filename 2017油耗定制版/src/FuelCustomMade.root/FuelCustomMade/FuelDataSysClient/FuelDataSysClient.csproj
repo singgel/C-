@@ -1,0 +1,1388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B14A51BA-6011-42D4-96F4-6E0EA35F717A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FuelDataSysClient</RootNamespace>
+    <AssemblyName>FuelDataSysClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\项目发布\汽车燃料消耗量信息系统\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://123.127.164.44/FuelsysClient/</UpdateUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>汽车燃料消耗量信息系统</ProductName>
+    <PublisherName>中国汽车技术研究中心数据资源中心</PublisherName>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Fuelogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2E7B12AFD014B8765D50FDEBBEE497EDEC8CF80C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FuelDataSysClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2.UI, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2.Extensions, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress 2011.2\Components\Bin\Framework\DevExpress.XtraTreeList.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EvDXWinLocalization, Version=11.2.8.0, Culture=neutral, PublicKeyToken=ff77e4d630503ab5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\EvDXWinLocalization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FuelDataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dll\FuelDataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevForm\DevSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\DevSplashScreen.Designer.cs">
+      <DependentUpon>DevSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DevForm\DevWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevForm\DevWaitForm.Designer.cs">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Configure\UpdaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\UpdaterForm.Designer.cs">
+      <DependentUpon>UpdaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Report\PreReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report\PreReportForm.Designer.cs">
+      <DependentUpon>PreReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Report\WholeYearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report\WholeYearForm.Designer.cs">
+      <DependentUpon>WholeYearForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_National\GHDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_National\GHDataForm.Designer.cs">
+      <DependentUpon>GHDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Toyota\ComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Toyota\ComparisonForm.Designer.cs">
+      <DependentUpon>ComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Toyota\ContrastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Toyota\ContrastForm.Designer.cs">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Volkswagen\ContrastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\Form_Volkswagen\ContrastForm.Designer.cs">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\EnterpriseAuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\EnterpriseAuthorityForm.Designer.cs">
+      <DependentUpon>EnterpriseAuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\SigAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\SigAddForm.Designer.cs">
+      <DependentUpon>SigAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\SigEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\SigEditForm.Designer.cs">
+      <DependentUpon>SigEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Account\Form_Volkswagen\CAFCInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Account\Form_Volkswagen\CAFCInfoForm.Designer.cs">
+      <DependentUpon>CAFCInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Account\FuelRankingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Account\FuelRankingForm.Designer.cs">
+      <DependentUpon>FuelRankingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Account\FuelHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Account\FuelHistoryForm.Designer.cs">
+      <DependentUpon>FuelHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Chrysler\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Chrysler\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ClxhParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ClxhParamForm.Designer.cs">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Mits\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ReviewCocData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ReviewCocData.Designer.cs">
+      <DependentUpon>ReviewCocData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Nissan\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ReviewVinData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Porsche\ReviewVinData.Designer.cs">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Subaru\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Subaru\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_BMW\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_BMW\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ReviewMainData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ReviewMainData.Designer.cs">
+      <DependentUpon>ReviewMainData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Toyota\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Volkswagen\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Volkswagen\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Index\IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Index\IndexForm.Designer.cs">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model_Porsche\HZDCModule.cs" />
+    <Compile Include="Model\QueryCafcModel.cs" />
+    <Compile Include="Model\QueryResult.cs" />
+    <Compile Include="Model\ResultMap.cs" />
+    <Compile Include="Model\Signature.cs" />
+    <Compile Include="Form_Configure\AuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\AuthorityForm.Designer.cs">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\GlobalExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\GlobalExceptionForm.Designer.cs">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\PreviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\Form_Jaguar\PreviewForm.Designer.cs">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Configure\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\AccessHelper.cs" />
+    <Compile Include="Form_Modify\ApplyDelViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ApplyDelViewForm.Designer.cs">
+      <DependentUpon>ApplyDelViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Compare\AnnouncementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\AnnouncementForm.Designer.cs">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Compare\CertificateComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\CertificateComparisonForm.Designer.cs">
+      <DependentUpon>CertificateComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeAddXtraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeAddXtraForm.Designer.cs">
+      <DependentUpon>ChangeAddXtraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeQuery.Designer.cs">
+      <DependentUpon>ChangeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ChangeRibbonForm.Designer.cs">
+      <DependentUpon>ChangeRibbonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\cljbxxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\cljbxxForm.Designer.cs">
+      <DependentUpon>cljbxxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CboItemEntity.cs" />
+    <Compile Include="Form_Compare\ContrastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Compare\ContrastForm.Designer.cs">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\AutoSizeFormClass.cs" />
+    <Compile Include="Tool\DataCheck.cs" />
+    <Compile Include="Tool\DefaultDirectory.cs" />
+    <Compile Include="Tool\ExportToExcel.cs" />
+    <Compile Include="Tool\FolderDialog.cs" />
+    <Compile Include="Form_Statistics\AvgFuelDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Statistics\AvgFuelDetailForm.Designer.cs">
+      <DependentUpon>AvgFuelDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\CafcDBHelper.cs" />
+    <Compile Include="Form_Account\CAFCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Account\CAFCForm.Designer.cs">
+      <DependentUpon>CAFCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\CafcUtils.cs" />
+    <Compile Include="Form_Statistics\FuelDataUploadTotalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Statistics\FuelDataUploadTotalForm.Designer.cs">
+      <DependentUpon>FuelDataUploadTotalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\StaticUtil.cs" />
+    <Compile Include="FuelCafc\VinDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelCafc\VinDetailForm.Designer.cs">
+      <DependentUpon>VinDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\GlobalExceptionManager.cs" />
+    <Compile Include="Tool\HttpUrlData.cs" />
+    <Compile Include="Tool\ObjectReflect.cs" />
+    <Compile Include="Tool\Tool_BMW\ImportCsv.cs" />
+    <Compile Include="Tool\Tool_BMW\ProgressEventArgs.cs" />
+    <Compile Include="Tool\Tool_Chrysler\ChryslerUtils.cs" />
+    <Compile Include="Tool\Tool_Jaguar\CtnyRllx.cs" />
+    <Compile Include="Tool\Tool_Jaguar\FcdsRllx.cs" />
+    <Compile Include="Tool\Tool_Mits\MitsUtils.cs" />
+    <Compile Include="Tool\Tool_Nissan\NissanUtils.cs" />
+    <Compile Include="Tool\Tool_Porsche\PorscheUtils.cs" />
+    <Compile Include="Tool\Tool_Subaru\ImportCsv.cs" />
+    <Compile Include="Tool\Tool_Jaguar\JaguarUtils.cs" />
+    <Compile Include="Tool\MitsUtils.cs" />
+    <Compile Include="Form_DBManager\JbxxViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\JbxxViewForm.Designer.cs">
+      <DependentUpon>JbxxViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalLoginForm.designer.cs">
+      <DependentUpon>LocalLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PopForm\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopForm\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\ProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\ProcessForm.Designer.cs">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PopForm\ReasonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PopForm\ReasonForm.Designer.cs">
+      <DependentUpon>ReasonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalForm.Designer.cs">
+      <DependentUpon>SearchLocalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalUpdateForm.Designer.cs">
+      <DependentUpon>SearchLocalUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalUploadedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalUploadedForm.Designer.cs">
+      <DependentUpon>SearchLocalUploadedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Statistics\SearchServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Statistics\SearchServerForm.Designer.cs">
+      <DependentUpon>SearchServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Configure\SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\SetForm.designer.cs">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Configure\SyncHolidayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\SyncHolidayForm.designer.cs">
+      <DependentUpon>SyncHolidayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Configure\SyncParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Configure\SyncParamForm.Designer.cs">
+      <DependentUpon>SyncParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\TemplateForm.Designer.cs">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\UpdateDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\UpdateDateForm.designer.cs">
+      <DependentUpon>UpdateDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\Tool_Subaru\ProgressEventArgs.cs" />
+    <Compile Include="Tool\Tool_Toyota\ToyotaCompareUtils.cs" />
+    <Compile Include="Tool\Tool_Toyota\ToyotaUtils.cs" />
+    <Compile Include="Tool\Tool_Volkswagen\ImportCsv.cs" />
+    <Compile Include="Tool\Tool_Volkswagen\VolkswagenCompareUtils.cs" />
+    <Compile Include="Tool\Utils.cs" />
+    <Compile Include="Utils_Control\DevTextEditControl.cs" />
+    <Compile Include="Utils_Control\GridControlHelper.cs" />
+    <Compile Include="Utils_Form\Utils_Configure\AppUpdater.cs" />
+    <Compile Include="Utils_Form\Utils_Configure\XmlFiles.cs" />
+    <Compile Include="Web References\AuthorityManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CafcService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CertificateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelDataOpen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\ApplyEditViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ApplyEditViewForm.Designer.cs">
+      <DependentUpon>ApplyEditViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Modify\ApplyUpOTViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Modify\ApplyUpOTViewForm.Designer.cs">
+      <DependentUpon>ApplyUpOTViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalOTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\SearchLocalOTForm.Designer.cs">
+      <DependentUpon>SearchLocalOTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\ReviewVinData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\ReviewVinData.Designer.cs">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DBManager\ClxhParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DBManager\ClxhParamForm.Designer.cs">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Report\MiddleYearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report\MiddleYearForm.Designer.cs">
+      <DependentUpon>MiddleYearForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelDataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelFileUpload\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DevForm\DevSplashScreen.resx">
+      <DependentUpon>DevSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DevForm\DevWaitForm.resx">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Account\FuelRankingForm.resx">
+      <DependentUpon>FuelRankingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\AnnouncementForm.resx">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\CertificateComparisonForm.resx">
+      <DependentUpon>CertificateComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\ContrastForm.resx">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\Form_Toyota\ContrastForm.resx">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\Form_Volkswagen\ContrastForm.resx">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\SetForm.resx">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\SyncHolidayForm.resx">
+      <DependentUpon>SyncHolidayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\SyncParamForm.resx">
+      <DependentUpon>SyncParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Compare\Form_Toyota\ComparisonForm.resx">
+      <DependentUpon>ComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Account\Form_Volkswagen\CAFCInfoForm.resx">
+      <DependentUpon>CAFCInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Account\FuelHistoryForm.resx">
+      <DependentUpon>FuelHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Account\CAFCForm.resx">
+      <DependentUpon>CAFCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\UpdaterForm.resx">
+      <DependentUpon>UpdaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\cljbxxForm.resx">
+      <DependentUpon>cljbxxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\ClxhParamForm.resx">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_BMW\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Chrysler\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Jaguar\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Jaguar\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Jaguar\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Mits\ClxhParamForm.resx">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Mits\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Mits\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Nissan\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Nissan\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Nissan\ReviewCocData.resx">
+      <DependentUpon>ReviewCocData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Nissan\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Porsche\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Porsche\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Porsche\ReviewVinData.resx">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Subaru\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Toyota\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Toyota\PreviewForm.resx">
+      <DependentUpon>PreviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Toyota\ReviewMainData.resx">
+      <DependentUpon>ReviewMainData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Toyota\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\Form_Volkswagen\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\JbxxViewForm.resx">
+      <DependentUpon>JbxxViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\ReviewVinData.resx">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\SearchLocalForm.resx">
+      <DependentUpon>SearchLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\SearchLocalOTForm.resx">
+      <DependentUpon>SearchLocalOTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\SearchLocalUpdateForm.resx">
+      <DependentUpon>SearchLocalUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\SearchLocalUploadedForm.resx">
+      <DependentUpon>SearchLocalUploadedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\TemplateForm.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DBManager\UpdateDateForm.resx">
+      <DependentUpon>UpdateDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Index\IndexForm.resx">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ApplyDelViewForm.resx">
+      <DependentUpon>ApplyDelViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ApplyEditViewForm.resx">
+      <DependentUpon>ApplyEditViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ApplyUpOTViewForm.resx">
+      <DependentUpon>ApplyUpOTViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ChangeAddXtraForm.resx">
+      <DependentUpon>ChangeAddXtraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ChangeQuery.resx">
+      <DependentUpon>ChangeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\ChangeRibbonForm.resx">
+      <DependentUpon>ChangeRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\EnterpriseAuthorityForm.resx">
+      <DependentUpon>EnterpriseAuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\SigAddForm.resx">
+      <DependentUpon>SigAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Modify\SigEditForm.resx">
+      <DependentUpon>SigEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_National\GHDataForm.resx">
+      <DependentUpon>GHDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report\MiddleYearForm.resx">
+      <DependentUpon>MiddleYearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report\PreReportForm.resx">
+      <DependentUpon>PreReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report\WholeYearForm.resx">
+      <DependentUpon>WholeYearForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Statistics\AvgFuelDetailForm.resx">
+      <DependentUpon>AvgFuelDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Statistics\FuelDataUploadTotalForm.resx">
+      <DependentUpon>FuelDataUploadTotalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Statistics\SearchServerForm.resx">
+      <DependentUpon>SearchServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelCafc\VinDetailForm.resx">
+      <DependentUpon>VinDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalLoginForm.resx">
+      <DependentUpon>LocalLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopForm\MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SubForm\GlobalExceptionForm.resx">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\ProcessForm.resx">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PopForm\ReasonForm.resx">
+      <DependentUpon>ReasonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Configure\AuthorityForm.resx">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conf.config" />
+    <Content Include="ExcelHeaderTemplate\Change.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_BMW.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Chrysler.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_JBLH.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Mits.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Nissan.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Porsche.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Toyota.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_ToyotaCompare.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate_Volkswagen.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\forecast.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\test.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\Year1.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\Year2.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="FuelDataSysClient_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\AuthorityManager\Authority.wsdl" />
+    <None Include="Web References\AuthorityManager\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CafcService\CafcWebService.wsdl" />
+    <None Include="Web References\CafcService\ForecastParam.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\ForecastPrj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCafcAndTcafc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCafcAndTcafcAndTcafc1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCAFCDetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CafcService\StatisticsData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\VinData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CertificateService\CertificateComparison.wsdl" />
+    <None Include="Web References\CertificateService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataOpen\FuelDataOpen.wsdl" />
+    <None Include="Web References\FuelDataOpen\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataService\FuelDataSysWebService.wsdl" />
+    <None Include="Web References\FuelDataService\OperateResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelDataService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataService\RllxParam.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelDataService\VehicleBasicInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelFileUpload\FileUploadService.wsdl" />
+    <None Include="Web References\FuelFileUpload\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADC-1.ico" />
+    <Content Include="data\data.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_Chrysler.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_JBLH.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_Mits.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_Nissan.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_Porsche.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\data_Toyota.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\menuData.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\UpdateList.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\141.gif" />
+    <Content Include="image\142.gif" />
+    <Content Include="image\143.gif" />
+    <Content Include="image\145.gif" />
+    <Content Include="image\bak.jpg" />
+    <Content Include="image\gbak.jpg" />
+    <Content Include="image\print.jpg" />
+    <None Include="Resources\barBtn_FuelLogo.png" />
+    <None Include="Resources\barBtn_word.png" />
+    <None Include="Resources\barBtn_key.png" />
+    <None Include="Resources\barBtn_GoCircle.png" />
+    <None Include="Resources\barBtn_GoRight.png" />
+    <None Include="Resources\barBtn_Import.png" />
+    <None Include="Resources\barBtn_paperAdd .png" />
+    <None Include="Resources\barBtn_paperView.png" />
+    <None Include="Resources\picBox_flow.png" />
+    <None Include="Resources\flow.png" />
+    <None Include="Resources\barBtn_SearchGreen.png" />
+    <None Include="Resources\barBtn_SearchBlue.png" />
+    <None Include="Resources\barBtn_MergeGH.png" />
+    <None Include="Resources\barBtn_MergeData.png" />
+    <None Include="Resources\barBtn_EditData.png" />
+    <None Include="Resources\barBtn_SearchBatch.png" />
+    <None Include="Resources\barBtn_carEdit.png" />
+    <None Include="Resources\barBtn_carDel.png" />
+    <None Include="Resources\barBtn_carCopy.png" />
+    <None Include="Resources\barBtn_carAdd.png" />
+    <None Include="Resources\barBtn_carImport.png" />
+    <None Include="Resources\barBtn_ImportGrey.png" />
+    <None Include="Resources\barBtn_ImportBlue.png" />
+    <None Include="Resources\barBtn_ImportWhite.png" />
+    <None Include="Resources\btnImportBlue.png" />
+    <None Include="Resources\btnImportGrey.png" />
+    <None Include="Resources\nav_chart.png" />
+    <None Include="Resources\nav_user_key.png" />
+    <None Include="Resources\nav_change.png" />
+    <None Include="Resources\nav_cloud.png" />
+    <None Include="Resources\nav_text_rotate.png" />
+    <None Include="Resources\nav_text_inverse.png" />
+    <None Include="Resources\nav_text_ab.png" />
+    <None Include="Resources\nav_text.png" />
+    <None Include="Resources\nav_table_delete.png" />
+    <None Include="Resources\nav_page_red.png" />
+    <None Include="Resources\nav_page_find.png" />
+    <None Include="Resources\nav_oneLine.png" />
+    <None Include="Resources\nav_mail.png" />
+    <None Include="Resources\nav_calendar_week.png" />
+    <None Include="Resources\nav_calendar_one.png" />
+    <None Include="Resources\nav_text_spelling.png" />
+    <None Include="Resources\nav_boxPic.png" />
+    <None Include="Resources\nav_webUp.png" />
+    <None Include="Resources\nav_boxLeft.png" />
+    <None Include="Resources\nav_import.png" />
+    <None Include="Resources\nav_law.png" />
+    <None Include="Resources\barBtn_userDel.png" />
+    <None Include="Resources\barBtn_userAdd.png" />
+    <None Include="Resources\barBtn_userEdit.png" />
+    <None Include="Resources\barBtn_ranking.png" />
+    <None Include="Resources\barBtn_compare.png" />
+    <None Include="Resources\barBtnAnnouncement.png" />
+    <None Include="Resources\barBtnCertificate.png" />
+    <None Include="Resources\barBtnLocalFuel.png" />
+    <None Include="Resources\barBtnExcelFuel.png" />
+    <None Include="Resources\barBtnOfficeFuel.png" />
+    <None Include="Resources\barBtn_history.png" />
+    <None Include="Resources\Fuelogo2.ico" />
+    <None Include="Resources\barBtn_Index.png" />
+    <None Include="Resources\barBtn_Set.png" />
+    <None Include="Resources\Fuelogo.ico" />
+    <None Include="Resources\nav_page_third.png" />
+    <None Include="Resources\nav_page_second.png" />
+    <None Include="Resources\nav_page_local.png" />
+    <None Include="Resources\nav_page_first.png" />
+    <None Include="Resources\nav_Calendar.png" />
+    <None Include="Resources\GreenCar.ico" />
+    <None Include="Resources\ExportToExcel.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\CarGreen.png" />
+    <None Include="Resources\btnBtn_Print.png" />
+    <None Include="Resources\barBtn_userSave.png" />
+    <None Include="Resources\barBtn_Update.png" />
+    <None Include="Resources\barBtn_Sync.png" />
+    <None Include="Resources\barBtn_SelectAll.png" />
+    <None Include="Resources\barBtn_Search.png" />
+    <None Include="Resources\barBtn_Repea.png" />
+    <None Include="Resources\barBtn_Refresh.png" />
+    <None Include="Resources\barBtn_ParamSync.png" />
+    <None Include="Resources\barBtn_ImportOld.png" />
+    <None Include="Resources\barBtn_HolidaySync.png" />
+    <None Include="Resources\barBtn_FuelUploadOT.png" />
+    <None Include="Resources\barBtn_FuelUpload.png" />
+    <None Include="Resources\barBtn_FuelUpdate.png" />
+    <None Include="Resources\barBtn_FuelSync.png" />
+    <None Include="Resources\barBtn_fuelImport.png" />
+    <None Include="Resources\barBtn_fuelDel.png" />
+    <None Include="Resources\barBtn_fuelCopy.png" />
+    <None Include="Resources\barBtn_fuelAdd.png" />
+    <None Include="Resources\barBtn_ExportWord.png" />
+    <None Include="Resources\barBtn_ExportPpt.png" />
+    <None Include="Resources\barBtn_ExportPdf.png" />
+    <None Include="Resources\barBtn_ExportGmail.png" />
+    <None Include="Resources\barBtn_ExportExcel.png" />
+    <None Include="Resources\barBtn_ExportAccess.png" />
+    <None Include="Resources\barBtn_exit.png" />
+    <None Include="Resources\barBtn_Edit.png" />
+    <None Include="Resources\barBtn_Del.png" />
+    <None Include="Resources\barBtn_ClearAll.png" />
+    <None Include="Resources\bar_WebSearch.png" />
+    <None Include="Resources\bar_upload.png" />
+    <None Include="Resources\bar_updateSearch.png" />
+    <None Include="Resources\bar_tools.png" />
+    <None Include="Resources\bar_reback.png" />
+    <None Include="Resources\bar_plusSearch.png" />
+    <None Include="Resources\bar_Param.png" />
+    <None Include="Resources\bar_page_third.png" />
+    <None Include="Resources\bar_page_second.png" />
+    <None Include="Resources\bar_page_local.png" />
+    <None Include="Resources\bar_page_first.png" />
+    <None Include="Resources\bar_Calendar.png" />
+    <None Include="Resources\arrow_right_top.png" />
+    <None Include="Resources\arrow_right.png" />
+    <None Include="Resources\arrow_left_top.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\ADC-1.ico" />
+    <None Include="Resources\adc_backlogo.png" />
+    <None Include="Resources\picBox_Set.png" />
+    <None Include="Resources\picBox_DebugInfo.png" />
+    <None Include="Resources\picBox_Computer.png" />
+    <None Include="Resources\nav_WebSearch.png" />
+    <None Include="Resources\nav_upload.png" />
+    <None Include="Resources\nav_updateSearch.png" />
+    <None Include="Resources\nav_tools.png" />
+    <None Include="Resources\nav_reback.png" />
+    <None Include="Resources\nav_plusSearch.png" />
+    <None Include="Resources\nav_Param.png" />
+    <None Include="Web References\CertificateService\CertificateComparison.disco" />
+    <None Include="Web References\FuelDataService\FuelDataSysWebService.disco" />
+    <None Include="Web References\FuelFileUpload\FileUploadService.disco" />
+    <Content Include="Fuelogo.ico" />
+    <None Include="Web References\AuthorityManager\Authority.disco" />
+    <None Include="Web References\FuelDataOpen\FuelDataOpen.disco" />
+    <None Include="Web References\CafcService\CafcWebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://soap.catarc.info/Authority.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AuthorityManager\</RelPath>
+      <UpdateFromURL>http://soap.catarc.info/Authority.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_AuthorityManager_Authority</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://soap.catarc.info/CafcWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CafcService\</RelPath>
+      <UpdateFromURL>http://soap.catarc.info/CafcWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_CafcService_CafcWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://soap.catarc.info/CertificateComparison.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CertificateService\</RelPath>
+      <UpdateFromURL>http://soap.catarc.info/CertificateComparison.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_CertificateService_CertificateComparison</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoap.catarc.info/FileUploadService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelFileUpload\</RelPath>
+      <UpdateFromURL>http://tsoap.catarc.info/FileUploadService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelFileUpload_FileUploadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://soap.catarc.info/FuelDataOpen.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelDataOpen\</RelPath>
+      <UpdateFromURL>http://soap.catarc.info/FuelDataOpen.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelDataOpen_FuelDataOpen</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoap.catarc.info/FuelDataSysWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelDataService\</RelPath>
+      <UpdateFromURL>http://tsoap.catarc.info/FuelDataSysWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelDataService_FuelDataSysWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="data\data.mdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.2">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4FF0B4D7-2CF5-48D2-83C8-5D7B0055A638}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DogAction\DogAction.csproj">
+      <Project>{FB32167E-65D2-4CBA-A3D5-8E607DF004E7}</Project>
+      <Name>DogAction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,14 @@
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\bin\Debug\HFSoft.Component.Windows.dll
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\bin\Debug\HFSoft.Component.Windows.pdb
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.LoadingForm.resources
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.csproj.GenerateResource.Cache
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.dll
+D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.pdb
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\bin\Debug\HFSoft.Component.Windows.dll
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\bin\Debug\HFSoft.Component.Windows.pdb
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.LoadingForm.resources
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.csproj.GenerateResource.Cache
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.dll
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.pdb
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.csprojResolveAssemblyReference.cache
+D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\obj\Debug\HFSoft.Component.Windows.csproj.CoreCompileInputs.cache

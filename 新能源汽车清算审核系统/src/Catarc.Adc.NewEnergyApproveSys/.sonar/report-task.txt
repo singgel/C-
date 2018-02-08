@@ -1,0 +1,5 @@
+projectKey=Catarc.Adc.NewEnergyApproveSys
+serverUrl=http://60.30.69.57:8089
+dashboardUrl=http://60.30.69.57:8089/dashboard/index/Catarc.Adc.NewEnergyApproveSys
+ceTaskId=AWAfVrz5DpHN7GRZOA-6
+ceTaskUrl=http://60.30.69.57:8089/api/ce/task?id=AWAfVrz5DpHN7GRZOA-6

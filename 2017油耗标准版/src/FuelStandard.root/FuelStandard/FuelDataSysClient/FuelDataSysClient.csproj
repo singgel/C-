@@ -1,0 +1,1701 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B14A51BA-6011-42D4-96F4-6E0EA35F717A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FuelDataSysClient</RootNamespace>
+    <AssemblyName>FuelDataSysClient</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\项目发布\汽车燃料消耗量信息系统\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://123.127.164.44/FuelsysClient/</UpdateUrl>
+    <TargetCulture>zh-CN</TargetCulture>
+    <ProductName>汽车燃料消耗量信息系统</ProductName>
+    <PublisherName>中国汽车技术研究中心数据资源中心</PublisherName>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Fuelogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2E7B12AFD014B8765D50FDEBBEE497EDEC8CF80C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FuelDataSysClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v11.2.UI, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v11.2.Extensions, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\DevExpress 2011.2\Components\Bin\Framework\DevExpress.XtraTreeList.v11.2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="dog_net_windows">
+      <HintPath>..\..\..\..\dll\dog_net_windows.dll</HintPath>
+    </Reference>
+    <Reference Include="EvDXWinLocalization, Version=11.2.8.0, Culture=neutral, PublicKeyToken=ff77e4d630503ab5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\EvDXWinLocalization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FuelDataModel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\dll\FuelDataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.interop.access.dao, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.interop.access.dao.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_BGSC\PreReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\PreReportForm.Designer.cs">
+      <DependentUpon>PreReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BGSC\Word2ViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\Word2ViewerForm.Designer.cs">
+      <DependentUpon>Word2ViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\EnterpriseAuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\EnterpriseAuthorityForm.Designer.cs">
+      <DependentUpon>EnterpriseAuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\SigAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\SigAddForm.Designer.cs">
+      <DependentUpon>SigAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\SigEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\SigEditForm.Designer.cs">
+      <DependentUpon>SigEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJHS\FuelRankingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJHS\FuelRankingForm.Designer.cs">
+      <DependentUpon>FuelRankingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJHS\YhlsbhForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJHS\YhlsbhForm.Designer.cs">
+      <DependentUpon>YhlsbhForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IndexForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IndexForm.Designer.cs">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model_Porsche\HZDCModule.cs" />
+    <Compile Include="Model\QueryCafcModel.cs" />
+    <Compile Include="Model\QueryResult.cs" />
+    <Compile Include="Model\ResultMap.cs" />
+    <Compile Include="Model\Signature.cs" />
+    <Compile Include="SubForm\AppUpdater.cs" />
+    <Compile Include="SubForm\AuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\AuthorityForm.Designer.cs">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\DevWaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\DevWaitForm.designer.cs">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\GlobalExceptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\GlobalExceptionForm.Designer.cs">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\UpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\UpdateForm.Designer.cs">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\XmlFiles.cs" />
+    <Compile Include="Tool\AccessHelper.cs" />
+    <Compile Include="Form_SJBG\ApplyDelViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ApplyDelViewForm.Designer.cs">
+      <DependentUpon>ApplyDelViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBD\AnnouncementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBD\AnnouncementForm.Designer.cs">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBD\CertificateComparisonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBD\CertificateComparisonForm.Designer.cs">
+      <DependentUpon>CertificateComparisonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeAddXtraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeAddXtraForm.Designer.cs">
+      <DependentUpon>ChangeAddXtraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeQuery.Designer.cs">
+      <DependentUpon>ChangeQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeRibbonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ChangeRibbonForm.Designer.cs">
+      <DependentUpon>ChangeRibbonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\cljbxxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\cljbxxForm.Designer.cs">
+      <DependentUpon>cljbxxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CboItemEntity.cs" />
+    <Compile Include="Form_SJBD\ContrastForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBD\ContrastForm.Designer.cs">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\AutoSizeFormClass.cs" />
+    <Compile Include="Tool\DataCheck.cs" />
+    <Compile Include="Tool\DefaultDirectory.cs" />
+    <Compile Include="Tool\ExportToExcel.cs" />
+    <Compile Include="Tool\FolderDialog.cs" />
+    <Compile Include="Form_BGSC\AddExistDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\AddExistDataForm.Designer.cs">
+      <DependentUpon>AddExistDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BGSC\AddForePrjForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\AddForePrjForm.Designer.cs">
+      <DependentUpon>AddForePrjForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BGSC\AddParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\AddParamForm.Designer.cs">
+      <DependentUpon>AddParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJTJ\AvgFuelDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJTJ\AvgFuelDetailForm.Designer.cs">
+      <DependentUpon>AvgFuelDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\CafcDBHelper.cs" />
+    <Compile Include="Form_SJHS\CAFCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJHS\CAFCForm.Designer.cs">
+      <DependentUpon>CAFCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\CafcUtils.cs" />
+    <Compile Include="Form_BGSC\ForecastDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\ForecastDataForm.Designer.cs">
+      <DependentUpon>ForecastDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\IntegrateDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelCafc\IntegrateDataForm.Designer.cs">
+      <DependentUpon>IntegrateDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelCafc\StaticUtil.cs" />
+    <Compile Include="FuelCafc\VinDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelCafc\VinDetailForm.Designer.cs">
+      <DependentUpon>VinDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FuelDataImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuelDataImport.Designer.cs">
+      <DependentUpon>FuelDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJHS\LinearGraphFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJHS\LinearGraphFrom.Designer.cs">
+      <DependentUpon>LinearGraphFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\GlobalExceptionManager.cs" />
+    <Compile Include="Tool\HttpUrlData.cs" />
+    <Compile Include="Tool\ObjectReflect.cs" />
+    <Compile Include="Tool\Tool_BMW\ImportCsv.cs" />
+    <Compile Include="Tool\Tool_BMW\ProgressEventArgs.cs" />
+    <Compile Include="Tool\Tool_Chrysler\ChryslerUtils.cs" />
+    <Compile Include="Tool\Tool_JBLH\CtnyRllx.cs" />
+    <Compile Include="Tool\Tool_JBLH\FcdsRllx.cs" />
+    <Compile Include="Tool\Tool_Mits\MitsUtils.cs" />
+    <Compile Include="Tool\Tool_Nissan\NissanUtils.cs" />
+    <Compile Include="Tool\Tool_Porsche\PorscheUtils.cs" />
+    <Compile Include="Tool\Tool_SBL\ImportCsv.cs" />
+    <Compile Include="Tool\InitDataTime.cs" />
+    <Compile Include="Tool\Tool_JBLH\JaguarUtils.cs" />
+    <Compile Include="Tool\MitsUtils.cs" />
+    <Compile Include="Form_SJSB\JbxxViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\JbxxViewForm.Designer.cs">
+      <DependentUpon>JbxxViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocalLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocalLoginForm.designer.cs">
+      <DependentUpon>LocalLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessForm.Designer.cs">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReasonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReasonForm.Designer.cs">
+      <DependentUpon>ReasonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalForm.Designer.cs">
+      <DependentUpon>SearchLocalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalUpdateForm.Designer.cs">
+      <DependentUpon>SearchLocalUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalUploadedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalUploadedForm.Designer.cs">
+      <DependentUpon>SearchLocalUploadedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJTJ\SearchServerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJTJ\SearchServerForm.Designer.cs">
+      <DependentUpon>SearchServerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\ApplyListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\ApplyListForm.Designer.cs">
+      <DependentUpon>ApplyListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\FilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\FilterForm.Designer.cs">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\PreUploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\PreUploadForm.Designer.cs">
+      <DependentUpon>PreUploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\SetForm.designer.cs">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForm\UpdateUploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm\UpdateUploadForm.Designer.cs">
+      <DependentUpon>UpdateUploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GJ\SyncHolidayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GJ\SyncHolidayForm.designer.cs">
+      <DependentUpon>SyncHolidayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_GJ\SyncParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_GJ\SyncParamForm.Designer.cs">
+      <DependentUpon>SyncParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\TemplateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\TemplateForm.Designer.cs">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\UpdateDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\UpdateDateForm.designer.cs">
+      <DependentUpon>UpdateDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\Tool_SBL\ProgressEventArgs.cs" />
+    <Compile Include="Tool\Tool_Toyota\ToyotaCompareUtils.cs" />
+    <Compile Include="Tool\Tool_Toyota\ToyotaUtils.cs" />
+    <Compile Include="Tool\Tool_Volkswagen\ImportCsv.cs" />
+    <Compile Include="Tool\Tool_Volkswagen\VolkswagenCompareUtils.cs" />
+    <Compile Include="UserManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserManager.Designer.cs">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tool\Utils.cs" />
+    <Compile Include="Web References\AuthorityManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CafcService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\CertificateService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelDataOpen\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\ApplyEditViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ApplyEditViewForm.Designer.cs">
+      <DependentUpon>ApplyEditViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJBG\ApplyUpOTViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJBG\ApplyUpOTViewForm.Designer.cs">
+      <DependentUpon>ApplyUpOTViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalOTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\SearchLocalOTForm.Designer.cs">
+      <DependentUpon>SearchLocalOTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\ReviewVinData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\ReviewVinData.Designer.cs">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\ReviewUpdateVinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\ReviewUpdateVinForm.Designer.cs">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_SJSB\ClxhParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_SJSB\ClxhParamForm.Designer.cs">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_BGSC\WordViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_BGSC\WordViewerForm.Designer.cs">
+      <DependentUpon>WordViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelDataService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FuelFileUpload\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form_BGSC\PreReportForm.resx">
+      <DependentUpon>PreReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\Word2ViewerForm.resx">
+      <DependentUpon>Word2ViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ApplyDelViewForm.resx">
+      <DependentUpon>ApplyDelViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBD\AnnouncementForm.resx">
+      <DependentUpon>AnnouncementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBD\CertificateComparisonForm.resx">
+      <DependentUpon>CertificateComparisonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ChangeAddXtraForm.resx">
+      <DependentUpon>ChangeAddXtraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ChangeQuery.resx">
+      <DependentUpon>ChangeQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ChangeRibbonForm.resx">
+      <DependentUpon>ChangeRibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\EnterpriseAuthorityForm.resx">
+      <DependentUpon>EnterpriseAuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\SigAddForm.resx">
+      <DependentUpon>SigAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\SigEditForm.resx">
+      <DependentUpon>SigEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJHS\FuelRankingForm.resx">
+      <DependentUpon>FuelRankingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJHS\YhlsbhForm.resx">
+      <DependentUpon>YhlsbhForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\cljbxxForm.resx">
+      <DependentUpon>cljbxxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBD\ContrastForm.resx">
+      <DependentUpon>ContrastForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\AddExistDataForm.resx">
+      <DependentUpon>AddExistDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\AddForePrjForm.resx">
+      <DependentUpon>AddForePrjForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\AddParamForm.resx">
+      <DependentUpon>AddParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJTJ\AvgFuelDetailForm.resx">
+      <DependentUpon>AvgFuelDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJHS\CAFCForm.resx">
+      <DependentUpon>CAFCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\ForecastDataForm.resx">
+      <DependentUpon>ForecastDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelCafc\IntegrateDataForm.resx">
+      <DependentUpon>IntegrateDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelCafc\VinDetailForm.resx">
+      <DependentUpon>VinDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FuelDataImport.resx">
+      <DependentUpon>FuelDataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\JbxxViewForm.resx">
+      <DependentUpon>JbxxViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJHS\LinearGraphFrom.resx">
+      <DependentUpon>LinearGraphFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IndexForm.resx">
+      <DependentUpon>IndexForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocalLoginForm.resx">
+      <DependentUpon>LocalLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessForm.resx">
+      <DependentUpon>ProcessForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReasonForm.resx">
+      <DependentUpon>ReasonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\searchLocalForm.resx">
+      <DependentUpon>SearchLocalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\SearchLocalUpdateForm.resx">
+      <DependentUpon>SearchLocalUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\SearchLocalUploadedForm.resx">
+      <DependentUpon>SearchLocalUploadedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJTJ\searchServerForm.resx">
+      <DependentUpon>SearchServerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\applyListForm.resx">
+      <DependentUpon>ApplyListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\AuthorityForm.resx">
+      <DependentUpon>AuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\DevWaitForm.resx">
+      <DependentUpon>DevWaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\FilterForm.resx">
+      <DependentUpon>FilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\GlobalExceptionForm.resx">
+      <DependentUpon>GlobalExceptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\PreUploadForm.resx">
+      <DependentUpon>PreUploadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\SetForm.resx">
+      <DependentUpon>SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\UpdateForm.resx">
+      <DependentUpon>UpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm\UpdateUploadForm.resx">
+      <DependentUpon>UpdateUploadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GJ\SyncHolidayForm.resx">
+      <DependentUpon>SyncHolidayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_GJ\SyncParamForm.resx">
+      <DependentUpon>SyncParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\TemplateForm.resx">
+      <DependentUpon>TemplateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ApplyEditViewForm.resx">
+      <DependentUpon>ApplyEditViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJBG\ApplyUpOTViewForm.resx">
+      <DependentUpon>ApplyUpOTViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\SearchLocalOTForm.resx">
+      <DependentUpon>SearchLocalOTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\ReviewVinData.resx">
+      <DependentUpon>ReviewVinData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\ReviewUpdateVinForm.resx">
+      <DependentUpon>ReviewUpdateVinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\UpdateDateForm.resx">
+      <DependentUpon>UpdateDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManager.resx">
+      <DependentUpon>UserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_SJSB\ClxhParamForm.resx">
+      <DependentUpon>ClxhParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_BGSC\WordViewerForm.resx">
+      <DependentUpon>WordViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="conf.config" />
+    <Content Include="ExcelHeaderTemplate\Change.docx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\ExcelHeaderTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\forecast.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\test.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\UpdateList.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\Year1.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\Year2.doc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="FuelDataSysClient_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\AuthorityManager\Authority.wsdl" />
+    <None Include="Web References\AuthorityManager\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CafcService\CafcWebService.wsdl" />
+    <None Include="Web References\CafcService\ForecastParam.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\ForecastPrj.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCafcAndTcafc.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCafcAndTcafcAndTcafc1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelCAFCDetails.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\FuelSummary.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\CafcService\StatisticsData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CafcService\VinData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CertificateService\CertificateComparison.wsdl" />
+    <None Include="Web References\CertificateService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataOpen\FuelDataOpen.wsdl" />
+    <None Include="Web References\FuelDataOpen\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataService\FuelDataSysWebService.wsdl" />
+    <None Include="Web References\FuelDataService\OperateResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelDataService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FuelDataService\RllxParam.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelDataService\VehicleBasicInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\FuelFileUpload\FileUploadService.wsdl" />
+    <None Include="Web References\FuelFileUpload\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADC-1.ico" />
+    <Content Include="data\data.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ExcelHeaderTemplate\menuData.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="image\141.gif" />
+    <Content Include="image\142.gif" />
+    <Content Include="image\143.gif" />
+    <Content Include="image\145.gif" />
+    <Content Include="image\bak.jpg" />
+    <Content Include="image\gbak.jpg" />
+    <Content Include="image\Globe Download.png" />
+    <Content Include="image\Globe Upload.png" />
+    <Content Include="image\print.jpg" />
+    <Content Include="image\search.png" />
+    <Content Include="image\searchserver.png" />
+    <None Include="Web References\FuelDataService\FuelDataSysWebService.disco" />
+    <None Include="Resources\Word_72px.png" />
+    <None Include="Resources\Zoom_In_96px_1093727_easyicon.net.png" />
+    <None Include="Web References\FuelFileUpload\FileUploadService.disco" />
+    <None Include="Resources\word_16.png" />
+    <None Include="Resources\word_16.ico" />
+    <None Include="Resources\xhtml_error.png" />
+    <None Include="Resources\world_orbit.png" />
+    <None Include="Resources\world_night.png" />
+    <None Include="Resources\world_key.png" />
+    <None Include="Resources\world_dawn.png" />
+    <None Include="Resources\world_connect.png" />
+    <None Include="Resources\yxgwsb.png" />
+    <None Include="Resources\ysb_16.png" />
+    <None Include="Resources\arrow_left.png" />
+    <None Include="Resources\arrow_left_top.png" />
+    <None Include="Resources\arrow_right.png" />
+    <None Include="Resources\arrow_right_top.png" />
+    <None Include="Resources\bcdsb_16.png" />
+    <None Include="Resources\dsb_16.png" />
+    <None Include="Resources\dtrlsjsb_16.png" />
+    <None Include="Resources\application_osx_add.png" />
+    <None Include="Resources\application_osx_cascade.png" />
+    <None Include="Resources\application_osx_delete.png" />
+    <None Include="Resources\application_osx_double.png" />
+    <None Include="Resources\application_osx_error.png" />
+    <None Include="Resources\application_osx_get.png" />
+    <None Include="Resources\application_osx_go.png" />
+    <None Include="Resources\application_osx_home.png" />
+    <None Include="Resources\application_osx_key.png" />
+    <None Include="Resources\application_osx_lightning.png" />
+    <None Include="Resources\application_osx_link.png" />
+    <None Include="Resources\application_osx_split.png" />
+    <None Include="Resources\application_osx_start.png" />
+    <None Include="Resources\application_osx_stop.png" />
+    <None Include="Resources\application_start.png" />
+    <None Include="Resources\application_stop.png" />
+    <None Include="Resources\arrow_ew.png" />
+    <None Include="Resources\arrow_in_longer.png" />
+    <None Include="Resources\arrow_ne.png" />
+    <None Include="Resources\arrow_ns.png" />
+    <None Include="Resources\arrow_nsew.png" />
+    <None Include="Resources\arrow_nw.png" />
+    <None Include="Resources\arrow_nw_ne_sw_se.png" />
+    <None Include="Resources\arrow_nw_se.png" />
+    <None Include="Resources\arrow_out_longer.png" />
+    <None Include="Resources\arrow_se.png" />
+    <None Include="Resources\arrow_sw.png" />
+    <None Include="Resources\arrow_sw_ne.png" />
+    <None Include="Resources\arrow_switch_bluegreen.png" />
+    <None Include="Resources\asterisk_red.png" />
+    <None Include="Resources\bell_silver.png" />
+    <None Include="Resources\bell_silver_start.png" />
+    <None Include="Resources\bell_silver_stop.png" />
+    <None Include="Resources\bell_start.png" />
+    <None Include="Resources\bell_stop.png" />
+    <None Include="Resources\book_addresses_add.png" />
+    <None Include="Resources\book_addresses_delete.png" />
+    <None Include="Resources\book_addresses_edit.png" />
+    <None Include="Resources\book_addresses_error.png" />
+    <None Include="Resources\book_addresses_key.png" />
+    <None Include="Resources\book_key.png" />
+    <None Include="Resources\book_magnify.png" />
+    <None Include="Resources\book_open_mark.png" />
+    <None Include="Resources\book_red.png" />
+    <None Include="Resources\book_tabs.png" />
+    <None Include="Resources\bookmark.png" />
+    <None Include="Resources\bookmark_add.png" />
+    <None Include="Resources\bookmark_delete.png" />
+    <None Include="Resources\bookmark_edit.png" />
+    <None Include="Resources\bookmark_error.png" />
+    <None Include="Resources\bookmark_go.png" />
+    <None Include="Resources\border_all.png" />
+    <None Include="Resources\border_bottom.png" />
+    <None Include="Resources\border_draw.png" />
+    <None Include="Resources\border_inner.png" />
+    <None Include="Resources\border_inner_horizontal.png" />
+    <None Include="Resources\border_inner_vertical.png" />
+    <None Include="Resources\border_left.png" />
+    <None Include="Resources\border_none.png" />
+    <None Include="Resources\border_outer.png" />
+    <None Include="Resources\border_right.png" />
+    <None Include="Resources\border_top.png" />
+    <None Include="Resources\box_error.png" />
+    <None Include="Resources\box_picture.png" />
+    <None Include="Resources\box_world.png" />
+    <None Include="Resources\brick_magnify.png" />
+    <None Include="Resources\bug_fix.png" />
+    <None Include="Resources\bug_magnify.png" />
+    <None Include="Resources\build.png" />
+    <None Include="Resources\build_cancel.png" />
+    <None Include="Resources\bullet_connect.png" />
+    <None Include="Resources\bullet_cross.png" />
+    <None Include="Resources\bullet_database.png" />
+    <None Include="Resources\bullet_database_yellow.png" />
+    <None Include="Resources\bullet_earth.png" />
+    <None Include="Resources\bullet_edit.png" />
+    <None Include="Resources\bullet_eject.png" />
+    <None Include="Resources\bullet_get.png" />
+    <None Include="Resources\bullet_home.png" />
+    <None Include="Resources\bullet_left.png" />
+    <None Include="Resources\bullet_lightning.png" />
+    <None Include="Resources\bullet_magnify.png" />
+    <None Include="Resources\bullet_minus.png" />
+    <None Include="Resources\bullet_page_white.png" />
+    <None Include="Resources\bullet_plus.png" />
+    <None Include="Resources\bullet_right.png" />
+    <None Include="Resources\bullet_shape.png" />
+    <None Include="Resources\bullet_sparkle.png" />
+    <None Include="Resources\bullet_start.png" />
+    <None Include="Resources\bullet_stop.png" />
+    <None Include="Resources\bullet_stop_alt.png" />
+    <None Include="Resources\bullet_tick.png" />
+    <None Include="Resources\bullet_wrench_red.png" />
+    <None Include="Resources\button.png" />
+    <None Include="Resources\cake_out.png" />
+    <None Include="Resources\cake_sliced.png" />
+    <None Include="Resources\calendar_select_day.png" />
+    <None Include="Resources\calendar_select_none.png" />
+    <None Include="Resources\calendar_select_week.png" />
+    <None Include="Resources\calendar_star.png" />
+    <None Include="Resources\camera_connect.png" />
+    <None Include="Resources\camera_magnify.png" />
+    <None Include="Resources\camera_picture.png" />
+    <None Include="Resources\camera_start.png" />
+    <None Include="Resources\camera_stop.png" />
+    <None Include="Resources\car_error.png" />
+    <None Include="Resources\car_red.png" />
+    <None Include="Resources\car_start.png" />
+    <None Include="Resources\car_stop.png" />
+    <None Include="Resources\cart_full.png" />
+    <None Include="Resources\cart_magnify.png" />
+    <None Include="Resources\cd_magnify.png" />
+    <None Include="Resources\cd_play.png" />
+    <None Include="Resources\cd_stop.png" />
+    <None Include="Resources\cd_stop_alt.png" />
+    <None Include="Resources\cd_tick.png" />
+    <None Include="Resources\cdr.png" />
+    <None Include="Resources\cdr_add.png" />
+    <None Include="Resources\cdr_burn.png" />
+    <None Include="Resources\cdr_cross.png" />
+    <None Include="Resources\cdr_delete.png" />
+    <None Include="Resources\cdr_edit.png" />
+    <None Include="Resources\cdr_eject.png" />
+    <None Include="Resources\cdr_error.png" />
+    <None Include="Resources\cdr_go.png" />
+    <None Include="Resources\cdr_magnify.png" />
+    <None Include="Resources\cdr_play.png" />
+    <None Include="Resources\cdr_start.png" />
+    <None Include="Resources\cdr_stop.png" />
+    <None Include="Resources\cdr_stop_alt.png" />
+    <None Include="Resources\cdr_tick.png" />
+    <None Include="Resources\chart_org_inverted.png" />
+    <None Include="Resources\chart_pie_lightning.png" />
+    <None Include="Resources\check_error.png" />
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\clock_start.png" />
+    <None Include="Resources\clock_stop.png" />
+    <None Include="Resources\cmy.png" />
+    <None Include="Resources\cog_start.png" />
+    <None Include="Resources\cog_stop.png" />
+    <None Include="Resources\color.png" />
+    <None Include="Resources\comment_dull.png" />
+    <None Include="Resources\comment_play.png" />
+    <None Include="Resources\comment_record.png" />
+    <None Include="Resources\compass.png" />
+    <None Include="Resources\computer_connect.png" />
+    <None Include="Resources\computer_magnify.png" />
+    <None Include="Resources\computer_off.png" />
+    <None Include="Resources\computer_start.png" />
+    <None Include="Resources\computer_stop.png" />
+    <None Include="Resources\computer_wrench.png" />
+    <None Include="Resources\control_add.png" />
+    <None Include="Resources\control_add_blue.png" />
+    <None Include="Resources\control_blank.png" />
+    <None Include="Resources\control_blank_blue.png" />
+    <None Include="Resources\control_power.png" />
+    <None Include="Resources\control_power_blue.png" />
+    <None Include="Resources\control_record.png" />
+    <None Include="Resources\control_record_blue.png" />
+    <None Include="Resources\control_remove.png" />
+    <None Include="Resources\control_remove_blue.png" />
+    <None Include="Resources\css_error.png" />
+    <None Include="Resources\cup_black.png" />
+    <None Include="Resources\cup_green.png" />
+    <None Include="Resources\cup_tea.png" />
+    <None Include="Resources\cursor_small.png" />
+    <None Include="Resources\database_copy.png" />
+    <None Include="Resources\database_start.png" />
+    <None Include="Resources\database_stop.png" />
+    <None Include="Resources\database_wrench.png" />
+    <None Include="Resources\database_yellow.png" />
+    <None Include="Resources\database_yellow_start.png" />
+    <None Include="Resources\database_yellow_stop.png" />
+    <None Include="Resources\decline.png" />
+    <None Include="Resources\device_stylus.png" />
+    <None Include="Resources\disk_black.png" />
+    <None Include="Resources\disk_black_error.png" />
+    <None Include="Resources\disk_black_magnify.png" />
+    <None Include="Resources\disk_download.png" />
+    <None Include="Resources\disk_edit.png" />
+    <None Include="Resources\disk_error.png" />
+    <None Include="Resources\disk_magnify.png" />
+    <None Include="Resources\disk_upload.png" />
+    <None Include="Resources\door_error.png" />
+    <None Include="Resources\drink_red.png" />
+    <None Include="Resources\drive_cdr.png" />
+    <None Include="Resources\drive_network_error.png" />
+    <None Include="Resources\drive_network_stop.png" />
+    <None Include="Resources\dvd_start.png" />
+    <None Include="Resources\dvd_stop.png" />
+    <None Include="Resources\cloud_16.png" />
+    <None Include="Resources\car_16.png" />
+    <None Include="Resources\car_add_16.png" />
+    <None Include="Resources\car_delete_16.png" />
+    <None Include="Resources\car_update_16.png" />
+    <None Include="Resources\car_19.png" />
+    <None Include="Resources\Car_Delete_24.png" />
+    <None Include="Resources\Car_Add_24.png" />
+    <None Include="Resources\certificate_48.png" />
+    <None Include="Resources\announcement__72.png" />
+    <None Include="Resources\date_96px_1186014_easyicon.net.png" />
+    <None Include="Resources\date_16px_1186014_easyicon.net.png" />
+    <None Include="Resources\data_delete_database_72px_1082301_easyicon.net.png" />
+    <None Include="Resources\distributor_report_72px_33216_easyicon.net.png" />
+    <None Include="Resources\classification_72.png" />
+    <None Include="Resources\btnImportAuto.png" />
+    <None Include="Resources\btnEditData.png" />
+    <None Include="Resources\btnSearchBatch.png" />
+    <None Include="Resources\btnSearchData.png" />
+    <None Include="Resources\btnMergeData.png" />
+    <None Include="Resources\btnMergeGH.png" />
+    <None Include="Resources\barBtnCompare.png" />
+    <None Include="Resources\barBtnuploaded.png" />
+    <None Include="Resources\btnEditFuel.png" />
+    <None Include="Resources\barBtn_userEdit.png" />
+    <None Include="Resources\barBtn_userAdd.png" />
+    <None Include="Resources\barBtn_userDel.png" />
+    <None Include="Resources\barBtn_userSave.png" />
+    <Content Include="Resources\edit_32.ico" />
+    <None Include="Resources\eject_blue.png" />
+    <None Include="Resources\eject_green.png" />
+    <None Include="Resources\email_magnify.png" />
+    <None Include="Resources\email_star.png" />
+    <None Include="Resources\email_start.png" />
+    <None Include="Resources\email_stop.png" />
+    <None Include="Resources\email_transfer.png" />
+    <Content Include="Resources\enable_32.png" />
+    <None Include="Resources\erase.png" />
+    <None Include="Resources\eyes.png" />
+    <None Include="Resources\feed_star.png" />
+    <None Include="Resources\film_eject.png" />
+    <None Include="Resources\film_magnify.png" />
+    <None Include="Resources\film_star.png" />
+    <None Include="Resources\film_start.png" />
+    <None Include="Resources\film_stop.png" />
+    <None Include="Resources\finger_point.png" />
+    <None Include="Resources\flag_black.png" />
+    <None Include="Resources\flag_checked.png" />
+    <None Include="Resources\flag_france.png" />
+    <None Include="Resources\flag_grey.png" />
+    <None Include="Resources\flag_white.png" />
+    <None Include="Resources\flower_daisy.png" />
+    <None Include="Resources\folder_bookmark.png" />
+    <None Include="Resources\folder_connect.png" />
+    <None Include="Resources\folder_film.png" />
+    <None Include="Resources\folder_font.png" />
+    <None Include="Resources\folder_home.png" />
+    <None Include="Resources\folder_up.png" />
+    <None Include="Resources\font_color.png" />
+    <None Include="Resources\font_larger.png" />
+    <None Include="Resources\font_smaller.png" />
+    <None Include="Resources\forward_blue.png" />
+    <None Include="Resources\forward_green.png" />
+    <None Include="Resources\Excel_96.png" />
+    <None Include="Resources\flow.png" />
+    <None Include="Resources\flow1.png" />
+    <Content Include="Resources\Fuel2.ico" />
+    <None Include="Resources\home_96px.ico" />
+    <None Include="Resources\gg.png" />
+    <None Include="Resources\heart_broken.png" />
+    <None Include="Resources\heart_connect.png" />
+    <None Include="Resources\house_connect.png" />
+    <None Include="Resources\house_key.png" />
+    <None Include="Resources\house_star.png" />
+    <None Include="Resources\html_error.png" />
+    <None Include="Resources\image_magnify.png" />
+    <None Include="Resources\image_star.png" />
+    <None Include="Resources\fuel_72.png" />
+    <None Include="Resources\Google_Plus_1_home_95.627906976744px_554317_easyicon.net.png" />
+    <None Include="Resources\fuelBackground.jpg" />
+    <None Include="Resources\fuelBackground1.jpg" />
+    <None Include="Resources\FuelMap1.png" />
+    <Content Include="Resources\import_16.png" />
+    <None Include="Resources\import_1_16.png" />
+    <None Include="Resources\import_161.png" />
+    <Content Include="Resources\import_32.png" />
+    <None Include="Resources\ipod_connect.png" />
+    <None Include="Resources\ipod_nano.png" />
+    <None Include="Resources\ipod_nano_connect.png" />
+    <None Include="Resources\joystick_connect.png" />
+    <None Include="Resources\key_start.png" />
+    <None Include="Resources\key_stop.png" />
+    <None Include="Resources\keyboard_connect.png" />
+    <None Include="Resources\laptop.png" />
+    <None Include="Resources\laptop_add.png" />
+    <None Include="Resources\laptop_connect.png" />
+    <None Include="Resources\laptop_delete.png" />
+    <None Include="Resources\laptop_disk.png" />
+    <None Include="Resources\laptop_edit.png" />
+    <None Include="Resources\laptop_error.png" />
+    <None Include="Resources\laptop_go.png" />
+    <None Include="Resources\laptop_key.png" />
+    <None Include="Resources\laptop_link.png" />
+    <None Include="Resources\laptop_magnify.png" />
+    <None Include="Resources\laptop_start.png" />
+    <None Include="Resources\laptop_stop.png" />
+    <None Include="Resources\laptop_wrench.png" />
+    <None Include="Resources\layout_key.png" />
+    <None Include="Resources\layout_lightning.png" />
+    <None Include="Resources\lock_key.png" />
+    <None Include="Resources\lock_start.png" />
+    <None Include="Resources\lock_stop.png" />
+    <None Include="Resources\linked_in_48px_1181197_easyicon.net.png" />
+    <None Include="Resources\linked_in_48px_1181231_easyicon.net.png" />
+    <None Include="Resources\in_color_96px_568106_easyicon.net.png" />
+    <None Include="Resources\in_linked_72px_42254_easyicon.net.png" />
+    <None Include="Resources\linked_in_48px_1181197_easyicon.net1.png" />
+    <None Include="Resources\Linked_In_Vintage_96px_1100580_easyicon.net.png" />
+    <None Include="Resources\key_85.070422535211px_1160542_easyicon.net.png" />
+    <Content Include="Resources\logo2 100.jpg" />
+    <None Include="Resources\lorry_start.png" />
+    <None Include="Resources\lorry_stop.png" />
+    <None Include="Resources\mail.png" />
+    <None Include="Resources\map_clipboard.png" />
+    <None Include="Resources\map_cursor.png" />
+    <None Include="Resources\map_error.png" />
+    <None Include="Resources\map_link.png" />
+    <None Include="Resources\map_start.png" />
+    <None Include="Resources\map_stop.png" />
+    <Content Include="Resources\merge_32.png" />
+    <None Include="Resources\page_lightning.png" />
+    <None Include="Resources\page_refresh.png" />
+    <None Include="Resources\page_green.png" />
+    <None Include="Resources\page_red.png" />
+    <None Include="Resources\page_code.png" />
+    <None Include="Resources\page_excel.png" />
+    <None Include="Resources\page_paste.png" />
+    <None Include="Resources\page_attach.png" />
+    <None Include="Resources\page_find.png" />
+    <None Include="Resources\page_gear.png" />
+    <None Include="Resources\plrlsjdr_16.png" />
+    <None Include="Resources\monitor_key.png" />
+    <None Include="Resources\moon_full.png" />
+    <None Include="Resources\music_note.png" />
+    <None Include="Resources\neighbourhood.png" />
+    <None Include="Resources\new_blue.png" />
+    <None Include="Resources\new_red.png" />
+    <None Include="Resources\next_blue.png" />
+    <None Include="Resources\next_green.png" />
+    <None Include="Resources\next-green.png" />
+    <None Include="Resources\outline.png" />
+    <None Include="Resources\package_down.png" />
+    <None Include="Resources\package_in.png" />
+    <None Include="Resources\package_se.png" />
+    <None Include="Resources\package_start.png" />
+    <None Include="Resources\package_stop.png" />
+    <None Include="Resources\package_white.png" />
+    <None Include="Resources\page_back.png" />
+    <None Include="Resources\page_break.png" />
+    <None Include="Resources\page_break_insert.png" />
+    <None Include="Resources\page_cancel.png" />
+    <None Include="Resources\page_forward.png" />
+    <None Include="Resources\page_header_footer.png" />
+    <None Include="Resources\page_landscape.png" />
+    <None Include="Resources\page_landscape_shot.png" />
+    <None Include="Resources\page_magnify.png" />
+    <None Include="Resources\page_portrait.png" />
+    <None Include="Resources\page_portrait_shot.png" />
+    <None Include="Resources\page_white_break.png" />
+    <None Include="Resources\page_white_cdr.png" />
+    <None Include="Resources\page_white_connect.png" />
+    <None Include="Resources\page_white_database_yellow.png" />
+    <None Include="Resources\page_white_font.png" />
+    <None Include="Resources\page_white_paint.png" />
+    <None Include="Resources\page_white_paste_table.png" />
+    <None Include="Resources\page_white_refresh.png" />
+    <None Include="Resources\page_white_side_by_side.png" />
+    <None Include="Resources\paint.png" />
+    <None Include="Resources\paint_can_brush.png" />
+    <None Include="Resources\paintbrush_color.png" />
+    <None Include="Resources\paintcan_red.png" />
+    <None Include="Resources\pause_blue.png" />
+    <None Include="Resources\pause_green.png" />
+    <None Include="Resources\pause_record.png" />
+    <None Include="Resources\phone_edit.png" />
+    <None Include="Resources\phone_error.png" />
+    <None Include="Resources\phone_go.png" />
+    <None Include="Resources\phone_key.png" />
+    <None Include="Resources\phone_link.png" />
+    <None Include="Resources\phone_start.png" />
+    <None Include="Resources\phone_stop.png" />
+    <None Include="Resources\photo_edit.png" />
+    <None Include="Resources\photo_paint.png" />
+    <None Include="Resources\picture_clipboard.png" />
+    <None Include="Resources\pictures_thumbs.png" />
+    <None Include="Resources\pill_error.png" />
+    <None Include="Resources\play_blue.png" />
+    <None Include="Resources\play_green.png" />
+    <None Include="Resources\plugin_key.png" />
+    <None Include="Resources\previous-green.png" />
+    <None Include="Resources\Oil_96.png" />
+    <None Include="Resources\Parameter_Review_16px_534170_easyicon.net.png" />
+    <None Include="Resources\Parameter_Review_72px_534170_easyicon.net.png" />
+    <Content Include="Resources\print2.jpg" />
+    <Content Include="Fuelogo.ico" />
+    <None Include="Resources\zoom_out.png" />
+    <None Include="Resources\zoom_in.png" />
+    <None Include="Resources\zoom_i3.png" />
+    <None Include="Web References\AuthorityManager\Authority.disco" />
+    <None Include="Web References\CertificateService\CertificateComparison.disco" />
+    <None Include="Web References\FuelDataOpen\FuelDataOpen.disco" />
+    <None Include="Web References\CafcService\CafcWebService.disco" />
+    <None Include="Resources\uploadOT_96.png" />
+    <None Include="Resources\upload_96.png" />
+    <None Include="Resources\view_history_96.png" />
+    <None Include="Resources\printer_cancel.png" />
+    <None Include="Resources\printer_color.png" />
+    <None Include="Resources\printer_connect.png" />
+    <None Include="Resources\printer_go.png" />
+    <None Include="Resources\printer_key.png" />
+    <None Include="Resources\printer_mono.png" />
+    <None Include="Resources\printer_start.png" />
+    <None Include="Resources\printer_stop.png" />
+    <None Include="Resources\rainbow_star.png" />
+    <None Include="Resources\record_blue.png" />
+    <None Include="Resources\record_green.png" />
+    <None Include="Resources\record_red.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\report_start.png" />
+    <None Include="Resources\report_stop.png" />
+    <None Include="Resources\reverse_blue.png" />
+    <None Include="Resources\reverse_green.png" />
+    <None Include="Resources\rewind_blue.png" />
+    <None Include="Resources\rewind_green.png" />
+    <None Include="Resources\rgb.png" />
+    <None Include="Resources\rosette_blue.png" />
+    <None Include="Resources\rss_error.png" />
+    <None Include="Resources\script_start.png" />
+    <None Include="Resources\script_stop.png" />
+    <None Include="Resources\seasons.png" />
+    <None Include="Resources\section_collapsed.png" />
+    <None Include="Resources\section_expanded.png" />
+    <None Include="Resources\server_start.png" />
+    <None Include="Resources\server_stop.png" />
+    <None Include="Resources\server_wrench.png" />
+    <None Include="Resources\shape_3d.png" />
+    <None Include="Resources\shape_shade_a.png" />
+    <None Include="Resources\shape_shade_b.png" />
+    <None Include="Resources\shape_shade_c.png" />
+    <None Include="Resources\shape_shadow.png" />
+    <None Include="Resources\shape_shadow_toggle.png" />
+    <None Include="Resources\shape_square_select.png" />
+    <None Include="Resources\shapes_many.png" />
+    <None Include="Resources\shapes_many_select.png" />
+    <None Include="Resources\share.png" />
+    <None Include="Resources\shield_error.png" />
+    <None Include="Resources\shield_rainbow.png" />
+    <None Include="Resources\shield_silver.png" />
+    <None Include="Resources\shield_start.png" />
+    <None Include="Resources\shield_stop.png" />
+    <None Include="Resources\smartphone.png" />
+    <None Include="Resources\smartphone_add.png" />
+    <None Include="Resources\smartphone_connect.png" />
+    <None Include="Resources\smartphone_delete.png" />
+    <None Include="Resources\smartphone_disk.png" />
+    <None Include="Resources\smartphone_edit.png" />
+    <None Include="Resources\smartphone_error.png" />
+    <None Include="Resources\smartphone_go.png" />
+    <None Include="Resources\smartphone_key.png" />
+    <None Include="Resources\smartphone_wrench.png" />
+    <None Include="Resources\sort_ascending.png" />
+    <None Include="Resources\sort_descending.png" />
+    <None Include="Resources\sound_high.png" />
+    <None Include="Resources\sound_in.png" />
+    <None Include="Resources\sound_out.png" />
+    <None Include="Resources\sport_golf_practice.png" />
+    <None Include="Resources\star_bronze.png" />
+    <None Include="Resources\star_bronze_half_grey.png" />
+    <None Include="Resources\star_gold.png" />
+    <None Include="Resources\star_gold_half_grey.png" />
+    <None Include="Resources\star_gold_half_silver.png" />
+    <None Include="Resources\star_grey.png" />
+    <None Include="Resources\star_half_grey.png" />
+    <None Include="Resources\star_silver.png" />
+    <None Include="Resources\status_be_right_back.png" />
+    <None Include="Resources\status_invisible.png" />
+    <None Include="Resources\stop_blue.png" />
+    <None Include="Resources\stop_green.png" />
+    <None Include="Resources\stop_red.png" />
+    <None Include="Resources\tab_blue.png" />
+    <None Include="Resources\tab_green.png" />
+    <None Include="Resources\tab_red.png" />
+    <None Include="Resources\table_cell.png" />
+    <None Include="Resources\table_column.png" />
+    <None Include="Resources\table_column_add.png" />
+    <None Include="Resources\table_column_delete.png" />
+    <None Include="Resources\table_connect.png" />
+    <None Include="Resources\table_row.png" />
+    <None Include="Resources\tags_grey.png" />
+    <None Include="Resources\tags_red.png" />
+    <None Include="Resources\telephone_red.png" />
+    <None Include="Resources\television_in.png" />
+    <None Include="Resources\television_off.png" />
+    <None Include="Resources\television_out.png" />
+    <None Include="Resources\television_star.png" />
+    <None Include="Resources\text_ab.png" />
+    <None Include="Resources\text_complete.png" />
+    <None Include="Resources\text_direction.png" />
+    <None Include="Resources\text_double_underline.png" />
+    <None Include="Resources\text_fit.png" />
+    <None Include="Resources\text_flip.png" />
+    <None Include="Resources\text_font_default.png" />
+    <None Include="Resources\text_inverse.png" />
+    <None Include="Resources\text_left_to_right.png" />
+    <None Include="Resources\text_lowercase_a.png" />
+    <None Include="Resources\text_mirror.png" />
+    <None Include="Resources\text_right_to_left.png" />
+    <None Include="Resources\text_rotate_0.png" />
+    <None Include="Resources\text_rotate_90.png" />
+    <None Include="Resources\text_rotate_180.png" />
+    <None Include="Resources\text_rotate_270.png" />
+    <None Include="Resources\text_ruler.png" />
+    <None Include="Resources\text_shading.png" />
+    <None Include="Resources\text_spelling.png" />
+    <None Include="Resources\text_tab.png" />
+    <None Include="Resources\theme.png" />
+    <None Include="Resources\time_green.png" />
+    <None Include="Resources\time_red.png" />
+    <None Include="Resources\transmit_red.png" />
+    <None Include="Resources\user_alert.png" />
+    <None Include="Resources\user_b.png" />
+    <None Include="Resources\user_brown.png" />
+    <None Include="Resources\user_comment.png" />
+    <None Include="Resources\user_cross.png" />
+    <None Include="Resources\user_earth.png" />
+    <None Include="Resources\user_gray_cool.png" />
+    <None Include="Resources\user_home.png" />
+    <None Include="Resources\user_key.png" />
+    <None Include="Resources\user_magnify.png" />
+    <None Include="Resources\user_mature.png" />
+    <None Include="Resources\user_star.png" />
+    <None Include="Resources\user_suit_black.png" />
+    <None Include="Resources\user_tick.png" />
+    <None Include="Resources\vcard_key.png" />
+    <None Include="Resources\vector_key.png" />
+    <None Include="Resources\weather_cloud.png" />
+    <None Include="Resources\weather_cloudy_rain.png" />
+    <None Include="Resources\webcam_connect.png" />
+    <None Include="Resources\webcam_start.png" />
+    <None Include="Resources\webcam_stop.png" />
+    <None Include="Resources\qianzhang_16.png" />
+    <None Include="Resources\qianzhangxiug_16.png" />
+    <None Include="Resources\usb_disk_96px_1065158_easyicon.net.png" />
+    <None Include="Resources\usb_stick_add_72px_535590_easyicon.net.png" />
+    <None Include="Resources\usb_stick_down_72px_535593_easyicon.net.png" />
+    <None Include="Resources\report_47.939546599496px_1200945_easyicon.net.png" />
+    <Content Include="Resources\webDown_blue_16.png" />
+    <None Include="Resources\webDown_Blue_96.png" />
+    <None Include="Resources\webSearch_16.png" />
+    <None Include="Resources\wenSearch_96.png" />
+    <None Include="Resources\getup96.png" />
+    <Content Include="Resources\print.jpg" />
+    <None Include="Resources\print1.jpg" />
+    <Content Include="Resources\print_96.png" />
+    <None Include="Resources\webDown_32.png" />
+    <None Include="Resources\webDown_16.png" />
+    <None Include="Resources\set_16.png" />
+    <None Include="Resources\set_96.png" />
+    <Content Include="Resources\webdown_96.png" />
+    <None Include="Resources\UndoLarge.png" />
+    <None Include="Resources\Undo.png" />
+    <None Include="Resources\HtmlStopLarge.png" />
+    <None Include="Resources\HtmlStop.png" />
+    <None Include="Resources\ExportToExcel.png" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\ADC-1.ico" />
+    <None Include="Resources\ADC-1.jpg" />
+    <None Include="Resources\Network_Center.png" />
+    <None Include="Resources\UpdateSmall.png" />
+    <None Include="Resources\Update.png" />
+    <None Include="Resources\Settings1.png" />
+    <None Include="Resources\SelectAll.png" />
+    <None Include="Resources\ClearAll.png" />
+    <None Include="Resources\Settings.png" />
+    <None Include="Resources\ZoomLarge.png" />
+    <None Include="Resources\Zoom.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\SaveFileLarge.png" />
+    <None Include="Resources\NewReportLarge.png" />
+    <None Include="Resources\NewReport.png" />
+    <None Include="Resources\HtmlRefreshLarge.png" />
+    <None Include="Resources\HtmlRefresh.png" />
+    <None Include="Resources\AutoList.png" />
+    <None Include="Resources\0013_s.gif" />
+    <None Include="Resources\UploadUpdateLarge.png" />
+    <None Include="Resources\UploadUpdate.png" />
+    <None Include="Resources\UploadOverTimeLarge.png" />
+    <None Include="Resources\UploadOverTime.png" />
+    <None Include="Resources\UploadLarge.png" />
+    <None Include="Resources\UploadDeleteLarge.png" />
+    <None Include="Resources\UploadDelete.png" />
+    <None Include="Resources\Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/Authority.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AuthorityManager\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/Authority.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_AuthorityManager_Authority</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/CertificateComparison.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CertificateService\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/CertificateComparison.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_CertificateService_CertificateComparison</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/CafcWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CafcService\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/CafcWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_CafcService_CafcWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/FileUploadService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelFileUpload\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/FileUploadService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelFileUpload_FileUploadService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/FuelDataOpen.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelDataOpen\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/FuelDataOpen.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelDataOpen_FuelDataOpen</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://tsoapfuel.catarc.info/FuelDataSysWebService.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FuelDataService\</RelPath>
+      <UpdateFromURL>http://tsoapfuel.catarc.info/FuelDataSysWebService.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FuelDataSysClient_FuelDataService_FuelDataSysWebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="data\data.mdb">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.2">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{4FF0B4D7-2CF5-48D2-83C8-5D7B0055A638}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DogAction\DogAction.csproj">
+      <Project>{FB32167E-65D2-4CBA-A3D5-8E607DF004E7}</Project>
+      <Name>DogAction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

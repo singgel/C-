@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateWindowsService", "CertificateWindowsService\CertificateWindowsService.csproj", "{263CA751-FE62-4633-955A-AAA1A204550C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateMvcApplication", "CertificateMvcApplication\CertificateMvcApplication.csproj", "{2E3CC806-138A-4441-9958-5FA5A97711CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateInsert", "CertificateInsert\CertificateInsert.csproj", "{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateWebCrawlerSys", "CertificateWebCrawlerSys\CertificateWebCrawlerSys.csproj", "{A4B252E1-25DB-404A-BA4B-51708086E4A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CertificateWebCrawlerWindowsService", "CertificateWebCrawlerWindowsService\CertificateWebCrawlerWindowsService.csproj", "{92351AD6-EC41-4F0E-A1EE-9A1B09915899}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CertificateWindowsService\\CertificateWindowsService.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = CertificateWindowsService\\
+		SccProjectUniqueName2 = CertificateMvcApplication\\CertificateMvcApplication.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = CertificateMvcApplication\\
+		SccProjectUniqueName3 = CertificateInsert\\CertificateInsert.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = CertificateInsert\\
+		SccProjectUniqueName4 = CertificateWebCrawlerSys\\CertificateWebCrawlerSys.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = CertificateWebCrawlerSys\\
+		SccProjectUniqueName5 = CertificateWebCrawlerWindowsService\\CertificateWebCrawlerWindowsService.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = CertificateWebCrawlerWindowsService\\
+		SccProjectUniqueName6 = Setup1\\Setup1.vdproj
+		SccProjectName6 = \u0022$/src/Catarc.Adc.Certificate/Setup1\u0022,\u0020TCAAAAAA
+		SccLocalPath6 = Setup1
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Debug|x86.ActiveCfg = Debug|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Debug|x86.Build.0 = Debug|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Release|Any CPU.ActiveCfg = Release|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Release|x86.ActiveCfg = Release|x86
+		{263CA751-FE62-4633-955A-AAA1A204550C}.Release|x86.Build.0 = Release|x86
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2E3CC806-138A-4441-9958-5FA5A97711CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Debug|x86.ActiveCfg = Debug|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Debug|x86.Build.0 = Debug|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Release|Any CPU.ActiveCfg = Release|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Release|x86.ActiveCfg = Release|x86
+		{E734C1C9-2BC5-4B11-9A55-3D912985A6AD}.Release|x86.Build.0 = Release|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Debug|x86.ActiveCfg = Debug|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Debug|x86.Build.0 = Debug|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Release|Any CPU.ActiveCfg = Release|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Release|x86.ActiveCfg = Release|x86
+		{A4B252E1-25DB-404A-BA4B-51708086E4A4}.Release|x86.Build.0 = Release|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Debug|x86.ActiveCfg = Debug|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Debug|x86.Build.0 = Debug|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Release|Any CPU.ActiveCfg = Release|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Release|Mixed Platforms.Build.0 = Release|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Release|x86.ActiveCfg = Release|x86
+		{92351AD6-EC41-4F0E-A1EE-9A1B09915899}.Release|x86.Build.0 = Release|x86
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|Any CPU.ActiveCfg = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|Any CPU.Build.0 = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|Mixed Platforms.Build.0 = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|x86.ActiveCfg = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Debug|x86.Build.0 = Debug
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|Any CPU.ActiveCfg = Release
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|Any CPU.Build.0 = Release
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|Mixed Platforms.ActiveCfg = Release
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|Mixed Platforms.Build.0 = Release
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|x86.ActiveCfg = Release
+		{39C1E89B-1AA8-4F09-BFC7-0B9AA3B4E084}.Release|x86.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

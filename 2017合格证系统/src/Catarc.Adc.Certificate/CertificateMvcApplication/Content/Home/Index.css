@@ -1,0 +1,52 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    }
+.con{
+    margin: 10px;
+    height: 450px;
+    }
+.mytree{
+    overflow: auto;
+    border-right:dashed 1px #5c87b2;
+    height:100%;
+    
+    }
+.totalCount{
+    float:left;
+    font-size:14px;
+    text-align:center;
+    margin-top:10px;
+    }
+.mytable{
+    overflow:auto;
+    width:80%;
+    margin-bottom:10px;
+    height:430px;
+    }
+ 
+.table > tbody > tr > td { height: 21px;  line-height: 21px; }
+.table > thead > tr > th { /*background-color: #E9F3F0;*/     background-color: #5C99CC; color: #fff; }
+.table-striped tbody > tr:nth-child(even) > td,
+.table-striped tbody > tr:nth-child(even) > th { background-color: #E9F3F0; }
+.table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th { background-color: transparent; }
+.table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {  background-color: #eff5ff  }
+.systable{margin: 5px;}
+table {color:#555;}
+.mybtn a{height: 21px;
+    line-height: 21px;
+    padding: 0 11px;
+    background: /*#02bafa;*/#22BBEE;
+    border: 1px #26bbdb solid;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12px;
+    outline: none;}
+.mybtn a:link{ color:#FFFFFF;}/* 链接默 */ 
+.mybtn a:visited{ background:#ccc;color:#ccc;}/* 访问过为 */ 
+.mybtn a:hover{background:#0066CC;}/* 鼠标悬停 */ 
+.mybtn a:active{ color:#03F;}/* 鼠标点击与释放时 */ 
+        

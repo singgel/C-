@@ -1,0 +1,3 @@
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache

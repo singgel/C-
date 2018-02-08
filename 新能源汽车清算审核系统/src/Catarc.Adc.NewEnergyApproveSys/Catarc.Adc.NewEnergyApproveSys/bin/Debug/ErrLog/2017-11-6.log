@@ -1,0 +1,42 @@
+// ■■■■■■■■■■ [2017/11/6 11:01:31] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+帮助链接: None
+对象: mscorlib
+堆栈:
+   at System.Collections.CollectionBase.System.Collections.IList.get_Item(Int32 index)
+   at DevExpress.XtraEditors.Controls.ComboBoxItemCollection.get_Item(Int32 index)
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.CLZL_SelectedIndexChanged(Object sender, EventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 89
+   at DevExpress.XtraEditors.Repository.RepositoryItemComboBox.RaiseSelectedIndexChanged(EventArgs e)
+   at DevExpress.XtraEditors.ComboBoxEdit.UpdatePopupEditValueIndex(Int32 prevIndex)
+   at DevExpress.XtraEditors.ComboBoxEdit.set_EditValue(Object value)
+   at DevExpress.XtraEditors.TextEdit.set_Text(String value)
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.btnClear_Click(Object sender, EventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 419
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at DevExpress.XtraEditors.BaseButton.OnClick(EventArgs e)
+   at DevExpress.XtraEditors.BaseButton.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraEditors.BaseControl.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Object System.Collections.IList.get_Item(Int32)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[Common.csproj]
+SCC_Aux_Path = "\\VSS2-PC\FuelCafcSystem_SQL_KIA"
+SCC_Project_Name = "$/src/FuelCafcSystemUpdateSQL_KIA/FuelCafcSystemUpdateSQL_KIA/Common", IAAAAAAA

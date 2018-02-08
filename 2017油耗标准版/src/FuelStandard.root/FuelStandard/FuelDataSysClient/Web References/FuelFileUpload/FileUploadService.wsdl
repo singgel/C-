@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://soap.catarc.info/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://soap.catarc.info/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://soap.catarc.info/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadFileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upload_File">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Upload_FileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Upload_FileResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strFilePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Download_File">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strFilePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="path" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Download_FileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Download_FileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryPortPERMISSION">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryPortPERMISSIONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryPortPERMISSIONResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySystemMsg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySystemMsgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuerySystemMsgResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEnterpriseMsg">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="msgType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryEnterpriseMsgResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryEnterpriseMsgResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSignature">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileOld" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="app_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="upd_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadSignatureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UploadSignatureResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySignatureByQymc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySignatureByQymcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuerySignatureByQymcResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSignature">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileOld" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="app_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="upd_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSignatureResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateSignatureResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadChangeDoc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fs" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileOld" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="app_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="upd_time" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpLoadChangeDocResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpLoadChangeDocResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryChangeDocByUid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryChangeDocByUidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryChangeDocByUidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="Upload_FileSoapIn">
+    <wsdl:part name="parameters" element="tns:Upload_File" />
+  </wsdl:message>
+  <wsdl:message name="Upload_FileSoapOut">
+    <wsdl:part name="parameters" element="tns:Upload_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="Download_FileSoapIn">
+    <wsdl:part name="parameters" element="tns:Download_File" />
+  </wsdl:message>
+  <wsdl:message name="Download_FileSoapOut">
+    <wsdl:part name="parameters" element="tns:Download_FileResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryPortPERMISSIONSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryPortPERMISSION" />
+  </wsdl:message>
+  <wsdl:message name="QueryPortPERMISSIONSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryPortPERMISSIONResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuerySystemMsgSoapIn">
+    <wsdl:part name="parameters" element="tns:QuerySystemMsg" />
+  </wsdl:message>
+  <wsdl:message name="QuerySystemMsgSoapOut">
+    <wsdl:part name="parameters" element="tns:QuerySystemMsgResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryEnterpriseMsgSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryEnterpriseMsg" />
+  </wsdl:message>
+  <wsdl:message name="QueryEnterpriseMsgSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryEnterpriseMsgResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadSignatureSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadSignature" />
+  </wsdl:message>
+  <wsdl:message name="UploadSignatureSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadSignatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuerySignatureByQymcSoapIn">
+    <wsdl:part name="parameters" element="tns:QuerySignatureByQymc" />
+  </wsdl:message>
+  <wsdl:message name="QuerySignatureByQymcSoapOut">
+    <wsdl:part name="parameters" element="tns:QuerySignatureByQymcResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSignatureSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSignature" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSignatureSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSignatureResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadChangeDocSoapIn">
+    <wsdl:part name="parameters" element="tns:UpLoadChangeDoc" />
+  </wsdl:message>
+  <wsdl:message name="UpLoadChangeDocSoapOut">
+    <wsdl:part name="parameters" element="tns:UpLoadChangeDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryChangeDocByUidSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryChangeDocByUid" />
+  </wsdl:message>
+  <wsdl:message name="QueryChangeDocByUidSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryChangeDocByUidResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FileUploadServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Upload_File">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传</wsdl:documentation>
+      <wsdl:input message="tns:Upload_FileSoapIn" />
+      <wsdl:output message="tns:Upload_FileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载</wsdl:documentation>
+      <wsdl:input message="tns:DownloadFileSoapIn" />
+      <wsdl:output message="tns:DownloadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Download_File">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">下载</wsdl:documentation>
+      <wsdl:input message="tns:Download_FileSoapIn" />
+      <wsdl:output message="tns:Download_FileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryPortPERMISSION">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查看端口权限</wsdl:documentation>
+      <wsdl:input message="tns:QueryPortPERMISSIONSoapIn" />
+      <wsdl:output message="tns:QueryPortPERMISSIONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySystemMsg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询公共消息/相关政策文件</wsdl:documentation>
+      <wsdl:input message="tns:QuerySystemMsgSoapIn" />
+      <wsdl:output message="tns:QuerySystemMsgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryEnterpriseMsg">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询企业消息</wsdl:documentation>
+      <wsdl:input message="tns:QueryEnterpriseMsgSoapIn" />
+      <wsdl:output message="tns:QueryEnterpriseMsgSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadSignature">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传电子签章</wsdl:documentation>
+      <wsdl:input message="tns:UploadSignatureSoapIn" />
+      <wsdl:output message="tns:UploadSignatureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySignatureByQymc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查看电子签章</wsdl:documentation>
+      <wsdl:input message="tns:QuerySignatureByQymcSoapIn" />
+      <wsdl:output message="tns:QuerySignatureByQymcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignature">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">修改电子签章</wsdl:documentation>
+      <wsdl:input message="tns:UpdateSignatureSoapIn" />
+      <wsdl:output message="tns:UpdateSignatureSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadChangeDoc">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">上传变更申请</wsdl:documentation>
+      <wsdl:input message="tns:UpLoadChangeDocSoapIn" />
+      <wsdl:output message="tns:UpLoadChangeDocSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryChangeDocByUid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询变更申请</wsdl:documentation>
+      <wsdl:input message="tns:QueryChangeDocByUidSoapIn" />
+      <wsdl:output message="tns:QueryChangeDocByUidSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FileUploadServiceSoap" type="tns:FileUploadServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://soap.catarc.info/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://soap.catarc.info/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upload_File">
+      <soap:operation soapAction="http://soap.catarc.info/Upload_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap:operation soapAction="http://soap.catarc.info/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Download_File">
+      <soap:operation soapAction="http://soap.catarc.info/Download_File" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPortPERMISSION">
+      <soap:operation soapAction="http://soap.catarc.info/QueryPortPERMISSION" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySystemMsg">
+      <soap:operation soapAction="http://soap.catarc.info/QuerySystemMsg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEnterpriseMsg">
+      <soap:operation soapAction="http://soap.catarc.info/QueryEnterpriseMsg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSignature">
+      <soap:operation soapAction="http://soap.catarc.info/UploadSignature" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySignatureByQymc">
+      <soap:operation soapAction="http://soap.catarc.info/QuerySignatureByQymc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignature">
+      <soap:operation soapAction="http://soap.catarc.info/UpdateSignature" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadChangeDoc">
+      <soap:operation soapAction="http://soap.catarc.info/UpLoadChangeDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryChangeDocByUid">
+      <soap:operation soapAction="http://soap.catarc.info/QueryChangeDocByUid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FileUploadServiceSoap12" type="tns:FileUploadServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://soap.catarc.info/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://soap.catarc.info/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Upload_File">
+      <soap12:operation soapAction="http://soap.catarc.info/Upload_File" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap12:operation soapAction="http://soap.catarc.info/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Download_File">
+      <soap12:operation soapAction="http://soap.catarc.info/Download_File" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPortPERMISSION">
+      <soap12:operation soapAction="http://soap.catarc.info/QueryPortPERMISSION" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySystemMsg">
+      <soap12:operation soapAction="http://soap.catarc.info/QuerySystemMsg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryEnterpriseMsg">
+      <soap12:operation soapAction="http://soap.catarc.info/QueryEnterpriseMsg" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadSignature">
+      <soap12:operation soapAction="http://soap.catarc.info/UploadSignature" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySignatureByQymc">
+      <soap12:operation soapAction="http://soap.catarc.info/QuerySignatureByQymc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSignature">
+      <soap12:operation soapAction="http://soap.catarc.info/UpdateSignature" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpLoadChangeDoc">
+      <soap12:operation soapAction="http://soap.catarc.info/UpLoadChangeDoc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryChangeDocByUid">
+      <soap12:operation soapAction="http://soap.catarc.info/QueryChangeDocByUid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileUploadService">
+    <wsdl:port name="FileUploadServiceSoap" binding="tns:FileUploadServiceSoap">
+      <soap:address location="http://tsoapfuel.catarc.info/FileUploadService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FileUploadServiceSoap12" binding="tns:FileUploadServiceSoap12">
+      <soap12:address location="http://tsoapfuel.catarc.info/FileUploadService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,131 @@
+// ■■■■■■■■■■ [2017/8/29 9:38:22] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: ORA-00942: 表或视图不存在
+帮助链接: None
+对象: Oracle Data Provider for .NET, Managed Driver
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.DBUtils.QueryHelper.queryInfomationByVin(String vin) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\QueryHelper.cs:行号 70
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.gcDataInfo_MouseDoubleClick(Object sender, MouseEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:行号 437
+   在 System.Windows.Forms.Control.OnMouseDoubleClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Collections.Generic.Dictionary`2[System.String,System.String] queryInfomationByVin(System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/8/29 9:38:40] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: ORA-00942: 表或视图不存在
+帮助链接: None
+对象: Oracle Data Provider for .NET, Managed Driver
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.DBUtils.QueryHelper.queryInfomationByVin(String vin) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\QueryHelper.cs:行号 70
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.gcDataInfo_MouseDoubleClick(Object sender, MouseEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:行号 437
+   在 System.Windows.Forms.Control.OnMouseDoubleClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Collections.Generic.Dictionary`2[System.String,System.String] queryInfomationByVin(System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/8/29 9:38:44] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: ORA-00942: 表或视图不存在
+帮助链接: None
+对象: Oracle Data Provider for .NET, Managed Driver
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.DBUtils.QueryHelper.queryInfomationByVin(String vin) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\QueryHelper.cs:行号 70
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.gcDataInfo_MouseDoubleClick(Object sender, MouseEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:行号 437
+   在 System.Windows.Forms.Control.OnMouseDoubleClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Collections.Generic.Dictionary`2[System.String,System.String] queryInfomationByVin(System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/8/29 23:37:15] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 无法将类型为“DevExpress.XtraEditors.LabelControl”的对象强制转换为类型“DevExpress.XtraEditors.SimpleButton”。
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.PopForm.PassInfoForm.lab_Click(Object sender, EventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\PassInfoForm.cs:行号 56
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   在 DevExpress.XtraEditors.BaseControl.WndProc(Message& msg)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void lab_Click(System.Object, System.EventArgs)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

@@ -1,0 +1,32 @@
+// ■■■■■■■■■■ [2017/9/6 19:08:37] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 无法将类型为“System.DBNull”的对象强制转换为类型“System.String”。
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.gcDataInfo_MouseDoubleClick(Object sender, MouseEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:行号 644
+   在 System.Windows.Forms.Control.OnMouseDoubleClick(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void gcDataInfo_MouseDoubleClick(System.Object, System.Windows.Forms.MouseEventArgs)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

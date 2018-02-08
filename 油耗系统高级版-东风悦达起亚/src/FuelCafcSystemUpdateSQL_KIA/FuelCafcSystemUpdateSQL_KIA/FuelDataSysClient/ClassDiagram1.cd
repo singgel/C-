@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FuelDataSysClient.AuthorityForm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ilACAAAADCACIAAwAATUAVADIIACAAIAGyADAAMEKAA=</HashCode>
+      <FileName>AuthorityForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.MenuModel" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAJAAAACAgAAAAAAAgAAAAAAAAAAAEAAAgAAAAgA=</HashCode>
+      <FileName>AuthorityForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.LocalLoginForm" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAgAAQAGAAAAEAAACAAEACAQAASgkAAAAAAABAAAA=</HashCode>
+      <FileName>LocalLoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.MainForm" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>Q2YlCIGRj2QkS0QfaUGRMAEqjgMACI2sXigQgSYEGKc=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Program" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAABAAAAAQ=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Utils" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>YAHAgoAAAIAXAAAICAgQQRAAAgogIRQBkFQAFiwAQSA=</HashCode>
+      <FileName>Tool\Utils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.UserInfoForm" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiQAEAIQACICABEACACBAAAGgAAAAAEAAAAQAEAAgAA=</HashCode>
+      <FileName>UserInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_BGSC.MiddleReportForm" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AXuRGOCVSGBEAgVYBAqEVkFCgJAOwY5gMg0IAFG4DAA=</HashCode>
+      <FileName>Form_BGSC\MiddleReportForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_BGSC.PreReportForm" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEA4KgArCECAER0wAChQBKC0IAIKAk1CgAIAJoEgE0=</HashCode>
+      <FileName>Form_BGSC\PreReportForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_BGSC.WholeReportForm" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AXuRGOCVSGBEAgVYBAqEVkFCgJAOwY5gMg0IAFG4DAA=</HashCode>
+      <FileName>Form_BGSC\WholeReportForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_GJ.SyncHolidayForm" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gQAAAEAABCAAAAAAAACAoAACABAAACAAAAAAAAIAQAI=</HashCode>
+      <FileName>Form_GJ\SyncHolidayForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_GJ.SyncParamForm" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEAAAAAgBCAAAAAAAACAIAACACAAIBCAAFAACAIAAEI=</HashCode>
+      <FileName>Form_GJ\SyncParamForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SCSJ.SocketDataForm" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5oaaEAgIDCAMgCfgQACgIBIDk8Ag+nswAAQRAAoEGgI=</HashCode>
+      <FileName>Form_SCSJ\SocketDataForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SCSJ.SocketMergerDataForm" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5g6CEAgIBCAGACfgQACgABIDk8Eg+jswAAQRAAoEEgM=</HashCode>
+      <FileName>Form_SCSJ\SocketMergerDataForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBD.AnnouncementForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iBAiEACgNKEEAAAQAECEAAADMKAAJAEAGjQCAEIOiEA=</HashCode>
+      <FileName>Form_SJBD\AnnouncementForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBD.CertificateComparisonForm" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iBAiEACgXKEEAAAQAECEAAADEKACJAAAGjQDACMCiEQ=</HashCode>
+      <FileName>Form_SJBD\CertificateComparisonForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBD.ContrastForm" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iBAiAACAbCAGQABYAAScAAADsIACJAAAGiwDBGMPGAQ=</HashCode>
+      <FileName>Form_SJBD\ContrastForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBD.ProductContrastForm" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iJAiAACAbCAEQABYAACEAAADsIACJAAAGiwDAGMOGAQ=</HashCode>
+      <FileName>Form_SJBD\ProductContrastForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ApplyDelViewForm" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACiAAABCAUAAAYAAOgICBXgAEATh8xIkQAgAoCAOI=</HashCode>
+      <FileName>Form_SJBG\ApplyDelViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ApplyEditViewForm" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACiAAABCAUIAAYAAOgICBXgAEATp8xAkQAgAoCAOI=</HashCode>
+      <FileName>Form_SJBG\ApplyEditViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ApplyUpOTViewForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgACiAAABCAUAAAYBAOgICAXgAEATh8xAswggAICAOI=</HashCode>
+      <FileName>Form_SJBG\ApplyUpOTViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ChangeAddXtraForm" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAEAABGkAOEQAQAyAECACACG4OJH8AtADFEBAHsAgUA=</HashCode>
+      <FileName>Form_SJBG\ChangeAddXtraForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ChangeQuery" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACDACgAKFNAAQQAEWBAIIPgKAH0osgAFACIHgEgOA=</HashCode>
+      <FileName>Form_SJBG\ChangeQuery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.ChangeRibbonForm" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iBBaAIAgHCEcAEIQAQSEAAACoCACAAsAEhTBACMESEU=</HashCode>
+      <FileName>Form_SJBG\ChangeRibbonForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.EnterpriseAuthorityForm" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACEAgAAXwAQBAAAIiAIEQCAAAAtAoAAGgAAAYAAAA=</HashCode>
+      <FileName>Form_SJBG\EnterpriseAuthorityForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.SigAddForm" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAABAAAACAQAACAAAYAAAAAHgAAAAAAEA=</HashCode>
+      <FileName>Form_SJBG\SigAddForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJBG.SigEditForm" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAABAAACCAQAACAAAYCAAAAHgAAAAAAEA=</HashCode>
+      <FileName>Form_SJBG\SigEditForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJHS.CAFCForm" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCBAkAAOAEAAUQAACqAAICwAABAQkwkgQCACAAgAg=</HashCode>
+      <FileName>Form_SJHS\CAFCForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJHS.CafcTempCountForm" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAgDghKHVCAAwAECAAAAKACBAKAgECjAAEQIAgsA=</HashCode>
+      <FileName>Form_SJHS\CafcTempCountForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJHS.CAFCTempForm" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACgAKEEAAAwAECIAAACACAEKAAgCDAAAQAAgkE=</HashCode>
+      <FileName>Form_SJHS\CAFCTempForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJHS.FuelRankingForm" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBACAACmDOGEAAAQAICAAEACgKAAAAMAGjQCAgIAiEI=</HashCode>
+      <FileName>Form_SJHS\FuelRankingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJHS.YhlsbhForm" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAEAAAopWAAAAAwEEKAAAACBKAAIQAAGgACAAIAAAA=</HashCode>
+      <FileName>Form_SJHS\YhlsbhForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.cljbxxForm" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARiWAsCSKYAySkABAGyCVMLIJSK/DtJZADQBiQAkqA=</HashCode>
+      <FileName>Form_SJSB\cljbxxForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.CLJBXXParamForm" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RQS0AMtEAShEGx2uAGiaLapHgQzM/4tYLnBRggERGog=</HashCode>
+      <FileName>Form_SJSB\CLJBXXParamForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.ConfigUnuploadForm" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAAAACAAAACAAAAAEAAAIAAAAAAAAA=</HashCode>
+      <FileName>Form_SJSB\ConfigUnuploadForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.ImportCLJBXXForm" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5gOTUSgTpCEWAm/hSRKMQFILm+EA/lsiIhUBAYoGgG8=</HashCode>
+      <FileName>Form_SJSB\ImportCLJBXXForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>5hOTEQwBFCAcAC/gQAKsQlArk8AA/ltgAAUBAYIEGao=</HashCode>
+      <FileName>Form_SJSB\ImportRLLXPARAMForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.JbxxViewForm" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAxCSBmiSKYh2SkAFIGzCVsKIJSK/DtJZMDQBiQAsiA=</HashCode>
+      <FileName>Form_SJSB\JbxxViewForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.RLLXParamForm" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>RESQAAhBACAAAgQAAACAAgACoASAAAhACCAAgAAAGAI=</HashCode>
+      <FileName>Form_SJSB\RLLXParamForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.SearchLocalForm" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>poKCECQCDDQMAGfhQACkCBIDk+Ag/hsgACQBBAoFkiI=</HashCode>
+      <FileName>Form_SJSB\SearchLocalForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.SearchLocalOTForm" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pgLCECQCDDQOAGfhQACkCBIDk+Ag/hsgQCQBAAoFkiI=</HashCode>
+      <FileName>Form_SJSB\SearchLocalOTForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.SearchLocalUpdateForm" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>pgKCECQCDDSMgGfhQBCkCBILk+Ag/xsgAAQBAAolkiI=</HashCode>
+      <FileName>Form_SJSB\SearchLocalUpdateForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJSB.SearchLocalUploadedForm" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ogaCECACDDSMgGfhQAClCBIDk+Ag/xswAAQBAIolkyI=</HashCode>
+      <FileName>Form_SJSB\SearchLocalUploadedForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJTJ.AvgFuelDetailForm" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAASAAAABCAEAoAAMACgAAICkiFA0QNwJhwAAQIAAIM=</HashCode>
+      <FileName>Form_SJTJ\AvgFuelDetailForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_SJTJ.SearchServerForm" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iuACyAgAOCAOAKNwDSelpTBDstAA/hs4GEQBhBIMEPI=</HashCode>
+      <FileName>Form_SJTJ\SearchServerForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Form_ZY.IndexForm" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BJQAAAAAACAAABAAAASAAAACAAAAIQAABGgAA4FAACA=</HashCode>
+      <FileName>Form_ZY\IndexForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelCafc.VinDetailForm" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAKECACQEEEAAAACgAXACgAAAAIAAAAQAgAgFAgA=</HashCode>
+      <FileName>FuelCafc\VinDetailForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Model.CboItemEntity" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAEAAAAAAAAAAAAAAAIAAAgCAAAAAA=</HashCode>
+      <FileName>Model\CboItemEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Model.QueryCafcModel" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAgAAAAAABAAKAQAAAEAAQAkESAAAgBAA=</HashCode>
+      <FileName>Model\QueryCafcModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Properties.Resources" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>P2/++f//3/v//3///93/////f+1/v/+/7///7//7//8=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgYACAA0AAAAAABAAEIQwAAHgxABQAoASBABACJAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.DevSplashScreen" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAIACAAAAAAkABAgAAAAAAAA=</HashCode>
+      <FileName>SubForm\DevSplashScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.DevWaitForm" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAACAACCAAACAAAAAIAABAAAAAAAACA=</HashCode>
+      <FileName>SubForm\DevWaitForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.GlobalExceptionForm" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgmACAEAIjQAAgRAABGAAAACAYEAEAAghQgQALACkgI=</HashCode>
+      <FileName>SubForm\GlobalExceptionForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.MessageForm" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAQABAAIAAAAAAAAA=</HashCode>
+      <FileName>SubForm\MessageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.PrintForm" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAJABgAAGAAAAAAEgCGAwACQACA/BtAMQAIAAAA0AA=</HashCode>
+      <FileName>SubForm\PrintForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.ProcessForm" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACAAAgABAACAAAACAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>SubForm\ProcessForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.ReasonForm" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAiAAAAIAAACAAIACAAAAQEAAAIAAAAAAAAA=</HashCode>
+      <FileName>SubForm\ReasonForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.SetForm" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQAAARwQACCCAAAQIAKwAQCDsSkC/FsACIRAgBIgAQA=</HashCode>
+      <FileName>SubForm\SetForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.SubForm.ShowDialogForm" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAiIAAAAAAACAiAICsoAAAIICCAAAIggAACA=</HashCode>
+      <FileName>SubForm\ShowDialogForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.CompareHelper" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAACCAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\CompareHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.DataCheckVINHelper" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAABAABAACAAAAAAAAAAAAAAEAAEAAAA=</HashCode>
+      <FileName>Tool\DataCheckVINHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.DataSourceHelper" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\DataSourceHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.DataVerifyHelper" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACABAAAAEIEACBAAAAAAQAAANAsIADFABCAEgAAACI=</HashCode>
+      <FileName>Tool\DataVerifyHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.DefaultDirectory" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAQAE=</HashCode>
+      <FileName>Tool\DefaultDirectory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.ExcelHelper" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEEwAACIEjBCAEICQQgAAAAICAABAQBBNDQEYICEARA=</HashCode>
+      <FileName>Tool\ExcelHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.ExportHelper" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\ExportHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.ExportToExcel" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAACAAAAAAAAAAEASAAAABAAAAAA=</HashCode>
+      <FileName>Tool\ExportToExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.GlobalExceptionManager" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\GlobalExceptionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.ImportExcel" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\ImportExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.MergerData" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tool\MergerData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.MitsUtils" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAEChAiGgGYEACNQBGCCwIKwQfAsMYDVABhAM0gQwyI=</HashCode>
+      <FileName>Tool\MitsUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.OracleHelper" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABCGAAAAAACAAABAAAEAAAQQAAAABAAAAAAEAAgA=</HashCode>
+      <FileName>Tool\OracleHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.Tool.WordHelper" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACABgALgSAAAAAAAAQAAIAAQAAAAGFAIAIAAAAEA=</HashCode>
+      <FileName>Tool\WordHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.CertificateComparison" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAYQYACIAAEggABBAqIghCAAQAAAECgAgACACAQE=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.HelloWorldCompletedEventArgs" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.QueryCertificateCompletedEventArgs" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.QueryAnnouncementCompletedEventArgs" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.QueryCountCompletedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.CertificateService.QueryNoticeByQymcCompletedEventArgs" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.FileUploadService" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DSACAAULSKwCDAkEpCIEkQolpAsEkwMFCgAEgTgIBIE=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.HelloWorldCompletedEventArgs" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.UploadFileCompletedEventArgs" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.Upload_FileCompletedEventArgs" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.DownloadFileCompletedEventArgs" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.Download_FileCompletedEventArgs" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.QueryPortPERMISSIONCompletedEventArgs" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.QuerySystemMsgCompletedEventArgs" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.QueryEnterpriseMsgCompletedEventArgs" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.UploadSignatureCompletedEventArgs" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.QuerySignatureByQymcCompletedEventArgs" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.UpdateSignatureCompletedEventArgs" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.UpLoadChangeDocCompletedEventArgs" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FuelDataSysClient.FuelFileUpload.QueryChangeDocByUidCompletedEventArgs" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="FuelDataSysClient.Tool.Status" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAgAAAAAEAAAAAAAAAgBAAAAAA=</HashCode>
+      <FileName>Tool\MitsUtils.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="FuelDataSysClient.CertificateService.HelloWorldCompletedEventHandler" Collapsed="true">
+    <Position X="5.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.CertificateService.QueryCertificateCompletedEventHandler" Collapsed="true">
+    <Position X="9.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.CertificateService.QueryAnnouncementCompletedEventHandler" Collapsed="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.CertificateService.QueryCountCompletedEventHandler" Collapsed="true">
+    <Position X="12.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.CertificateService.QueryNoticeByQymcCompletedEventHandler" Collapsed="true">
+    <Position X="16.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\CertificateService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.HelloWorldCompletedEventHandler" Collapsed="true">
+    <Position X="4" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.UploadFileCompletedEventHandler" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.Upload_FileCompletedEventHandler" Collapsed="true">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.DownloadFileCompletedEventHandler" Collapsed="true">
+    <Position X="2.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.Download_FileCompletedEventHandler" Collapsed="true">
+    <Position X="0.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.QueryPortPERMISSIONCompletedEventHandler" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.QuerySystemMsgCompletedEventHandler" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.QueryEnterpriseMsgCompletedEventHandler" Collapsed="true">
+    <Position X="14.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.UploadSignatureCompletedEventHandler" Collapsed="true">
+    <Position X="12.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.QuerySignatureByQymcCompletedEventHandler" Collapsed="true">
+    <Position X="2.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.UpdateSignatureCompletedEventHandler" Collapsed="true">
+    <Position X="5.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.UpLoadChangeDocCompletedEventHandler" Collapsed="true">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="FuelDataSysClient.FuelFileUpload.QueryChangeDocByUidCompletedEventHandler" Collapsed="true">
+    <Position X="11" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Web References\FuelFileUpload\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

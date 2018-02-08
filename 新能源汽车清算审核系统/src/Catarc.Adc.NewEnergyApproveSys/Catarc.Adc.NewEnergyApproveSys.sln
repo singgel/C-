@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catarc.Adc.NewEnergyApproveSys", "Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys.csproj", "{408D8281-B2AD-4A32-B6F9-B42BD7067353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HFSoft.Component.Windows", "HFSoft.Component.Windows\HFSoft.Component.Windows.csproj", "{F97C8FE8-673B-406C-B5CD-9415601378BE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NewEnergyApproveSys", "NewEnergyApproveSys\NewEnergyApproveSys.vdproj", "{DF7219B6-3C3D-4E8B-AAAC-AA4FFAD7F8DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{408D8281-B2AD-4A32-B6F9-B42BD7067353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408D8281-B2AD-4A32-B6F9-B42BD7067353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{408D8281-B2AD-4A32-B6F9-B42BD7067353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408D8281-B2AD-4A32-B6F9-B42BD7067353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F97C8FE8-673B-406C-B5CD-9415601378BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F97C8FE8-673B-406C-B5CD-9415601378BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F97C8FE8-673B-406C-B5CD-9415601378BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F97C8FE8-673B-406C-B5CD-9415601378BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF7219B6-3C3D-4E8B-AAAC-AA4FFAD7F8DC}.Debug|Any CPU.ActiveCfg = Debug
+		{DF7219B6-3C3D-4E8B-AAAC-AA4FFAD7F8DC}.Debug|Any CPU.Build.0 = Debug
+		{DF7219B6-3C3D-4E8B-AAAC-AA4FFAD7F8DC}.Release|Any CPU.ActiveCfg = Release
+		{DF7219B6-3C3D-4E8B-AAAC-AA4FFAD7F8DC}.Release|Any CPU.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FED8B32-A022-40D8-B450-0650CD1147D1}
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Catarc.Adc.NewEnergyApproveSys\\Catarc.Adc.NewEnergyApproveSys.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Catarc.Adc.NewEnergyApproveSys\\
+		SccProjectUniqueName2 = HFSoft.Component.Windows\\HFSoft.Component.Windows.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = HFSoft.Component.Windows\\
+	EndGlobalSection
+EndGlobal

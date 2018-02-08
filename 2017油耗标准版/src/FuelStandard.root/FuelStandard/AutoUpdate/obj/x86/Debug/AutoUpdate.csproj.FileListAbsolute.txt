@@ -1,0 +1,7 @@
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\bin\Debug\AutoUpdate.exe
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\bin\Debug\AutoUpdate.pdb
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\obj\x86\Debug\AutoUpdate.Form1.resources
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+E:\油耗免费版\src\FuelDataSys\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb

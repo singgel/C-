@@ -1,0 +1,7 @@
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\bin\Debug\CertificateWindowsService.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\bin\Debug\CertificateWindowsService.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\obj\x86\Debug\CertificateWindowsService.ProjectInstaller.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\obj\x86\Debug\CertificateWindowsService.csproj.GenerateResource.Cache
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\obj\x86\Debug\CertificateWindowsService.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\obj\x86\Debug\CertificateWindowsService.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWindowsService\obj\x86\Debug\CertificateWindowsService.csprojResolveAssemblyReference.cache

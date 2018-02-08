@@ -1,0 +1,84 @@
+// ■■■■■■■■■■ [2017/8/30 8:54:17] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 未将对象引用设置到对象的实例。
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ApproveThirdForm.gvDataInfo_CustomColumnDisplayText(Object sender, CustomColumnDisplayTextEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs:行号 557
+   在 DevExpress.XtraGrid.Views.Base.ColumnView.RaiseCustomColumnDisplayText(CustomColumnDisplayTextEventArgs e)
+   在 DevExpress.XtraGrid.Views.Base.ColumnView.RaiseCustomColumnDisplayText(Int32 rowHandle, GridColumn column, Object _value, String displayText)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRegularRowCell(GridViewDrawArgs e, GridCellInfo ci)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRegularRow(GridViewDrawArgs e, GridDataRowInfo ri)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRow(GridViewDrawArgs e, GridRowInfo ri)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRows(GridViewDrawArgs e)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawContents(GridViewDrawArgs e)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.Draw(ViewDrawArgs ee)
+   在 DevExpress.XtraGrid.Views.Base.BaseView.Draw(GraphicsCache e)
+   在 DevExpress.XtraGrid.GridControl.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void gvDataInfo_CustomColumnDisplayText(System.Object, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/8/30 8:54:23] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 未将对象引用设置到对象的实例。
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   在 Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ApproveThirdForm.gvDataInfo_CustomColumnDisplayText(Object sender, CustomColumnDisplayTextEventArgs e) 位置 D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs:行号 557
+   在 DevExpress.XtraGrid.Views.Base.ColumnView.RaiseCustomColumnDisplayText(CustomColumnDisplayTextEventArgs e)
+   在 DevExpress.XtraGrid.Views.Base.ColumnView.RaiseCustomColumnDisplayText(Int32 rowHandle, GridColumn column, Object _value, String displayText)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRegularRowCell(GridViewDrawArgs e, GridCellInfo ci)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRegularRow(GridViewDrawArgs e, GridDataRowInfo ri)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRow(GridViewDrawArgs e, GridRowInfo ri)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawRows(GridViewDrawArgs e)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.DrawContents(GridViewDrawArgs e)
+   在 DevExpress.XtraGrid.Views.Grid.Drawing.GridPainter.Draw(ViewDrawArgs ee)
+   在 DevExpress.XtraGrid.Views.Base.BaseView.Draw(GraphicsCache e)
+   在 DevExpress.XtraGrid.GridControl.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   在 DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void gvDataInfo_CustomColumnDisplayText(System.Object, DevExpress.XtraGrid.Views.Base.CustomColumnDisplayTextEventArgs)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

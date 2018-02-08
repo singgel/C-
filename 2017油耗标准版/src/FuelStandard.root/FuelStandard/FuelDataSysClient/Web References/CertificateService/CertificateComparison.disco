@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://tsoapfuel.catarc.info/CertificateComparison.asmx?wsdl" docRef="http://tsoapfuel.catarc.info/CertificateComparison.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://tsoapfuel.catarc.info/CertificateComparison.asmx" xmlns:q1="CertificateComparison" binding="q1:CertificateComparisonSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://tsoapfuel.catarc.info/CertificateComparison.asmx" xmlns:q2="CertificateComparison" binding="q2:CertificateComparisonSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

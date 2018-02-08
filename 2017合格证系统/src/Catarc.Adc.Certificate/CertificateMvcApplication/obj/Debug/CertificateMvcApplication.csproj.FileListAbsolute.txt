@@ -1,0 +1,13 @@
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\CertificateMvcApplication.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\CertificateMvcApplication.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\CertificateWindowsService.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\Newtonsoft.Json.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\CertificateWindowsService.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\obj\Debug\CertificateMvcApplication.csprojResolveAssemblyReference.cache
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\obj\Debug\CertificateMvcApplication.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\obj\Debug\CertificateMvcApplication.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\ICSharpCode.SharpZipLib.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\NPOI.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\NPOI.OOXML.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\NPOI.OpenXml4Net.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateMvcApplication\bin\NPOI.OpenXmlFormats.dll

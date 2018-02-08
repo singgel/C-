@@ -1,0 +1,5 @@
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\Common\bin\Debug\Common.dll
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\Common\bin\Debug\Common.pdb
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\Common\obj\Debug\Common.dll
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\Common\obj\Debug\Common.pdb
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

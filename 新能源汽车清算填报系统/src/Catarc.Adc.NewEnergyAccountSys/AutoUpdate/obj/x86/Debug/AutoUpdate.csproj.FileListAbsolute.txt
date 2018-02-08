@@ -1,0 +1,8 @@
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\bin\Debug\AutoUpdate.exe
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\bin\Debug\AutoUpdate.pdb
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.csprojResolveAssemblyReference.cache
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.Form1.resources
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.Properties.Resources.resources
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.csproj.GenerateResource.Cache
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.exe
+D:\Project Codes\2017油耗标准版\src\AutoUpdate\obj\x86\Debug\AutoUpdate.pdb

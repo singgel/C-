@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://calfuel.catarc.info/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://calfuel.catarc.info/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://calfuel.catarc.info/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCafcUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckCafcUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckCafcUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryStatisticsData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryStatisticsDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryStatisticsDataResult" type="tns:ArrayOfStatisticsData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfStatisticsData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="StatisticsData" nillable="true" type="tns:StatisticsData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="StatisticsData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clxh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clzzrq" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryFuelSummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryFuelSummaryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryFuelSummaryResult" type="tns:ArrayOfFuelSummary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFuelSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FuelSummary" nillable="true" type="tns:FuelSummary" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FuelSummary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryCalParamDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCalParamDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryCalParamDetailsResult" type="tns:ArrayOfFuelCAFCDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFuelCAFCDetails">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FuelCAFCDetails" nillable="true" type="tns:FuelCAFCDetails" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FuelCAFCDetails">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Check" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clxh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rllx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bsqxs" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zczbzl" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zwps" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zhgkxslc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TgtZhgkrlxhl" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActZhgkrlxhl" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_hs" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_act" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryTECafc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryTECafcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryTECafcResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFuelCafcAndTcafc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FuelCafcAndTcafc" nillable="true" type="tns:FuelCafcAndTcafc" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FuelCafcAndTcafc">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cafc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tcafc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_hs" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_act" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryNECafc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryNECafcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryNECafcResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryHgzJhb">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qcscqy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryHgzJhbResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryHgzJhbResult" type="tns:ArrayOfStatisticsData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveForecastPrj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prjObj" type="tns:ForecastPrj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ForecastPrj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Prj_Id" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remarks" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Check" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveForecastPrjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveForecastPrjResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateForecastPrj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prjObj" type="tns:ForecastPrj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateForecastPrjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateForecastPrjResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelForecastPrj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prjIdArray" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="DelForecastPrjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DelForecastPrjResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveForecastParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramObjArray" type="tns:ArrayOfForecastParam" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfForecastParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ForecastParam" nillable="true" type="tns:ForecastParam" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ForecastParam">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Param_Id" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prj_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clxh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rllx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bsqxs" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zczbzl" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zwps" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zhgkxslc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Zhgkrlxhl" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Check" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveForecastParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveForecastParamResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateForecastParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramObjArray" type="tns:ArrayOfForecastParam" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateForecastParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateForecastParamResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelForecastParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="paramIdArray" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelForecastParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DelForecastParamResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryExistParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryExistParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryExistParamResult" type="tns:ArrayOfForecastParam" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForecastPrj">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForecastPrjResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForecastPrjResult" type="tns:ArrayOfForecastPrj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfForecastPrj">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ForecastPrj" nillable="true" type="tns:ForecastPrj" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryForecastParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prj_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForecastParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForecastParamResult" type="tns:ArrayOfForecastParam" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForeCastTECafc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prj_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForeCastTECafcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForeCastTECafcResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForeCastNECafc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prj_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryForeCastNECafcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryForeCastNECafcResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteForeCast">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="prj_Id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteForeCastResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteForeCastResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySimpleVinData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuerySimpleVinDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QuerySimpleVinDataResult" type="tns:ArrayOfVinData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVinData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VinData" nillable="true" type="tns:VinData" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VinData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Vin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clxh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rllx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zwps" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zczbzl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clzzrq" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreateTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bsqxs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zhgkxslc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zhgkrlxhl" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryVinData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="statData" type="tns:StatisticsData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVinDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryVinDataResult" type="tns:ArrayOfVinData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVinKeyParam">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fuelDetail" type="tns:FuelCAFCDetails" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVinKeyParamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryVinKeyParamResult" type="tns:ArrayOfVinData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_NE_Industry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="START_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_NE_IndustryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProc_CAFC_NE_IndustryResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_NE_All">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QYLX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QCSCQY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="START_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_NE_AllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProc_CAFC_NE_AllResult" type="tns:ArrayOfFuelCafcAndTcafcAndTcafc1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFuelCafcAndTcafcAndTcafc1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FuelCafcAndTcafcAndTcafc1" nillable="true" type="tns:FuelCafcAndTcafcAndTcafc1" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FuelCafcAndTcafcAndTcafc1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="P_zczbzl" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cafc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tcafc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Tcafc1" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_hs" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sl_act" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProc_CAFC_TE_All">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QYLX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QCSCQY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="START_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_TE_AllResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProc_CAFC_TE_AllResult" type="tns:ArrayOfFuelCafcAndTcafcAndTcafc1" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_TE_Industry">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="START_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="END_CLZZRQ" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProc_CAFC_TE_IndustryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProc_CAFC_TE_IndustryResult" type="tns:ArrayOfFuelCafcAndTcafc" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckCafcUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckCafcUser" />
+  </wsdl:message>
+  <wsdl:message name="CheckCafcUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckCafcUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryStatisticsDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryStatisticsData" />
+  </wsdl:message>
+  <wsdl:message name="QueryStatisticsDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryStatisticsDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryFuelSummarySoapIn">
+    <wsdl:part name="parameters" element="tns:QueryFuelSummary" />
+  </wsdl:message>
+  <wsdl:message name="QueryFuelSummarySoapOut">
+    <wsdl:part name="parameters" element="tns:QueryFuelSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCalParamDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCalParamDetails" />
+  </wsdl:message>
+  <wsdl:message name="QueryCalParamDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCalParamDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryTECafcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryTECafc" />
+  </wsdl:message>
+  <wsdl:message name="QueryTECafcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryTECafcResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryNECafcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryNECafc" />
+  </wsdl:message>
+  <wsdl:message name="QueryNECafcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryNECafcResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryHgzJhbSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryHgzJhb" />
+  </wsdl:message>
+  <wsdl:message name="QueryHgzJhbSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryHgzJhbResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveForecastPrjSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveForecastPrj" />
+  </wsdl:message>
+  <wsdl:message name="SaveForecastPrjSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveForecastPrjResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateForecastPrjSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateForecastPrj" />
+  </wsdl:message>
+  <wsdl:message name="UpdateForecastPrjSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateForecastPrjResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelForecastPrjSoapIn">
+    <wsdl:part name="parameters" element="tns:DelForecastPrj" />
+  </wsdl:message>
+  <wsdl:message name="DelForecastPrjSoapOut">
+    <wsdl:part name="parameters" element="tns:DelForecastPrjResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveForecastParamSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveForecastParam" />
+  </wsdl:message>
+  <wsdl:message name="SaveForecastParamSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveForecastParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateForecastParamSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateForecastParam" />
+  </wsdl:message>
+  <wsdl:message name="UpdateForecastParamSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateForecastParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelForecastParamSoapIn">
+    <wsdl:part name="parameters" element="tns:DelForecastParam" />
+  </wsdl:message>
+  <wsdl:message name="DelForecastParamSoapOut">
+    <wsdl:part name="parameters" element="tns:DelForecastParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryExistParamSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryExistParam" />
+  </wsdl:message>
+  <wsdl:message name="QueryExistParamSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryExistParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForecastPrjSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForecastPrj" />
+  </wsdl:message>
+  <wsdl:message name="QueryForecastPrjSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForecastPrjResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForecastParamSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForecastParam" />
+  </wsdl:message>
+  <wsdl:message name="QueryForecastParamSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForecastParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForeCastTECafcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForeCastTECafc" />
+  </wsdl:message>
+  <wsdl:message name="QueryForeCastTECafcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForeCastTECafcResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryForeCastNECafcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryForeCastNECafc" />
+  </wsdl:message>
+  <wsdl:message name="QueryForeCastNECafcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryForeCastNECafcResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteForeCastSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteForeCast" />
+  </wsdl:message>
+  <wsdl:message name="DeleteForeCastSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteForeCastResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuerySimpleVinDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QuerySimpleVinData" />
+  </wsdl:message>
+  <wsdl:message name="QuerySimpleVinDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QuerySimpleVinDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryVinDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryVinData" />
+  </wsdl:message>
+  <wsdl:message name="QueryVinDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryVinDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryVinKeyParamSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryVinKeyParam" />
+  </wsdl:message>
+  <wsdl:message name="QueryVinKeyParamSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryVinKeyParamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_NE_IndustrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_NE_Industry" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_NE_IndustrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_NE_IndustryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_NE_AllSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_NE_All" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_NE_AllSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_NE_AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_TE_AllSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_TE_All" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_TE_AllSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_TE_AllResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_TE_IndustrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_TE_Industry" />
+  </wsdl:message>
+  <wsdl:message name="GetProc_CAFC_TE_IndustrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetProc_CAFC_TE_IndustryResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CafcWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckCafcUser">
+      <wsdl:input message="tns:CheckCafcUserSoapIn" />
+      <wsdl:output message="tns:CheckCafcUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryStatisticsData">
+      <wsdl:input message="tns:QueryStatisticsDataSoapIn" />
+      <wsdl:output message="tns:QueryStatisticsDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryFuelSummary">
+      <wsdl:input message="tns:QueryFuelSummarySoapIn" />
+      <wsdl:output message="tns:QueryFuelSummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCalParamDetails">
+      <wsdl:input message="tns:QueryCalParamDetailsSoapIn" />
+      <wsdl:output message="tns:QueryCalParamDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryTECafc">
+      <wsdl:input message="tns:QueryTECafcSoapIn" />
+      <wsdl:output message="tns:QueryTECafcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryNECafc">
+      <wsdl:input message="tns:QueryNECafcSoapIn" />
+      <wsdl:output message="tns:QueryNECafcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryHgzJhb">
+      <wsdl:input message="tns:QueryHgzJhbSoapIn" />
+      <wsdl:output message="tns:QueryHgzJhbSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastPrj">
+      <wsdl:input message="tns:SaveForecastPrjSoapIn" />
+      <wsdl:output message="tns:SaveForecastPrjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastPrj">
+      <wsdl:input message="tns:UpdateForecastPrjSoapIn" />
+      <wsdl:output message="tns:UpdateForecastPrjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastPrj">
+      <wsdl:input message="tns:DelForecastPrjSoapIn" />
+      <wsdl:output message="tns:DelForecastPrjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastParam">
+      <wsdl:input message="tns:SaveForecastParamSoapIn" />
+      <wsdl:output message="tns:SaveForecastParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastParam">
+      <wsdl:input message="tns:UpdateForecastParamSoapIn" />
+      <wsdl:output message="tns:UpdateForecastParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastParam">
+      <wsdl:input message="tns:DelForecastParamSoapIn" />
+      <wsdl:output message="tns:DelForecastParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryExistParam">
+      <wsdl:input message="tns:QueryExistParamSoapIn" />
+      <wsdl:output message="tns:QueryExistParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastPrj">
+      <wsdl:input message="tns:QueryForecastPrjSoapIn" />
+      <wsdl:output message="tns:QueryForecastPrjSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastParam">
+      <wsdl:input message="tns:QueryForecastParamSoapIn" />
+      <wsdl:output message="tns:QueryForecastParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastTECafc">
+      <wsdl:input message="tns:QueryForeCastTECafcSoapIn" />
+      <wsdl:output message="tns:QueryForeCastTECafcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastNECafc">
+      <wsdl:input message="tns:QueryForeCastNECafcSoapIn" />
+      <wsdl:output message="tns:QueryForeCastNECafcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteForeCast">
+      <wsdl:input message="tns:DeleteForeCastSoapIn" />
+      <wsdl:output message="tns:DeleteForeCastSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuerySimpleVinData">
+      <wsdl:input message="tns:QuerySimpleVinDataSoapIn" />
+      <wsdl:output message="tns:QuerySimpleVinDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinData">
+      <wsdl:input message="tns:QueryVinDataSoapIn" />
+      <wsdl:output message="tns:QueryVinDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinKeyParam">
+      <wsdl:input message="tns:QueryVinKeyParamSoapIn" />
+      <wsdl:output message="tns:QueryVinKeyParamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_Industry">
+      <wsdl:input message="tns:GetProc_CAFC_NE_IndustrySoapIn" />
+      <wsdl:output message="tns:GetProc_CAFC_NE_IndustrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_All">
+      <wsdl:input message="tns:GetProc_CAFC_NE_AllSoapIn" />
+      <wsdl:output message="tns:GetProc_CAFC_NE_AllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_All">
+      <wsdl:input message="tns:GetProc_CAFC_TE_AllSoapIn" />
+      <wsdl:output message="tns:GetProc_CAFC_TE_AllSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_Industry">
+      <wsdl:input message="tns:GetProc_CAFC_TE_IndustrySoapIn" />
+      <wsdl:output message="tns:GetProc_CAFC_TE_IndustrySoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CafcWebServiceSoap" type="tns:CafcWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://calfuel.catarc.info/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCafcUser">
+      <soap:operation soapAction="http://calfuel.catarc.info/CheckCafcUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryStatisticsData">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryStatisticsData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryFuelSummary">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryFuelSummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCalParamDetails">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryCalParamDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTECafc">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryTECafc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNECafc">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryNECafc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHgzJhb">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryHgzJhb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastPrj">
+      <soap:operation soapAction="http://calfuel.catarc.info/SaveForecastPrj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastPrj">
+      <soap:operation soapAction="http://calfuel.catarc.info/UpdateForecastPrj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastPrj">
+      <soap:operation soapAction="http://calfuel.catarc.info/DelForecastPrj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/SaveForecastParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/UpdateForecastParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/DelForecastParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryExistParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryExistParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastPrj">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryForecastPrj" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryForecastParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastTECafc">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryForeCastTECafc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastNECafc">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryForeCastNECafc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteForeCast">
+      <soap:operation soapAction="http://calfuel.catarc.info/DeleteForeCast" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySimpleVinData">
+      <soap:operation soapAction="http://calfuel.catarc.info/QuerySimpleVinData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinData">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryVinData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinKeyParam">
+      <soap:operation soapAction="http://calfuel.catarc.info/QueryVinKeyParam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_Industry">
+      <soap:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_NE_Industry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_All">
+      <soap:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_NE_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_All">
+      <soap:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_TE_All" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_Industry">
+      <soap:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_TE_Industry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CafcWebServiceSoap12" type="tns:CafcWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://calfuel.catarc.info/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckCafcUser">
+      <soap12:operation soapAction="http://calfuel.catarc.info/CheckCafcUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryStatisticsData">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryStatisticsData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryFuelSummary">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryFuelSummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCalParamDetails">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryCalParamDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTECafc">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryTECafc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNECafc">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryNECafc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHgzJhb">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryHgzJhb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastPrj">
+      <soap12:operation soapAction="http://calfuel.catarc.info/SaveForecastPrj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastPrj">
+      <soap12:operation soapAction="http://calfuel.catarc.info/UpdateForecastPrj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastPrj">
+      <soap12:operation soapAction="http://calfuel.catarc.info/DelForecastPrj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveForecastParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/SaveForecastParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateForecastParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/UpdateForecastParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelForecastParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/DelForecastParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryExistParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryExistParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastPrj">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryForecastPrj" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForecastParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryForecastParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastTECafc">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryForeCastTECafc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryForeCastNECafc">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryForeCastNECafc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteForeCast">
+      <soap12:operation soapAction="http://calfuel.catarc.info/DeleteForeCast" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuerySimpleVinData">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QuerySimpleVinData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinData">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryVinData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVinKeyParam">
+      <soap12:operation soapAction="http://calfuel.catarc.info/QueryVinKeyParam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_Industry">
+      <soap12:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_NE_Industry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_NE_All">
+      <soap12:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_NE_All" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_All">
+      <soap12:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_TE_All" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProc_CAFC_TE_Industry">
+      <soap12:operation soapAction="http://calfuel.catarc.info/GetProc_CAFC_TE_Industry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CafcWebService">
+    <wsdl:port name="CafcWebServiceSoap" binding="tns:CafcWebServiceSoap">
+      <soap:address location="http://tsoap.catarc.info/CafcWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CafcWebServiceSoap12" binding="tns:CafcWebServiceSoap12">
+      <soap12:address location="http://tsoap.catarc.info/CafcWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

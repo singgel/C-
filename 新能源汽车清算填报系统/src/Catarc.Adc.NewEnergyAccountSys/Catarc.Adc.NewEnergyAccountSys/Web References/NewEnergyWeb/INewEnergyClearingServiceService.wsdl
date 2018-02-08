@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.mai.catarc.info/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="INewEnergyClearingServiceService" targetNamespace="http://service.mai.catarc.info/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema elementFormDefault="unqualified" targetNamespace="http://service.mai.catarc.info/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element xmlns:ns1="http://service.mai.catarc.info/" name="checkEnterprise" type="ns1:checkEnterprise" />
+      <xs:complexType name="checkEnterprise">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="qymc" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns2="http://service.mai.catarc.info/" name="checkEnterpriseResponse" type="ns2:checkEnterpriseResponse" />
+      <xs:complexType name="checkEnterpriseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns3="http://service.mai.catarc.info/" name="getNewEnergyVehicleInfoCount" type="ns3:getNewEnergyVehicleInfoCount" />
+      <xs:complexType name="getNewEnergyVehicleInfoCount">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="cpxh" type="xs:string" />
+          <xs:element minOccurs="0" name="year" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns4="http://service.mai.catarc.info/" name="getNewEnergyVehicleInfoCountResponse" type="ns4:getNewEnergyVehicleInfoCountResponse" />
+      <xs:complexType name="getNewEnergyVehicleInfoCountResponse">
+        <xs:sequence>
+          <xs:element name="return" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns5="http://service.mai.catarc.info/" name="getNerdsQyname" type="ns5:getNerdsQyname" />
+      <xs:complexType name="getNerdsQyname">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns6="http://service.mai.catarc.info/" name="getNerdsQynameResponse" type="ns6:getNerdsQynameResponse" />
+      <xs:complexType name="getNerdsQynameResponse">
+        <xs:sequence>
+          <xs:element xmlns:ns7="http://service.mai.catarc.info/" minOccurs="0" maxOccurs="unbounded" name="return" type="ns7:qynameByYear" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="qynameByYear">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="qymc" type="xs:string" />
+          <xs:element minOccurs="0" name="year" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns8="http://service.mai.catarc.info/" name="getNewEnergyVehicleInfo" type="ns8:getNewEnergyVehicleInfo" />
+      <xs:complexType name="getNewEnergyVehicleInfo">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+          <xs:element minOccurs="0" name="password" type="xs:string" />
+          <xs:element minOccurs="0" name="cpxh" type="xs:string" />
+          <xs:element minOccurs="0" name="year" type="xs:string" />
+          <xs:element name="pageSize" type="xs:int" />
+          <xs:element name="pageIndex" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns9="http://service.mai.catarc.info/" name="getNewEnergyVehicleInfoResponse" type="ns9:getNewEnergyVehicleInfoResponse" />
+      <xs:complexType name="getNewEnergyVehicleInfoResponse">
+        <xs:sequence>
+          <xs:element xmlns:ns10="http://service.mai.catarc.info/" minOccurs="0" maxOccurs="unbounded" name="return" type="ns10:newEnergyVehicle" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="newEnergyVehicle">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="chang" type="xs:string" />
+          <xs:element minOccurs="0" name="cnzzscqy" type="xs:string" />
+          <xs:element minOccurs="0" name="cpmc" type="xs:string" />
+          <xs:element minOccurs="0" name="cpxh" type="xs:string" />
+          <xs:element minOccurs="0" name="cxhcnzzxh" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcqdc" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcqdgl" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcqdxh" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcxslc" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcxslc_cun" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcyblc" type="xs:string" />
+          <xs:element minOccurs="0" name="ddqcyblc_cun" type="xs:string" />
+          <xs:element minOccurs="0" name="dlxdcc" type="xs:string" />
+          <xs:element minOccurs="0" name="dlxdcxh" type="xs:string" />
+          <xs:element minOccurs="0" name="dlxdczl" type="xs:string" />
+          <xs:element minOccurs="0" name="ekg" type="xs:string" />
+          <xs:element minOccurs="0" name="ggpc" type="xs:string" />
+          <xs:element minOccurs="0" name="lb" type="xs:string" />
+          <xs:element minOccurs="0" name="nerdspc" type="xs:string" />
+          <xs:element minOccurs="0" name="no" type="xs:string" />
+          <xs:element minOccurs="0" name="pz_id" type="xs:string" />
+          <xs:element minOccurs="0" name="qymc" type="xs:string" />
+          <xs:element minOccurs="0" name="rldcqpqy" type="xs:string" />
+          <xs:element minOccurs="0" name="rldcqpxh" type="xs:string" />
+          <xs:element minOccurs="0" name="rldcxtedgl" type="xs:string" />
+          <xs:element minOccurs="0" name="xnzzzdl" type="xs:string" />
+          <xs:element minOccurs="0" name="year" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns11="http://service.mai.catarc.info/" name="helloNewEnergyClearing" type="ns11:helloNewEnergyClearing" />
+      <xs:complexType name="helloNewEnergyClearing">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="username" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element xmlns:ns12="http://service.mai.catarc.info/" name="helloNewEnergyClearingResponse" type="ns12:helloNewEnergyClearingResponse" />
+      <xs:complexType name="helloNewEnergyClearingResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="return" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getNewEnergyVehicleInfoCountResponse">
+    <wsdl:part name="parameters" element="tns:getNewEnergyVehicleInfoCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNewEnergyVehicleInfoCount">
+    <wsdl:part name="parameters" element="tns:getNewEnergyVehicleInfoCount" />
+  </wsdl:message>
+  <wsdl:message name="checkEnterpriseResponse">
+    <wsdl:part name="parameters" element="tns:checkEnterpriseResponse" />
+  </wsdl:message>
+  <wsdl:message name="helloNewEnergyClearingResponse">
+    <wsdl:part name="parameters" element="tns:helloNewEnergyClearingResponse" />
+  </wsdl:message>
+  <wsdl:message name="helloNewEnergyClearing">
+    <wsdl:part name="parameters" element="tns:helloNewEnergyClearing" />
+  </wsdl:message>
+  <wsdl:message name="getNewEnergyVehicleInfoResponse">
+    <wsdl:part name="parameters" element="tns:getNewEnergyVehicleInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNerdsQynameResponse">
+    <wsdl:part name="parameters" element="tns:getNerdsQynameResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNewEnergyVehicleInfo">
+    <wsdl:part name="parameters" element="tns:getNewEnergyVehicleInfo" />
+  </wsdl:message>
+  <wsdl:message name="checkEnterprise">
+    <wsdl:part name="parameters" element="tns:checkEnterprise" />
+  </wsdl:message>
+  <wsdl:message name="getNerdsQyname">
+    <wsdl:part name="parameters" element="tns:getNerdsQyname" />
+  </wsdl:message>
+  <wsdl:portType name="INewEnergyClearingService">
+    <wsdl:operation name="checkEnterprise">
+      <wsdl:input name="checkEnterprise" message="tns:checkEnterprise" />
+      <wsdl:output name="checkEnterpriseResponse" message="tns:checkEnterpriseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getNewEnergyVehicleInfoCount">
+      <wsdl:input name="getNewEnergyVehicleInfoCount" message="tns:getNewEnergyVehicleInfoCount" />
+      <wsdl:output name="getNewEnergyVehicleInfoCountResponse" message="tns:getNewEnergyVehicleInfoCountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getNerdsQyname">
+      <wsdl:input name="getNerdsQyname" message="tns:getNerdsQyname" />
+      <wsdl:output name="getNerdsQynameResponse" message="tns:getNerdsQynameResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getNewEnergyVehicleInfo">
+      <wsdl:input name="getNewEnergyVehicleInfo" message="tns:getNewEnergyVehicleInfo" />
+      <wsdl:output name="getNewEnergyVehicleInfoResponse" message="tns:getNewEnergyVehicleInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="helloNewEnergyClearing">
+      <wsdl:input name="helloNewEnergyClearing" message="tns:helloNewEnergyClearing" />
+      <wsdl:output name="helloNewEnergyClearingResponse" message="tns:helloNewEnergyClearingResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="INewEnergyClearingServiceServiceSoapBinding" type="tns:INewEnergyClearingService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="checkEnterprise">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="checkEnterprise">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="checkEnterpriseResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewEnergyVehicleInfoCount">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getNewEnergyVehicleInfoCount">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getNewEnergyVehicleInfoCountResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNerdsQyname">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getNerdsQyname">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getNerdsQynameResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewEnergyVehicleInfo">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getNewEnergyVehicleInfo">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getNewEnergyVehicleInfoResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="helloNewEnergyClearing">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="helloNewEnergyClearing">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="helloNewEnergyClearingResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="INewEnergyClearingServiceService">
+    <wsdl:port name="INewEnergyClearingServicePort" binding="tns:INewEnergyClearingServiceServiceSoapBinding">
+      <soap:address location="http://123.127.164.35:18082/APP/services/mai_newec" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

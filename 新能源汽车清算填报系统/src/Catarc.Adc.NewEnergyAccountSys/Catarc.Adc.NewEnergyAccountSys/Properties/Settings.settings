@@ -1,0 +1,42 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Catarc.Adc.NewEnergyAccountSys.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="VehicleMeunUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Template\VehicleMeun.XML</Value>
+    </Setting>
+    <Setting Name="VehicleCompany" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LiquYear" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UserPwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Template" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Template\公告模板.xlsx</Value>
+    </Setting>
+    <Setting Name="Vehicle_MFCS" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ClearYear" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Catarc_Adc_NewEnergyAccountSys_NewEnergyWeb_IManufacturersAiService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://123.127.164.35:18082/APP/services/mai_newec</Value>
+    </Setting>
+    <Setting Name="Instructions" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Template\填报说明(新能源汽车清算).pdf</Value>
+    </Setting>
+    <Setting Name="SkinStyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AuthorityUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Template\Authority_Basic.XML</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

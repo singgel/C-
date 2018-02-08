@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalysisInput>
+  <Settings>
+    <Setting>
+      <Key>sonar.cs.ignoreHeaderComments</Key>
+      <Value>true</Value>
+    </Setting>
+  </Settings>
+  <Rules>
+    <Rule>
+      <Key>S1939</Key>
+    </Rule>
+    <Rule>
+      <Key>S1940</Key>
+    </Rule>
+    <Rule>
+      <Key>S125</Key>
+    </Rule>
+    <Rule>
+      <Key>S1944</Key>
+    </Rule>
+    <Rule>
+      <Key>S2930</Key>
+    </Rule>
+    <Rule>
+      <Key>S2933</Key>
+    </Rule>
+    <Rule>
+      <Key>S2934</Key>
+    </Rule>
+    <Rule>
+      <Key>S1848</Key>
+    </Rule>
+    <Rule>
+      <Key>S1905</Key>
+    </Rule>
+    <Rule>
+      <Key>S2743</Key>
+    </Rule>
+    <Rule>
+      <Key>S1656</Key>
+    </Rule>
+    <Rule>
+      <Key>S2995</Key>
+    </Rule>
+    <Rule>
+      <Key>S2996</Key>
+    </Rule>
+    <Rule>
+      <Key>S2997</Key>
+    </Rule>
+    <Rule>
+      <Key>S2757</Key>
+    </Rule>
+    <Rule>
+      <Key>S2758</Key>
+    </Rule>
+    <Rule>
+      <Key>S2761</Key>
+    </Rule>
+    <Rule>
+      <Key>S1449</Key>
+    </Rule>
+    <Rule>
+      <Key>S1854</Key>
+    </Rule>
+    <Rule>
+      <Key>S1862</Key>
+    </Rule>
+    <Rule>
+      <Key>S2953</Key>
+    </Rule>
+    <Rule>
+      <Key>S1871</Key>
+    </Rule>
+    <Rule>
+      <Key>S2971</Key>
+    </Rule>
+    <Rule>
+      <Key>S1643</Key>
+    </Rule>
+    <Rule>
+      <Key>S1764</Key>
+    </Rule>
+    <Rule>
+      <Key>S2223</Key>
+    </Rule>
+    <Rule>
+      <Key>S1134</Key>
+    </Rule>
+    <Rule>
+      <Key>S2344</Key>
+    </Rule>
+    <Rule>
+      <Key>S1135</Key>
+    </Rule>
+    <Rule>
+      <Key>S2345</Key>
+    </Rule>
+    <Rule>
+      <Key>S2225</Key>
+    </Rule>
+    <Rule>
+      <Key>S2346</Key>
+    </Rule>
+    <Rule>
+      <Key>S907</Key>
+    </Rule>
+    <Rule>
+      <Key>S1144</Key>
+    </Rule>
+    <Rule>
+      <Key>S3444</Key>
+    </Rule>
+    <Rule>
+      <Key>S1145</Key>
+    </Rule>
+    <Rule>
+      <Key>S2234</Key>
+    </Rule>
+    <Rule>
+      <Key>S3443</Key>
+    </Rule>
+    <Rule>
+      <Key>S3447</Key>
+    </Rule>
+    <Rule>
+      <Key>S3449</Key>
+    </Rule>
+    <Rule>
+      <Key>S1155</Key>
+    </Rule>
+    <Rule>
+      <Key>S2123</Key>
+    </Rule>
+    <Rule>
+      <Key>S2486</Key>
+    </Rule>
+    <Rule>
+      <Key>S3457</Key>
+    </Rule>
+    <Rule>
+      <Key>S2368</Key>
+    </Rule>
+    <Rule>
+      <Key>S3456</Key>
+    </Rule>
+    <Rule>
+      <Key>S3217</Key>
+    </Rule>
+    <Rule>
+      <Key>S3216</Key>
+    </Rule>
+    <Rule>
+      <Key>S927</Key>
+    </Rule>
+    <Rule>
+      <Key>S3218</Key>
+    </Rule>
+    <Rule>
+      <Key>S2360</Key>
+    </Rule>
+    <Rule>
+      <Key>S3451</Key>
+    </Rule>
+    <Rule>
+      <Key>S3450</Key>
+    </Rule>
+    <Rule>
+      <Key>S2376</Key>
+    </Rule>
+    <Rule>
+      <Key>S3466</Key>
+    </Rule>
+    <Rule>
+      <Key>S3220</Key>
+    </Rule>
+    <Rule>
+      <Key>S2372</Key>
+    </Rule>
+    <Rule>
+      <Key>S1697</Key>
+    </Rule>
+    <Rule>
+      <Key>S1698</Key>
+    </Rule>
+    <Rule>
+      <Key>S1699</Key>
+    </Rule>
+    <Rule>
+      <Key>S2306</Key>
+    </Rule>
+    <Rule>
+      <Key>S2437</Key>
+    </Rule>
+    <Rule>
+      <Key>S1116</Key>
+    </Rule>
+    <Rule>
+      <Key>S2326</Key>
+    </Rule>
+    <Rule>
+      <Key>S1117</Key>
+    </Rule>
+    <Rule>
+      <Key>S1118</Key>
+    </Rule>
+    <Rule>
+      <Key>S2328</Key>
+    </Rule>
+    <Rule>
+      <Key>S2681</Key>
+    </Rule>
+    <Rule>
+      <Key>S1244</Key>
+    </Rule>
+    <Rule>
+      <Key>S2696</Key>
+    </Rule>
+    <Rule>
+      <Key>S1006</Key>
+    </Rule>
+    <Rule>
+      <Key>S3427</Key>
+    </Rule>
+    <Rule>
+      <Key>S1481</Key>
+    </Rule>
+    <Rule>
+      <Key>S2692</Key>
+    </Rule>
+    <Rule>
+      <Key>S2219</Key>
+    </Rule>
+    <Rule>
+      <Key>S2184</Key>
+    </Rule>
+    <Rule>
+      <Key>S3397</Key>
+    </Rule>
+    <Rule>
+      <Key>S3169</Key>
+    </Rule>
+    <Rule>
+      <Key>S3168</Key>
+    </Rule>
+    <Rule>
+      <Key>S3172</Key>
+    </Rule>
+    <Rule>
+      <Key>S3234</Key>
+    </Rule>
+    <Rule>
+      <Key>S3237</Key>
+    </Rule>
+    <Rule>
+      <Key>S3236</Key>
+    </Rule>
+    <Rule>
+      <Key>S1172</Key>
+    </Rule>
+    <Rule>
+      <Key>S3246</Key>
+    </Rule>
+    <Rule>
+      <Key>S2278</Key>
+    </Rule>
+    <Rule>
+      <Key>S3005</Key>
+    </Rule>
+    <Rule>
+      <Key>S3249</Key>
+    </Rule>
+    <Rule>
+      <Key>S1185</Key>
+    </Rule>
+    <Rule>
+      <Key>S2275</Key>
+    </Rule>
+    <Rule>
+      <Key>S3244</Key>
+    </Rule>
+    <Rule>
+      <Key>S1066</Key>
+    </Rule>
+    <Rule>
+      <Key>S3251</Key>
+    </Rule>
+    <Rule>
+      <Key>S3376</Key>
+    </Rule>
+    <Rule>
+      <Key>S2290</Key>
+    </Rule>
+    <Rule>
+      <Key>S2291</Key>
+    </Rule>
+    <Rule>
+      <Key>S2292</Key>
+    </Rule>
+    <Rule>
+      <Key>S3262</Key>
+    </Rule>
+    <Rule>
+      <Key>S3263</Key>
+    </Rule>
+    <Rule>
+      <Key>S3265</Key>
+    </Rule>
+    <Rule>
+      <Key>S108</Key>
+    </Rule>
+  </Rules>
+  <Files>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Common\ApplicationFolder.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Common\EncryptUtil.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Common\ObjectReflect.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\DevTextEditControl.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\OracleHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\QueryHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DataUtils\DataCompareHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DataUtils\DataTableHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DevForm\DevSplashScreen.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DevForm\DevSplashScreen.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DevForm\DevWaitForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DevForm\DevWaitForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_Config\SetForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_Config\SetForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_Index\IndexForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_Index\IndexForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\DataDictionary.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\DataDictionary.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\NoticeForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\NoticeForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\RoleForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\RoleForm.designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\SingleDicData.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\SingleDicData.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\SubsidyForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\SubsidyForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UpdateUserPWD.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UpdateUserPWD.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UserForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UserForm.designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UserInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage\UserInfoForm.designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_SysManage_Utils\Utils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\AccountInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\AccountInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveFirstForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveFirstForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveSecondForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveSecondForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ContactInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ContactInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\InspectInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\InspectInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\SingleInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\SingleInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\ApproveFirstUtils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\ApproveSecondUtils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\ApproveThirdUtils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\ExportAccountInfo.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\ImportDataUtils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage_Utils\InspectInfoUtils.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\LogUtils\GlobalExceptionManager.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\LogUtils\LogManager.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\LogUtils\ReviewLogManager.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\LoginForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\LoginForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\MainForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\MainForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\OfficeHelper\ImportExcel.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\OfficeHelper\ImportExcelNPOI.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\OfficeHelper\SysIOHelper.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\BigPictureForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\BigPictureForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\GlobalExceptionForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\GlobalExceptionForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\MessageForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\MessageForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\PassInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\PassInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\RejectInfoForm.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\PopForm\RejectInfoForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Program.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Properties\AssemblyInfo.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Properties\Resources.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Properties\Settings.Designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\LoadingForm.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\LoadingForm.designer.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\LoadingHandler.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\Properties\AssemblyInfo.cs</File>
+    <File>D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\HFSoft.Component.Windows\Unity.cs</File>
+  </Files>
+</AnalysisInput>

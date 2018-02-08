@@ -1,0 +1,16 @@
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\bin\Debug\CertificateWebCrawlerSys.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\bin\Debug\CertificateWebCrawlerSys.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.MainForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.Properties.Resources.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.csproj.GenerateResource.Cache
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\bin\Debug\CertificateWebCrawlerSys.exe.config
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.ShowForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.ShowInfoForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.AllForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.HGZForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.PZForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.WSForm.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\bin\Debug\HtmlAgilityPack.dll
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateWebCrawlerSys\obj\x86\Debug\CertificateWebCrawlerSys.csprojResolveAssemblyReference.cache

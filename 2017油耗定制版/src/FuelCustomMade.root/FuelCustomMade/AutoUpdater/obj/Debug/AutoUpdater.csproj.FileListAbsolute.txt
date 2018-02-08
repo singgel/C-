@@ -1,0 +1,8 @@
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.MainForm.resources
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.Properties.Resources.resources
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.csproj.GenerateResource.Cache
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.exe.licenses
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\bin\Debug\AutoUpdater.exe
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\bin\Debug\AutoUpdater.pdb
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.exe
+D:\Project Codes\2017油耗定制版\src\FuelCustomMade.root\FuelCustomMade\AutoUpdater\obj\Debug\AutoUpdater.pdb

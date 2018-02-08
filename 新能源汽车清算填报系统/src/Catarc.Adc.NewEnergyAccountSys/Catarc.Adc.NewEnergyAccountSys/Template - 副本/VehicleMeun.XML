@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MenuData>
+
+  <MenuModel>
+    <ID>10</ID>
+    <MenuName>华元重型机械有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>1</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>11</ID>
+    <MenuName>天津凯德实业有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>12</ID>
+    <MenuName>湖南晟通天力汽车有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>3</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>13</ID>
+    <MenuName>北京北方华德尼奥普兰客车股份有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>4</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>14</ID>
+    <MenuName>北京华林特装车有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>15</ID>
+    <MenuName>北京汽车股份有限公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>6</OrderID>
+  </MenuModel>
+  <MenuModel>
+    <ID>16</ID>
+    <MenuName>北京天路通科技有限责任公司</MenuName>
+    <ParentID>汽车生产企业</ParentID>
+    <OrderID>7</OrderID>
+  </MenuModel>
+  
+  <MenuModel>
+    <ID>20</ID>
+    <MenuName>2014</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>1</OrderID>
+  </MenuModel>
+   <MenuModel>
+    <ID>21</ID>
+    <MenuName>2015</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>2</OrderID>
+  </MenuModel>
+   <MenuModel>
+    <ID>22</ID>
+    <MenuName>2016</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>3</OrderID>
+  </MenuModel>
+   <MenuModel>
+    <ID>23</ID>
+    <MenuName>2017</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>4</OrderID>
+  </MenuModel>
+   <MenuModel>
+    <ID>24</ID>
+    <MenuName>2018</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>5</OrderID>
+  </MenuModel>
+   <MenuModel>
+    <ID>25</ID>
+    <MenuName>2019</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>6</OrderID>
+  </MenuModel>
+     <MenuModel>
+    <ID>26</ID>
+    <MenuName>2020</MenuName>
+    <ParentID>清算年份</ParentID>
+    <OrderID>7</OrderID>
+  </MenuModel>
+  
+  
+  
+ 
+
+</MenuData>

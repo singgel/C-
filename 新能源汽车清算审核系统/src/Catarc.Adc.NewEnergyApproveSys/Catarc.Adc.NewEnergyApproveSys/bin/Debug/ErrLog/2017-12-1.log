@@ -1,0 +1,305 @@
+// ■■■■■■■■■■ [2017/12/1 10:20:25] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: System.Data
+堆栈:
+   at System.Data.DataView.ToTable(String tableName, Boolean distinct, String[] columnNames)
+   at System.Data.DataView.ToTable()
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 29
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 352
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Data.DataTable ToTable(System.String, Boolean, System.String[])
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 10:38:07] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 26
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnCancle_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 360
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 10:38:25] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 26
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnCancle_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 360
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 10:40:14] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 26
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 352
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 10:54:13] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 23
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 352
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 10:55:11] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Unable to cast object of type 'System.Data.DataView' to type 'System.Data.DataTable'.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 24
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 352
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/12/1 14:18:09] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.DBUtils.QueryHelper.queryInfomationByVin(String guid) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\DBUtils\QueryHelper.cs:line 63
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ImportDataForm.gcDataInfo_MouseDoubleClick(Object sender, MouseEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ImportDataForm.cs:line 907
+   at System.Windows.Forms.Control.OnMouseDoubleClick(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.XtraEditors.Container.EditorContainer.WndProc(Message& m)
+   at DevExpress.XtraGrid.GridControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Collections.Generic.Dictionary`2[System.String,System.String] queryInfomationByVin(System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

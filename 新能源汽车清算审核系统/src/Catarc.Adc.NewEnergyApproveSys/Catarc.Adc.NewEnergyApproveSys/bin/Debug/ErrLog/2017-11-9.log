@@ -1,0 +1,135 @@
+// ■■■■■■■■■■ [2017/11/9 17:11:44] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 23
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ApproveThirdForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs:line 236
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/11/9 17:12:01] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 23
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ApproveThirdForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs:line 236
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/11/9 17:12:19] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Object reference not set to an instance of an object.
+帮助链接: None
+对象: Catarc.Adc.NewEnergyApproveSys
+堆栈:
+   at Catarc.Adc.NewEnergyApproveSys.ControlUtils.GridControlHelper.SelectItem(Object obj, Boolean flg) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\ControlUtils\GridControlHelper.cs:line 23
+   at Catarc.Adc.NewEnergyApproveSys.Form_WorkManage.ApproveThirdForm.barBtnSelect_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\Form_WorkManage\ApproveThirdForm.cs:line 236
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void SelectItem(System.Object, Boolean)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算审核系统\src\Catarc.Adc.NewEnergyApproveSys\Catarc.Adc.NewEnergyApproveSys\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

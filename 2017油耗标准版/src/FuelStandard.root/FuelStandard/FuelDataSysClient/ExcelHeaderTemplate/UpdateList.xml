@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>Application autoUpdate</description>
+  <Updater>
+	<Url>http://192.168.120.190:8034/1base/</Url>
+	<LastUpdateTime>2017-06-30</LastUpdateTime>
+  </Updater>
+  <Application applicationId="FuelDataSysClient">
+    <EntryPoint>FuelDataSysClient.exe</EntryPoint>
+    <Location>.</Location>
+	<Version>1.0.0.0</Version>
+  </Application>
+  <Files>
+	   <File Ver="1.0.0.0" Name="FuelDataSysClient.exe"/>
+  </Files>
+</AutoUpdater>

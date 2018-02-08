@@ -1,0 +1,74 @@
+// ■■■■■■■■■■ [2017/9/13 16:56:36] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 系统找不到指定的文件。
+帮助链接: None
+对象: System
+堆栈:
+   在 System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start()
+   在 System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start(String fileName)
+   在 Catarc.Adc.NewEnergyAccountSys.Form_Index.IndexForm.hyperLinkEdit1_Click(Object sender, EventArgs e) 位置 D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\Catarc.Adc.NewEnergyAccountSys\Form_Index\IndexForm.cs:行号 23
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 DevExpress.XtraEditors.HyperLinkEdit.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   在 DevExpress.XtraEditors.TextEdit.WndProc(Message& msg)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Boolean StartWithShellExecuteEx(System.Diagnostics.ProcessStartInfo)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\Catarc.Adc.NewEnergyAccountSys\bin\Debug\
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 2.0.50727.8669
+
+
+
+// ■■■■■■■■■■ [2017/9/13 16:56:44] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: 系统找不到指定的文件。
+帮助链接: None
+对象: System
+堆栈:
+   在 System.Diagnostics.Process.StartWithShellExecuteEx(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start()
+   在 System.Diagnostics.Process.Start(ProcessStartInfo startInfo)
+   在 System.Diagnostics.Process.Start(String fileName)
+   在 Catarc.Adc.NewEnergyAccountSys.Form_Index.IndexForm.hyperLinkEdit1_Click(Object sender, EventArgs e) 位置 D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\Catarc.Adc.NewEnergyAccountSys\Form_Index\IndexForm.cs:行号 23
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 DevExpress.XtraEditors.HyperLinkEdit.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   在 DevExpress.XtraEditors.TextEdit.WndProc(Message& msg)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Boolean StartWithShellExecuteEx(System.Diagnostics.ProcessStartInfo)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\新能源汽车清算填报系统\src\Catarc.Adc.NewEnergyAccountSys\Catarc.Adc.NewEnergyAccountSys\bin\Debug\
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 2.0.50727.8669
+
+
+

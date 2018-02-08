@@ -1,0 +1,111 @@
+// ■■■■■■■■■■ [2017/5/19 8:06:09] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Unable to cast object of type 'System.Data.DataTable' to type 'System.Data.DataView'.
+帮助链接: None
+对象: FuelDataSysClient
+堆栈:
+   at FuelDataSysClient.Form_SJBG.ChangeAddXtraForm.Show(CheckEdit ck, String type, String text, String applyType) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeAddXtraForm.cs:line 171
+   at FuelDataSysClient.Form_SJBG.ChangeAddXtraForm.INSERT_O_CheckedChanged(Object sender, EventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeAddXtraForm.cs:line 204
+   at DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit.RaiseCheckedChanged(EventArgs e)
+   at DevExpress.XtraEditors.CheckEdit.set_EditValue(Object value)
+   at DevExpress.XtraEditors.CheckEdit.set_CheckState(CheckState value)
+   at DevExpress.XtraEditors.CheckEdit.Toggle()
+   at DevExpress.XtraEditors.CheckEdit.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraEditors.BaseControl.WndProc(Message& msg)
+   at DevExpress.XtraEditors.BaseEdit.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void Show(DevExpress.XtraEditors.CheckEdit, System.String, System.String, System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/5/19 8:07:18] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Unable to cast object of type 'System.Data.DataTable' to type 'System.Data.DataView'.
+帮助链接: None
+对象: FuelDataSysClient
+堆栈:
+   at FuelDataSysClient.Form_SJBG.ChangeAddXtraForm.Show(CheckEdit ck, String type, String text, String applyType) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeAddXtraForm.cs:line 171
+   at FuelDataSysClient.Form_SJBG.ChangeAddXtraForm.INSERT_O_CheckedChanged(Object sender, EventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeAddXtraForm.cs:line 204
+   at DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit.RaiseCheckedChanged(EventArgs e)
+   at DevExpress.XtraEditors.CheckEdit.set_EditValue(Object value)
+   at DevExpress.XtraEditors.CheckEdit.set_CheckState(CheckState value)
+   at DevExpress.XtraEditors.CheckEdit.Toggle()
+   at DevExpress.XtraEditors.CheckEdit.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraEditors.BaseControl.WndProc(Message& msg)
+   at DevExpress.XtraEditors.BaseEdit.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void Show(DevExpress.XtraEditors.CheckEdit, System.String, System.String, System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+
+// ■■■■■■■■■■ [2017/5/19 8:25:33] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: <target>.CT_ZHGKRLXHL and <source>.CT_ZHGKRLXHL have conflicting properties: DataType property mismatch.
+帮助链接: None
+对象: FuelDataSysClient
+堆栈:
+   at FuelDataSysClient.Form_SJBG.ChangeAddXtraForm.LoadDataByVin(DataView vins) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeAddXtraForm.cs:line 142
+   at FuelDataSysClient.Form_SJBG.ChangeQuery.simpleButton4_Click(Object sender, EventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJBG\ChangeQuery.cs:line 260
+   at System.Windows.Forms.Control.OnClick(EventArgs e)
+   at DevExpress.XtraEditors.BaseButton.OnClick(EventArgs e)
+   at DevExpress.XtraEditors.BaseButton.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraEditors.BaseControl.WndProc(Message& msg)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void LoadDataByVin(System.Data.DataView)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.42000
+
+
+

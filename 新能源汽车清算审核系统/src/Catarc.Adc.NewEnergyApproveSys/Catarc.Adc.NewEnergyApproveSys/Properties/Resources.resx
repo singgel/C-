@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barBtn_ParamSync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ParamSync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_FuelUpload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_FuelUpload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SearchBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SearchBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_GoRight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_GoRight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_table_delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_table_delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_compare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_compare.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_plusSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_plusSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_user_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_user_key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SelectAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SelectAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_FuelUploadOT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_FuelUploadOT.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_law" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_law.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SearchData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SearchData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Update" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_Calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userDel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userDel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_key" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_key.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GreenCar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GreenCar.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_mail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_mail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_cloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carUnion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carUnion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carImport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carImport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ImportBlue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ImportBlue.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="adc_backlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\adc_backlogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnPause_hb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnPause_hb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carDel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carDel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Index.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Set.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_FuelUpdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_FuelUpdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userSave" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_text_rotate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_text_rotate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_reback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_reback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_FuelSync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_FuelSync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_reback" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_reback.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_oneLine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_oneLine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_Computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_Computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportAccess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportAccess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_GoCircle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_GoCircle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nevsars1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nevsars.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Repea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Repea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nevsars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nevsars.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_Param" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_Param.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_updateSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_updateSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_ClientSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_ClientSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_fuelImport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_fuelImport.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_tools" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_tools.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_fuelCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_fuelCopy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_user_home" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_user_home.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Refresh2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userAdd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_chart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_chart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_count" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_count.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_BowserSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_BowserSet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userDel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userDel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_calendar_one" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_calendar_one.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_carAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_carAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_third" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_third.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportPpt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportPpt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_webUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_webUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_page_second" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_page_second.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Repea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Repea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_fuelDel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_fuelDel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportExcel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportExcel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="working" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\working.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnPause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnPause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Sync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Sync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ImportWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ImportWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ClearAll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ClearAll.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_role" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_role.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_second" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_second.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_EditData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_EditData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_page_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_page_first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_MergeData" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_MergeData.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportPdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportPdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ranking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ranking.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_updateSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_updateSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_paperAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_paperAdd .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_right_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_right_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Refuse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Refuse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ADC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Approve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Approve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_word" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_word.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_page_third" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_page_third.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_local" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_local.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_fuelAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_fuelAdd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Refresh1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnBtn_Print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnBtn_Print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_DebugInfo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_DebugInfo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_test" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_page_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_page_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CarGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ADC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ADC.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnCertificate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnCertificate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_boxPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_boxPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_text_inverse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_text_inverse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportGmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportGmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnAnnouncement" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnAnnouncement.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_change" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_change.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_userSave1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_userSave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_left_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_left_top.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_MergeGH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_MergeGH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ExportWord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ExportWord.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_Calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_Calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_Param" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_Param.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_WebSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_WebSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_text_ab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_text_ab.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SearchBatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SearchBatch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="navBtn_Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\navBtn_Set.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_boxLeft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_boxLeft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_WebSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_WebSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Del" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Del.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_paperView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_paperView.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_history.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_HolidaySync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_HolidaySync.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SearchGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SearchGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_calendar_week" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_calendar_week.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ImportGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ImportGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="picBox_Set" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picBox_Set.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_ImportOld" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_ImportOld.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_plusSearch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_plusSearch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_text_spelling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_text_spelling.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bar_page_local" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bar_page_local.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtn_SearchBatch1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtn_SearchBatch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barBtnCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\barBtnCheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewEnerguApprove_Index" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewEnerguApprove_Index.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

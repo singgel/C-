@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>D:\IIS server\NewEnergyAccountSys\|publish\|D:\2017\2017_IIS部署发布\NewEnergyAccountSys\</PublishUrlHistory>
+    <InstallUrlHistory>http://123.127.164.42:30979/Energr/|http://127.0.0.1:30979/|http://localhost:30979/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://123.127.164.42:30979/Energr/|http://127.0.0.1:30979/|http://localhost:30979/|http://localhost/Catarc.Adc.NewEnergyAccountSys/|http://localhost/</UpdateUrlHistory>
+    <BootstrapperUrlHistory>D:\IIS server\NewEnergyAccountSys</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory />
+    <FallbackCulture>zh-CN</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

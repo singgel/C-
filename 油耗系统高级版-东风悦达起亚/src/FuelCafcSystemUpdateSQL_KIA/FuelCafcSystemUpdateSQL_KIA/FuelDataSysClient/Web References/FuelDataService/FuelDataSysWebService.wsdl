@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="FuelDataSysWebService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="FuelDataSysWebService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="FuelDataSysWebService">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryQymc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryQymcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryQymcResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryParamVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryParamVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryParamVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadTimeConstrain">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadTimeConstrainResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryUploadTimeConstrainResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadDeadLine">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="manufactureDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadDeadLineResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryUploadDeadLineResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadInsertFuelDataList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vehicleInfoList" type="tns:ArrayOfVehicleBasicInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="cKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfVehicleBasicInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="VehicleBasicInfo" nillable="true" type="tns:VehicleBasicInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="VehicleBasicInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="EntityList" type="tns:ArrayOfRllxParamEntity" />
+          <s:element minOccurs="0" maxOccurs="1" name="V_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="App_Vin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="HgNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CocNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CCCHolder" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Hgspbm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="User_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qcscqy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jkqczjxs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clxh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Clzl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Rllx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zczbzl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zgcs" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ltgg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zj" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Clzzrq" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tymc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Yyc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zwps" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zdsjzzl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Edzk" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Lj" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qdxs" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="UpdateTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jyjgmc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Jybgbh" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Qtxx" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Apply_Type" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Check" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfRllxParamEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RllxParamEntity" nillable="true" type="tns:RllxParamEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RllxParamEntity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Param_Entity_Id" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Param_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="V_Id" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Vin" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Param_Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UploadInsertFuelDataListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadInsertFuelDataListResult" type="tns:OperateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OperateResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ResultCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResultDetail" type="tns:ArrayOfNameValuePair" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfNameValuePair">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NameValuePair" nillable="true" type="tns:NameValuePair" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NameValuePair">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UploadOverTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vehicleInfoList" type="tns:ArrayOfVehicleBasicInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="cKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadOverTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadOverTimeResult" type="tns:OperateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApplyUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vehicleInfoList" type="tns:ArrayOfVehicleBasicInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="cKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApplyUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyUpdateResult" type="tns:OperateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ApplyDelelte">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vinList" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="delReason" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ApplyDelelteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyDelelteResult" type="tns:OperateResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryUploadedFuelDataResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelDataCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelDataCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryUploadedFuelDataCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCustomFuelData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCustomFuelDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryCustomFuelDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVehicleInfoByVin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVehicleInfoByVinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryVehicleInfoByVinResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVehicleInfoByVinVid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVehicleInfoByVinVidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryVehicleInfoByVinVidResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyUpLoadOT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyUpLoadOTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryApplyUpLoadOTResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyDelInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyDelInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryApplyDelInfoResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyUpdateInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryApplyUpdateInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryApplyUpdateInfoResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryHisFuelData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryHisFuelDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryHisFuelDataResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryRllxParamData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryRllxParamDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryRllxParamDataResult" type="tns:ArrayOfRllxParam" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRllxParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RllxParam" nillable="true" type="tns:RllxParam" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RllxParam">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Param_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Param_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fuel_Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Param_Remark" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Control_Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Control_Value" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Order_Rule" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="QueryHolidayData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryHolidayDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryHolidayDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVidByVins">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vins" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryVidByVinsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryVidByVinsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryNoticeResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelData_New">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageNum" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pagesize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clxh" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clzl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rllx" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="timeType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryUploadedFuelData_NewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryUploadedFuelData_NewResult" type="tns:ArrayOfVehicleBasicInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckUser" />
+  </wsdl:message>
+  <wsdl:message name="CheckUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryQymcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryQymc" />
+  </wsdl:message>
+  <wsdl:message name="QueryQymcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryQymcResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryParamVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryParamVersion" />
+  </wsdl:message>
+  <wsdl:message name="QueryParamVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryParamVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadTimeConstrainSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUploadTimeConstrain" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadTimeConstrainSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUploadTimeConstrainResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadDeadLineSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUploadDeadLine" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadDeadLineSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUploadDeadLineResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadInsertFuelDataListSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadInsertFuelDataList" />
+  </wsdl:message>
+  <wsdl:message name="UploadInsertFuelDataListSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadInsertFuelDataListResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadOverTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadOverTime" />
+  </wsdl:message>
+  <wsdl:message name="UploadOverTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadOverTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApplyUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:ApplyUpdate" />
+  </wsdl:message>
+  <wsdl:message name="ApplyUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:ApplyUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ApplyDelelteSoapIn">
+    <wsdl:part name="parameters" element="tns:ApplyDelelte" />
+  </wsdl:message>
+  <wsdl:message name="ApplyDelelteSoapOut">
+    <wsdl:part name="parameters" element="tns:ApplyDelelteResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelData" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelDataCountSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelDataCount" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelDataCountSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelDataCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCustomFuelDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCustomFuelData" />
+  </wsdl:message>
+  <wsdl:message name="QueryCustomFuelDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCustomFuelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryVehicleInfoByVinSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryVehicleInfoByVin" />
+  </wsdl:message>
+  <wsdl:message name="QueryVehicleInfoByVinSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryVehicleInfoByVinResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryVehicleInfoByVinVidSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryVehicleInfoByVinVid" />
+  </wsdl:message>
+  <wsdl:message name="QueryVehicleInfoByVinVidSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryVehicleInfoByVinVidResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyUpLoadOTSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryApplyUpLoadOT" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyUpLoadOTSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryApplyUpLoadOTResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyDelInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryApplyDelInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyDelInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryApplyDelInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyUpdateInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryApplyUpdateInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryApplyUpdateInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryApplyUpdateInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryHisFuelDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryHisFuelData" />
+  </wsdl:message>
+  <wsdl:message name="QueryHisFuelDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryHisFuelDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryRllxParamDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryRllxParamData" />
+  </wsdl:message>
+  <wsdl:message name="QueryRllxParamDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryRllxParamDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryHolidayDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryHolidayData" />
+  </wsdl:message>
+  <wsdl:message name="QueryHolidayDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryHolidayDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryVidByVinsSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryVidByVins" />
+  </wsdl:message>
+  <wsdl:message name="QueryVidByVinsSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryVidByVinsResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryNotice" />
+  </wsdl:message>
+  <wsdl:message name="QueryNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelData_NewSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelData_New" />
+  </wsdl:message>
+  <wsdl:message name="QueryUploadedFuelData_NewSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryUploadedFuelData_NewResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FuelDataSysWebServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <wsdl:input message="tns:CheckUserSoapIn" />
+      <wsdl:output message="tns:CheckUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryQymc">
+      <wsdl:input message="tns:QueryQymcSoapIn" />
+      <wsdl:output message="tns:QueryQymcSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryParamVersion">
+      <wsdl:input message="tns:QueryParamVersionSoapIn" />
+      <wsdl:output message="tns:QueryParamVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadTimeConstrain">
+      <wsdl:input message="tns:QueryUploadTimeConstrainSoapIn" />
+      <wsdl:output message="tns:QueryUploadTimeConstrainSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadDeadLine">
+      <wsdl:input message="tns:QueryUploadDeadLineSoapIn" />
+      <wsdl:output message="tns:QueryUploadDeadLineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadInsertFuelDataList">
+      <wsdl:input message="tns:UploadInsertFuelDataListSoapIn" />
+      <wsdl:output message="tns:UploadInsertFuelDataListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadOverTime">
+      <wsdl:input message="tns:UploadOverTimeSoapIn" />
+      <wsdl:output message="tns:UploadOverTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApplyUpdate">
+      <wsdl:input message="tns:ApplyUpdateSoapIn" />
+      <wsdl:output message="tns:ApplyUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ApplyDelelte">
+      <wsdl:input message="tns:ApplyDelelteSoapIn" />
+      <wsdl:output message="tns:ApplyDelelteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData">
+      <wsdl:input message="tns:QueryUploadedFuelDataSoapIn" />
+      <wsdl:output message="tns:QueryUploadedFuelDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelDataCount">
+      <wsdl:input message="tns:QueryUploadedFuelDataCountSoapIn" />
+      <wsdl:output message="tns:QueryUploadedFuelDataCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCustomFuelData">
+      <wsdl:input message="tns:QueryCustomFuelDataSoapIn" />
+      <wsdl:output message="tns:QueryCustomFuelDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVin">
+      <wsdl:input message="tns:QueryVehicleInfoByVinSoapIn" />
+      <wsdl:output message="tns:QueryVehicleInfoByVinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVinVid">
+      <wsdl:input message="tns:QueryVehicleInfoByVinVidSoapIn" />
+      <wsdl:output message="tns:QueryVehicleInfoByVinVidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpLoadOT">
+      <wsdl:input message="tns:QueryApplyUpLoadOTSoapIn" />
+      <wsdl:output message="tns:QueryApplyUpLoadOTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyDelInfo">
+      <wsdl:input message="tns:QueryApplyDelInfoSoapIn" />
+      <wsdl:output message="tns:QueryApplyDelInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpdateInfo">
+      <wsdl:input message="tns:QueryApplyUpdateInfoSoapIn" />
+      <wsdl:output message="tns:QueryApplyUpdateInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryHisFuelData">
+      <wsdl:input message="tns:QueryHisFuelDataSoapIn" />
+      <wsdl:output message="tns:QueryHisFuelDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryRllxParamData">
+      <wsdl:input message="tns:QueryRllxParamDataSoapIn" />
+      <wsdl:output message="tns:QueryRllxParamDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryHolidayData">
+      <wsdl:input message="tns:QueryHolidayDataSoapIn" />
+      <wsdl:output message="tns:QueryHolidayDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryVidByVins">
+      <wsdl:input message="tns:QueryVidByVinsSoapIn" />
+      <wsdl:output message="tns:QueryVidByVinsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryNotice">
+      <wsdl:input message="tns:QueryNoticeSoapIn" />
+      <wsdl:output message="tns:QueryNoticeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData_New">
+      <wsdl:input message="tns:QueryUploadedFuelData_NewSoapIn" />
+      <wsdl:output message="tns:QueryUploadedFuelData_NewSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FuelDataSysWebServiceSoap" type="tns:FuelDataSysWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="FuelDataSysWebService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap:operation soapAction="FuelDataSysWebService/CheckUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryQymc">
+      <soap:operation soapAction="FuelDataSysWebService/QueryQymc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryParamVersion">
+      <soap:operation soapAction="FuelDataSysWebService/QueryParamVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadTimeConstrain">
+      <soap:operation soapAction="FuelDataSysWebService/QueryUploadTimeConstrain" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadDeadLine">
+      <soap:operation soapAction="FuelDataSysWebService/QueryUploadDeadLine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadInsertFuelDataList">
+      <soap:operation soapAction="FuelDataSysWebService/UploadInsertFuelDataList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadOverTime">
+      <soap:operation soapAction="FuelDataSysWebService/UploadOverTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApplyUpdate">
+      <soap:operation soapAction="FuelDataSysWebService/ApplyUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApplyDelelte">
+      <soap:operation soapAction="FuelDataSysWebService/ApplyDelelte" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData">
+      <soap:operation soapAction="FuelDataSysWebService/QueryUploadedFuelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelDataCount">
+      <soap:operation soapAction="FuelDataSysWebService/QueryUploadedFuelDataCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCustomFuelData">
+      <soap:operation soapAction="FuelDataSysWebService/QueryCustomFuelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVin">
+      <soap:operation soapAction="FuelDataSysWebService/QueryVehicleInfoByVin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVinVid">
+      <soap:operation soapAction="FuelDataSysWebService/QueryVehicleInfoByVinVid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpLoadOT">
+      <soap:operation soapAction="FuelDataSysWebService/QueryApplyUpLoadOT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyDelInfo">
+      <soap:operation soapAction="FuelDataSysWebService/QueryApplyDelInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpdateInfo">
+      <soap:operation soapAction="FuelDataSysWebService/QueryApplyUpdateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHisFuelData">
+      <soap:operation soapAction="FuelDataSysWebService/QueryHisFuelData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRllxParamData">
+      <soap:operation soapAction="FuelDataSysWebService/QueryRllxParamData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHolidayData">
+      <soap:operation soapAction="FuelDataSysWebService/QueryHolidayData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVidByVins">
+      <soap:operation soapAction="FuelDataSysWebService/QueryVidByVins" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNotice">
+      <soap:operation soapAction="FuelDataSysWebService/QueryNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData_New">
+      <soap:operation soapAction="FuelDataSysWebService/QueryUploadedFuelData_New" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FuelDataSysWebServiceSoap12" type="tns:FuelDataSysWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="FuelDataSysWebService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckUser">
+      <soap12:operation soapAction="FuelDataSysWebService/CheckUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryQymc">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryQymc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryParamVersion">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryParamVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadTimeConstrain">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryUploadTimeConstrain" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadDeadLine">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryUploadDeadLine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadInsertFuelDataList">
+      <soap12:operation soapAction="FuelDataSysWebService/UploadInsertFuelDataList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadOverTime">
+      <soap12:operation soapAction="FuelDataSysWebService/UploadOverTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApplyUpdate">
+      <soap12:operation soapAction="FuelDataSysWebService/ApplyUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ApplyDelelte">
+      <soap12:operation soapAction="FuelDataSysWebService/ApplyDelelte" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryUploadedFuelData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelDataCount">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryUploadedFuelDataCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCustomFuelData">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryCustomFuelData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVin">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryVehicleInfoByVin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVehicleInfoByVinVid">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryVehicleInfoByVinVid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpLoadOT">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryApplyUpLoadOT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyDelInfo">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryApplyDelInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryApplyUpdateInfo">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryApplyUpdateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHisFuelData">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryHisFuelData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRllxParamData">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryRllxParamData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHolidayData">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryHolidayData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryVidByVins">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryVidByVins" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNotice">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryUploadedFuelData_New">
+      <soap12:operation soapAction="FuelDataSysWebService/QueryUploadedFuelData_New" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FuelDataSysWebService">
+    <wsdl:port name="FuelDataSysWebServiceSoap" binding="tns:FuelDataSysWebServiceSoap">
+      <soap:address location="http://tsoap.catarc.info/FuelDataSysWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FuelDataSysWebServiceSoap12" binding="tns:FuelDataSysWebServiceSoap12">
+      <soap12:address location="http://tsoap.catarc.info/FuelDataSysWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

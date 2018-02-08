@@ -1,0 +1,138 @@
+// ■■■■■■■■■■ [2017/4/19 16:23:16] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Unable to cast object of type 'System.Data.DataView' to type 'System.Data.DataTable'.
+帮助链接: None
+对象: FuelDataSysClient
+堆栈:
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnCopy_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 141
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: Void barBtnCopy_ItemClick(System.Object, DevExpress.XtraBars.ItemClickEventArgs)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/19 16:25:18] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Syntax error: Invalid usage of 'Is' operator. Correct syntax: <expression> Is [Not] Null.
+帮助链接: None
+对象: System.Data
+堆栈:
+   at System.Data.BinaryNode.Optimize()
+   at System.Data.DataExpression.Bind(DataTable table)
+   at System.Data.DataExpression..ctor(DataTable table, String expression, Type type)
+   at System.Data.DataTable.Select(String filterExpression)
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnCopy_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 142
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Data.ExpressionNode Optimize()
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+
+// ■■■■■■■■■■ [2017/4/19 16:52:23] ■■■■■■■■■■ //
+
+
+// ---------- [错误信息] ---------- //
+
+信息: Column 'VIN' does not belong to table Table.
+帮助链接: None
+对象: System.Data
+堆栈:
+   at System.Data.DataRow.GetDataColumn(String columnName)
+   at System.Data.DataRow.get_Item(String columnName)
+   at FuelDataSysClient.Form_SJSB.ImportRLLXPARAMForm.barBtnCopy_ItemClick(Object sender, ItemClickEventArgs e) in D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\Form_SJSB\ImportRLLXPARAMForm.cs:line 153
+   at DevExpress.XtraBars.BarItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarBaseButtonItem.OnClick(BarItemLink link)
+   at DevExpress.XtraBars.BarItemLink.OnLinkClick()
+   at DevExpress.XtraBars.BarItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarButtonItemLink.OnLinkAction(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.BarItemLink.OnLinkActionCore(BarLinkAction action, Object actionArgs)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.ClickLink(BarItemLink link)
+   at DevExpress.XtraBars.ViewInfo.BarSelectionInfo.UnPressLink(BarItemLink link)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPressItem(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnUnPress(DXMouseEventArgs e, RibbonHitInfo hitInfo)
+   at DevExpress.XtraBars.Ribbon.Handler.BaseRibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.Handler.RibbonHandler.OnMouseUp(DXMouseEventArgs e)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.OnMouseUp(MouseEventArgs e)
+   at System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   at System.Windows.Forms.Control.WndProc(Message& m)
+   at DevExpress.Utils.Controls.ControlBase.WndProc(Message& m)
+   at DevExpress.XtraBars.Ribbon.RibbonControl.WndProc(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+方法: System.Data.DataColumn GetDataColumn(System.String)
+
+
+// ---------- [系统环境] ---------- //
+
+当前路径: D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysClient\bin\Debug
+机器名: USER-PC[user-PC]
+操作系统: Microsoft Windows NT 6.1.7601 Service Pack 1
+系统路径: C:\Windows\system32
+用户名: user
+.NET版本: 4.0.30319.18408
+
+
+

@@ -1,0 +1,4 @@
+D:\Project Codes\2017油耗标准版\src\FuelStandard.root\FuelStandard\FuelDataSysClient\bin\Debug\FuelDataSysClient.exe.config
+D:\Project Codes\2017油耗标准版\src\FuelStandard.root\FuelStandard\FuelDataSysClient\obj\x86\Debug\Interop.AcroPDFLib.dll
+D:\Project Codes\2017油耗标准版\src\FuelStandard.root\FuelStandard\FuelDataSysClient\obj\x86\Debug\AxInterop.AcroPDFLib.dll
+D:\Project Codes\2017油耗标准版\src\FuelStandard.root\FuelStandard\FuelDataSysClient\obj\x86\Debug\FuelDataSysClient.csproj.ResolveComReference.cache

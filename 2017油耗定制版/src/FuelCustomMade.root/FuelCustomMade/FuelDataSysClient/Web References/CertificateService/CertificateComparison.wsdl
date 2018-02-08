@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="CertificateComparison" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="CertificateComparison" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="CertificateComparison">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="okey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryCertificateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryAnnouncement">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="okey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryAnnouncementResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryAnnouncementResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="okey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QueryCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryNoticeByQymc">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="qymc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="startTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="endTime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryNoticeByQymcResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryNoticeByQymcResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCertificate" />
+  </wsdl:message>
+  <wsdl:message name="QueryCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryAnnouncementSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryAnnouncement" />
+  </wsdl:message>
+  <wsdl:message name="QueryAnnouncementSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryAnnouncementResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryCountSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryCount" />
+  </wsdl:message>
+  <wsdl:message name="QueryCountSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryNoticeByQymcSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryNoticeByQymc" />
+  </wsdl:message>
+  <wsdl:message name="QueryNoticeByQymcSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryNoticeByQymcResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CertificateComparisonSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCertificate">
+      <wsdl:input message="tns:QueryCertificateSoapIn" />
+      <wsdl:output message="tns:QueryCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryAnnouncement">
+      <wsdl:input message="tns:QueryAnnouncementSoapIn" />
+      <wsdl:output message="tns:QueryAnnouncementSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryCount">
+      <wsdl:input message="tns:QueryCountSoapIn" />
+      <wsdl:output message="tns:QueryCountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryNoticeByQymc">
+      <wsdl:input message="tns:QueryNoticeByQymcSoapIn" />
+      <wsdl:output message="tns:QueryNoticeByQymcSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CertificateComparisonSoap" type="tns:CertificateComparisonSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="CertificateComparison/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCertificate">
+      <soap:operation soapAction="CertificateComparison/QueryCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAnnouncement">
+      <soap:operation soapAction="CertificateComparison/QueryAnnouncement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCount">
+      <soap:operation soapAction="CertificateComparison/QueryCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNoticeByQymc">
+      <soap:operation soapAction="CertificateComparison/QueryNoticeByQymc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CertificateComparisonSoap12" type="tns:CertificateComparisonSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="CertificateComparison/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCertificate">
+      <soap12:operation soapAction="CertificateComparison/QueryCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryAnnouncement">
+      <soap12:operation soapAction="CertificateComparison/QueryAnnouncement" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryCount">
+      <soap12:operation soapAction="CertificateComparison/QueryCount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryNoticeByQymc">
+      <soap12:operation soapAction="CertificateComparison/QueryNoticeByQymc" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CertificateComparison">
+    <wsdl:port name="CertificateComparisonSoap" binding="tns:CertificateComparisonSoap">
+      <soap:address location="http://soap.catarc.info/CertificateComparison.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CertificateComparisonSoap12" binding="tns:CertificateComparisonSoap12">
+      <soap12:address location="http://soap.catarc.info/CertificateComparison.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,16 @@
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.csprojResolveAssemblyReference.cache
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.LocalLoginForm.resources
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.Properties.Resources.resources
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.SubForm.SetForm.resources
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.csproj.GenerateResource.Cache
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.exe.licenses
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\FuelDataSysServer.exe.config
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\FuelDataSysServer.exe
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\FuelDataSysServer.pdb
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\Common.dll
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\Common.pdb
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.exe
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.pdb
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\obj\x86\Debug\FuelDataSysServer.MainServerForm.resources
+D:\Project Codes\油耗系统高级版-东风悦达起亚\src\FuelCafcSystemUpdateSQL_KIA\FuelCafcSystemUpdateSQL_KIA\FuelDataSysServer\bin\Debug\FuelDataModel.dll

@@ -1,0 +1,6 @@
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\bin\Debug\CertificateInsert.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\bin\Debug\CertificateInsert.pdb
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\obj\x86\Debug\CertificateInsert.Form1.resources
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\obj\x86\Debug\CertificateInsert.csproj.GenerateResource.Cache
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\obj\x86\Debug\CertificateInsert.exe
+D:\Project Codes\2017合格证系统\src\Catarc.Adc.Certificate\CertificateInsert\obj\x86\Debug\CertificateInsert.pdb
